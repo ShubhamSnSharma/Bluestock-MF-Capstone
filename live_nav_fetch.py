@@ -2,8 +2,8 @@ import pandas as pd
 import requests
 from pathlib import Path
 
-# Folder to save CSV files
-output_folder = Path("data/raw")
+# Folder to save API-fetched CSV files
+output_folder = Path("data/api")
 output_folder.mkdir(parents=True, exist_ok=True)
 
 # Required schemes
@@ -44,6 +44,8 @@ for file_name, amfi_code in schemes.items():
     except KeyError:
         print(f"Unexpected response for {amfi_code}")
 
-print("\nAll schemes fetched successfully.")
+print("\n" + "=" * 60)
+print("All requested NAV datasets have been fetched successfully.")
+print(f"Saved in: {output_folder}")
 
 
