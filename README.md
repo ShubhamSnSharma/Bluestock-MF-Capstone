@@ -1,52 +1,27 @@
-# Bluestock Mutual Fund Analytics Capstone
+# Bluestock Fintech Internship
 
-This repository contains my work for the **Bluestock Fintech Mutual Fund Analytics Capstone** as part of the Bluestock internship program.
+This repository contains all projects, assignments, and prerequisites completed during the Bluestock Fintech Internship. The repository is organized into distinct subdirectories for the Capstone Project and prerequisite coursework.
 
-The project focuses on building a data-driven mutual fund analytics pipeline using Python. Throughout the internship, the project will cover data ingestion, validation, SQL, exploratory data analysis, dashboards, and financial insights.
-
-## Day 1 Progress
-
-- Created the project structure
-- Configured the development environment and dependencies
-- Loaded and explored all provided datasets
-- Performed basic data quality checks
-  - Missing values
-  - Duplicate records
-  - Data types
-- Explored the fund master dataset
-- Validated AMFI scheme codes against NAV history
-- Retrieved live NAV data using the MFAPI
-- Saved API-fetched NAV datasets for further analysis
-
-## Project Structure
+## Repository Structure
 
 ```
 Bluestock-MF-Capstone/
-├── dashboard/
-├── data/
-│   ├── api/          # NAV data fetched from MFAPI
-│   ├── processed/    # Cleaned datasets
-│   └── raw/          # Original datasets
-├── notebooks/
-├── reports/
-├── sql/
-├── data_ingestion.py
-├── live_nav_fetch.py
-├── requirements.txt
-└── README.md
+├── 01-Capstone-Project-I/
+│   └── Day-01-Project-Setup-ETL/         # Day 01 – Project Setup & Data Ingestion (ETL)
+└── 02-Data-Analyst-Prerequisite/
+    └── Week-01-Core-Data-Analytics/      # Week 01 – Core Data Analytics Foundation
 ```
 
-## Technologies Used
+### Projects Overview
 
-- Python
-- Pandas
-- NumPy
-- Requests
-- SQLAlchemy
-- Jupyter Notebook
-- Matplotlib
-- Plotly
+- **01-Capstone-Project-I/Day-01-Project-Setup-ETL/**
+  - **Day 01 – Project Setup & Data Ingestion (ETL):** Data ingestion pipelines, live NAV retrieval scripts, and raw market datasets for mutual fund analytics.
 
----
+- **02-Data-Analyst-Prerequisite/Week-01-Core-Data-Analytics/**
+  - **Week 01 – Core Data Analytics Foundation:** End-to-end retail data analytics workflow covering Python EDA, SQL analytical queries, Excel interactive sales dashboards, and Power BI report exports.
 
-*This repository will be updated as new milestones of the Bluestock Mutual Fund Analytics Capstone are completed.*
+Each project directory contains its own dedicated `README.md` documentation detailing setup instructions, project workflows, analytical insights, and deliverables.
+
+## Author
+
+Shubham Sharma
