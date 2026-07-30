@@ -1,27 +1,29 @@
 # Bluestock Fintech Internship
 
-This repository contains all projects, assignments, and prerequisites completed during the Bluestock Fintech Internship. The repository is organized into distinct subdirectories for the Capstone Project and prerequisite coursework.
+This repository contains all coursework, projects, and prerequisites completed during the Bluestock Fintech Internship program.
 
 ## Repository Structure
 
-```
+```text
 Bluestock-MF-Capstone/
-├── 01-Capstone-Project-I/
-│   └── Day-01-Project-Setup-ETL/         # Day 01 – Project Setup & Data Ingestion (ETL)
-└── 02-Data-Analyst-Prerequisite/
-    └── Week-01-Core-Data-Analytics/      # Week 01 – Core Data Analytics Foundation
+├── 01-Capstone-Project-I/          # Capstone Project I – Mutual Fund Analytics
+└── 02-Data-Analyst-Prerequisite/   # Data Analyst Foundations & Prerequisite Work
 ```
 
-### Projects Overview
+## Track Summaries
 
-- **01-Capstone-Project-I/Day-01-Project-Setup-ETL/**
-  - **Day 01 – Project Setup & Data Ingestion (ETL):** Data ingestion pipelines, live NAV retrieval scripts, and raw market datasets for mutual fund analytics.
+### 1. Capstone Project I (Mutual Fund Analytics)
+- **Location:** `01-Capstone-Project-I/`
+- **Overview:** End-to-end data engineering, ETL pipelines, live NAV data fetching, and financial analytics for mutual funds.
 
-- **02-Data-Analyst-Prerequisite/Week-01-Core-Data-Analytics/**
-  - **Week 01 – Core Data Analytics Foundation:** End-to-end retail data analytics workflow covering Python EDA, SQL analytical queries, Excel interactive sales dashboards, and Power BI report exports.
+### 2. Data Analyst Prerequisite
+- **Location:** `02-Data-Analyst-Prerequisite/`
+- **Overview:** Core data analytics foundation covering data cleaning, Exploratory Data Analysis (EDA), relational SQL querying, Excel dashboards, and Power BI report development.
 
-Each project directory contains its own dedicated `README.md` documentation detailing setup instructions, project workflows, analytical insights, and deliverables.
+---
+
+> **Note:** Each individual assignment directory contains its own dedicated `README.md` with detailed instructions, setup steps, and project insights.
 
 ## Author
 
-Shubham Sharma
+**Shubham Sharma**
