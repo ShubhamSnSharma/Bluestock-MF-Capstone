@@ -1,0 +1,41 @@
+amfi_code,scheme_name,category,fund_house,sharpe_ratio,sortino_ratio,alpha,beta,max_drawdown
+119551,SBI Bluechip Fund - Regular Plan - Growth,Equity,SBI Mutual Fund,1.2083,1.8402,0.1649,-0.0318,-0.1501
+119552,SBI Bluechip Fund - Direct Plan - Growth,Equity,SBI Mutual Fund,0.9533,1.4196,0.132,-0.0262,-0.118
+119598,SBI Small Cap Fund - Regular Plan - Growth,Equity,SBI Mutual Fund,0.9453,1.418,0.2369,-0.0232,-0.2871
+119599,SBI Small Cap Fund - Direct Plan - Growth,Equity,SBI Mutual Fund,-0.0572,-0.0803,-0.0121,0.062,-0.5257
+119120,SBI Magnum Gilt Fund - Regular Plan - Growth,Debt,SBI Mutual Fund,-0.2266,-0.3182,-0.0092,-0.0064,-0.0433
+100016,HDFC Top 100 Fund - Regular Plan - Growth,Equity,HDFC Mutual Fund,-0.2015,-0.2869,-0.0313,-0.0583,-0.2473
+125497,HDFC Top 100 Fund - Direct Plan - Growth,Equity,HDFC Mutual Fund,0.7758,1.1488,0.1155,0.0488,-0.152
+100033,HDFC Mid-Cap Opportunities Fund - Regular - Growth,Equity,HDFC Mutual Fund,1.0937,1.6321,0.2073,0.0051,-0.1622
+125498,HDFC Mid-Cap Opportunities Fund - Direct - Growth,Equity,HDFC Mutual Fund,0.3006,0.4298,0.0555,0.0091,-0.2112
+100025,HDFC Short Term Debt Fund - Regular - Growth,Debt,HDFC Mutual Fund,-0.5671,-0.7815,-0.0221,0.0012,-0.0431
+120503,ICICI Pru Bluechip Fund - Regular - Growth,Equity,ICICI Prudential MF,0.798,1.1765,0.1094,-0.0403,-0.139
+120504,ICICI Pru Bluechip Fund - Direct - Growth,Equity,ICICI Prudential MF,1.0265,1.5391,0.148,0.0162,-0.1259
+120505,ICICI Pru Midcap Fund - Regular - Growth,Equity,ICICI Prudential MF,1.1801,1.7834,0.2277,0.0005,-0.1819
+120506,ICICI Pru Value Discovery Fund - Regular - Growth,Equity,ICICI Prudential MF,0.6489,0.9517,0.1003,0.0419,-0.1983
+120507,ICICI Pru Liquid Fund - Regular - Growth,Debt,ICICI Prudential MF,0.4957,0.7187,0.0024,-0.0004,-0.001
+118632,Nippon India Large Cap Fund - Regular - Growth,Equity,Nippon India MF,1.0817,1.612,0.1528,-0.0084,-0.1741
+118633,Nippon India Large Cap Fund - Direct - Growth,Equity,Nippon India MF,0.6452,0.9676,0.0891,-0.0366,-0.1863
+118634,Nippon India Small Cap Fund - Regular - Growth,Equity,Nippon India MF,0.4484,0.647,0.1167,0.1035,-0.2334
+118635,Nippon India ETF Nifty 50 BeES,Equity,Nippon India MF,0.6649,0.9766,0.0863,-0.0014,-0.1165
+118636,Nippon India Gilt Securities Fund - Regular - Growth,Debt,Nippon India MF,-0.3566,-0.4971,-0.0142,0.0013,-0.0832
+120841,Kotak Bluechip Fund - Regular - Growth,Equity,Kotak Mahindra MF,0.4943,0.7198,0.0678,0.0364,-0.1757
+120842,Kotak Emerging Equity Fund - Regular - Growth,Equity,Kotak Mahindra MF,0.076,0.107,0.0142,0.0181,-0.24
+120843,Kotak Flexicap Fund - Regular - Growth,Equity,Kotak Mahindra MF,1.3067,2.0157,0.2068,-0.0228,-0.1297
+120844,Kotak Liquid Fund - Regular - Growth,Debt,Kotak Mahindra MF,-0.0887,-0.125,-0.0005,-0.0004,-0.0012
+119092,Axis Bluechip Fund - Regular - Growth,Equity,Axis Mutual Fund,0.0308,0.0439,0.0046,0.0097,-0.144
+119093,Axis Bluechip Fund - Direct - Growth,Equity,Axis Mutual Fund,0.1296,0.1844,0.019,0.0259,-0.2175
+119094,Axis Midcap Fund - Regular - Growth,Equity,Axis Mutual Fund,0.9982,1.5043,0.1915,-0.0663,-0.2096
+119095,Axis Small Cap Fund - Regular - Growth,Equity,Axis Mutual Fund,-0.076,-0.1076,-0.0213,-0.067,-0.5168
+101206,ABSL Frontline Equity Fund - Regular - Growth,Equity,Aditya Birla Sun Life MF,1.0272,1.5456,0.1504,0.0211,-0.1129
+101207,ABSL Small Cap Fund - Regular - Growth,Equity,Aditya Birla Sun Life MF,0.1627,0.2332,0.0397,-0.0653,-0.3545
+101208,ABSL Liquid Fund - Regular - Growth,Debt,Aditya Birla Sun Life MF,-0.8156,-1.102,-0.0041,0.0003,-0.0016
+102885,UTI Nifty 50 Index Fund - Regular - Growth,Equity,UTI Mutual Fund,0.8171,1.2137,0.1042,-0.0195,-0.1086
+102886,UTI Mid Cap Fund - Regular - Growth,Equity,UTI Mutual Fund,-0.2058,-0.2868,-0.0388,-0.0421,-0.28
+102887,UTI Flexi Cap Fund - Regular - Growth,Equity,UTI Mutual Fund,0.6195,0.9195,0.0982,0.0167,-0.2154
+148567,Mirae Asset Large Cap Fund - Regular - Growth,Equity,Mirae Asset MF,1.4483,2.1778,0.2064,0.0237,-0.1127
+148568,Mirae Asset Emerging Bluechip Fund - Regular - Growth,Equity,Mirae Asset MF,0.9263,1.3809,0.142,-0.0264,-0.1527
+148569,Mirae Asset Tax Saver Fund - Regular - Growth,Equity,Mirae Asset MF,1.2349,1.8752,0.2189,0.0181,-0.164
+149322,DSP Top 100 Equity Fund - Regular - Growth,Equity,DSP Mutual Fund,0.464,0.6694,0.0665,-0.0041,-0.1484
+149323,DSP Midcap Fund - Regular - Growth,Equity,DSP Mutual Fund,1.1321,1.6701,0.2008,-0.0025,-0.1725
+149324,DSP Small Cap Fund - Regular - Growth,Equity,DSP Mutual Fund,0.9498,1.4206,0.2363,0.0115,-0.3117
