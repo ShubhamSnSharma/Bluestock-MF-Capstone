@@ -1,28 +1,30 @@
 # Bluestock Mutual Fund Capstone
-## Day 06: Power BI Dashboard Design Specification
+## Day 06: Power BI Dashboard Design & Data Model Specification
 
-This directory contains the Day 06 Power BI Dashboard Specification and Implementation Blueprint for the Bluestock Mutual Fund Analytics Capstone.
-
----
-
-## Deliverables
-
-- `dashboard_specification.md`: Enterprise-grade Power BI implementation blueprint detailing data model architecture, Star Schema relationships, DAX measure calculations, 4 dashboard page specifications, theme design system, and VertiPaq performance optimization guidelines.
+This directory contains the complete Power BI implementation blueprint and semantic data model preparation files for Day 06 of the Bluestock Mutual Fund Analytics Capstone.
 
 ---
 
-## Key Highlights of Specification
+## Deliverables & Organization
 
-1. **Semantic Data Model**:
-   - 11 pre-processed datasets mapped into Star Schema architecture.
-   - Explicit DAX date table (`Dim_Calendar`).
-   - $1 : N$ single-direction relationship filter propagation.
+```text
+Day-06-PowerBI-Dashboard-Design/
+├── dashboard_specification.md  # Complete 4-page Power BI visual blueprint & UX guidelines
+├── dashboard_theme.json         # Production Power BI theme JSON configuration
+├── dax_measures.md             # Complete DAX measures dictionary (20+ calculations)
+├── data_model.md               # Star Schema topology, relationships & Date Table setup
+├── field_folders.md            # Display folder organization mapping for DAX measures
+└── README.md                   # Module documentation index
+```
 
-2. **DAX Calculation Engine**:
-   - 20+ syntactically validated DAX measures covering AUM, CAGR, Sharpe, Sortino, Alpha, Beta, Max Drawdown, Historical VaR (95%), CVaR (95%), Tracking Error, HHI Index, and At-Risk Investor Continuity metrics.
+---
 
-3. **4-Page Dashboard Layout**:
-   - **Page 1**: Executive Overview & AUM Analytics
-   - **Page 2**: Scheme Performance & Risk-Adjusted Returns
-   - **Page 3**: Advanced Risk Analytics & Tail-Risk (VaR / CVaR)
-   - **Page 4**: Investor Behavior, Cohort LTV & SIP Continuity
+## Deliverables Summary
+
+| File | Description |
+| :--- | :--- |
+| [`dashboard_specification.md`](./dashboard_specification.md) | Enterprise-grade Power BI visual specification covering data model mapping, visual layout, dynamic slicers, drillthrough targets, and VertiPaq performance optimization rules. |
+| [`dashboard_theme.json`](./dashboard_theme.json) | Production-ready Power BI JSON theme file defining colors (Navy `#1E3A8A`, Slate `#0F172A`, Green `#10B981`, Red `#EF4444`), typography (Segoe UI), and visual element styles. |
+| [`dax_measures.md`](./dax_measures.md) | Complete DAX measure library for Core KPIs (`Total AUM`, `Total Investors`, `Total SIP`), Performance (`CAGR`, `Sharpe`, `Sortino`, `Alpha`, `Beta`, `Max Drawdown`), Risk (`VaR 95`, `CVaR 95`, `HHI`), and Investor Continuity (`At Risk Investors`, `At Risk Rate`). |
+| [`data_model.md`](./data_model.md) | Semantic data model specification documenting Star Schema tables, relationships matrix, $1:N$ single-direction filter rules, hidden columns, and DAX `Dim_Calendar` table script. |
+| [`field_folders.md`](./field_folders.md) | Display folder hierarchy mapping (`01 Executive KPIs`, `02 Performance Metrics`, `03 Risk Analytics`, `04 Investor Behavior`, `05 Benchmark Comparison`) for clean model governance. |
