@@ -151,15 +151,14 @@ COALESCE(AvgBeta, 1.0)
 ---
 
 ### `Tracking Error`
-- **Description**: Annualized standard deviation of active returns relative to benchmark index returns.
+- **Description**: Exposes the pre-computed annualized tracking error / active risk volatility percentage from scheme performance.
 - **Display Format**: `Percentage` (`0.00%`)
 
 ```dax
 Tracking Error = 
-VAR DailyActiveReturn = Fact_NAVHistory[daily_return] - RELATED(Fact_BenchmarkIndices[daily_return])
-VAR DailyStdDev = STDEV.S(DailyActiveReturn)
+VAR AvgTE = AVERAGE(Dim_SchemePerformance[std_dev_ann_pct])
 RETURN
-DailyStdDev * SQRT(252)
+DIVIDE(AvgTE, 100, 0)
 ```
 
 ---
