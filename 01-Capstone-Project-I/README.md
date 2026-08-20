@@ -69,6 +69,8 @@ The project utilizes 10 core datasets covering fund master metadata, daily NAVs,
 ```text
 01-Capstone-Project-I/
 ├── README.md                                   # Root project documentation
+├── run_pipeline.py                             # Master pipeline orchestration script
+├── .gitignore                                  # Git exclusion rules
 │
 ├── Day-01-Project-Setup-ETL/                   # Day 01: Ingestion & Live API
 │   ├── README.md                               # Stage documentation
@@ -177,15 +179,35 @@ The project utilizes 10 core datasets covering fund master metadata, daily NAVs,
 
 ## 7. How to Run the Pipeline & Analytics
 
-Each stage of the analytics pipeline can be executed via its respective Python scripts or explored interactively inside the Jupyter Notebooks.
+### Recommended: Run the Complete Master Pipeline
+To execute the entire multi-stage data engineering, cleaning, database generation, and analytical verification pipeline in sequence with a single command:
 
-### Step 1: Run Data Ingestion & Live NAV Fetching (Day 01)
+```bash
+python run_pipeline.py
+```
+
+`run_pipeline.py` orchestrates the completed project stages sequentially:
+1. **Raw Data Ingestion & Profiling** (`Day-01-Project-Setup-ETL`)
+2. **Automated Data Cleaning & Validation** (`Day-02-Data-Cleaning-SQL`)
+3. **SQLite Database Build & Population** (`Day-02-Data-Cleaning-SQL`)
+4. **Analytical SQL Query Execution** (`Day-02-Data-Cleaning-SQL`)
+5. **Fund Performance & Scorecard Analytics** (`Day-04-Fund-Performance-Analytics`)
+6. **Advanced Risk, VaR/CVaR & Investor Analytics** (`Day-05-Advanced-Risk-Analytics`)
+
+*(Note: `run_pipeline.py` executes the data processing and analytical engines. The interactive Tableau workbook, PDF export, and presentation are standalone final deliverables described in Sections 8 & 9).*
+
+---
+
+### Alternative: Run Individual Stages Manually
+Each stage of the analytics pipeline can also be executed independently via its respective Python scripts or explored interactively inside the Jupyter Notebooks.
+
+#### Step 1: Run Data Ingestion & Live NAV Fetching (Day 01)
 ```bash
 python3 Day-01-Project-Setup-ETL/data_ingestion.py
 python3 Day-01-Project-Setup-ETL/live_nav_fetch.py
 ```
 
-### Step 2: Execute Data Cleaning & Build SQLite Database (Day 02)
+#### Step 2: Execute Data Cleaning & Build SQLite Database (Day 02)
 ```bash
 # Run data cleaning and validation
 python3 Day-02-Data-Cleaning-SQL/scripts/run_cleaning_pipeline.py
@@ -197,13 +219,13 @@ python3 Day-02-Data-Cleaning-SQL/scripts/build_database.py
 python3 Day-02-Data-Cleaning-SQL/scripts/execute_queries.py
 ```
 
-### Step 3: Run Fund Performance & Multi-Factor Scorecard Engine (Day 04)
+#### Step 3: Run Fund Performance & Multi-Factor Scorecard Engine (Day 04)
 ```bash
 python3 Day-04-Fund-Performance-Analytics/scripts/performance_metrics.py
 ```
 *Or open and run `Day-04-Fund-Performance-Analytics/notebooks/Performance_Analytics.ipynb` in Jupyter.*
 
-### Step 4: Run Advanced Risk, VaR/CVaR, Cohort & SIP Gap Engine (Day 05)
+#### Step 4: Run Advanced Risk, VaR/CVaR, Cohort & SIP Gap Engine (Day 05)
 ```bash
 python3 Day-05-Advanced-Risk-Analytics/scripts/advanced_metrics.py
 python3 Day-05-Advanced-Risk-Analytics/scripts/cohort_analysis.py
