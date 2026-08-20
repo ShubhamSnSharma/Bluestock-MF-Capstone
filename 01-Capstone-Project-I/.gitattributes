@@ -1,0 +1,7 @@
+# Declare binary files
+*.pdf binary
+*.pptx binary
+*.twbx binary
+*.db binary
+*.png binary
+*.jpg binary

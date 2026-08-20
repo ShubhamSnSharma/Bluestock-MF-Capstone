@@ -6,12 +6,12 @@ This module serves as the primary master orchestration entry point for the
 Bluestock Mutual Fund Analytics project. It coordinates and executes the complete
 multi-stage data engineering and quantitative analytics workflow in sequential order:
 
-  Stage 1: Raw Data Ingestion & Profiling (Day 01)
-  Stage 2: Automated Data Cleaning & Validation (Day 02)
-  Stage 3: SQLite Database Star-Schema Build & Population (Day 02)
-  Stage 4: Analytical SQL Query Suite Execution (Day 02)
-  Stage 5: Fund Performance & Multi-Factor Scorecard Analytics (Day 04)
-  Stage 6: Advanced Risk, Tail Loss (VaR/CVaR) & Investor Retention (Day 05)
+  Stage 1: Raw Data Ingestion & Profiling
+  Stage 2: Automated Data Cleaning & Transformation
+  Stage 3: SQLite Star-Schema Database Build & Table Population
+  Stage 4: Analytical SQL Query Suite Execution
+  Stage 5: Fund Performance & Multi-Factor Scorecard Analytics
+  Stage 6: Advanced Risk, Tail Loss (VaR/CVaR) & Investor Analytics
 
 Usage:
   python run_pipeline.py
@@ -45,7 +45,7 @@ def run_stage(stage_num: int, total_stages: int, name: str, script_path: Path, c
     print("\n" + "=" * 80)
     print(header)
     print("=" * 80)
-    print(f"Script: {script_path.relative_to(cwd.parent if cwd.parent.exists() else cwd)}")
+    print(f"Script: {script_path.relative_to(cwd)}")
     print(f"Working Directory: {cwd}\n")
 
     start_time = time.time()
@@ -80,33 +80,33 @@ def main() -> None:
     stages = [
         (
             "Raw Data Ingestion & Profiling",
-            repo_root / "Day-01-Project-Setup-ETL" / "data_ingestion.py",
-            repo_root / "Day-01-Project-Setup-ETL"
+            repo_root / "scripts" / "data_ingestion.py",
+            repo_root
         ),
         (
             "Automated Data Cleaning & Transformation",
-            repo_root / "Day-02-Data-Cleaning-SQL" / "scripts" / "run_cleaning_pipeline.py",
-            repo_root / "Day-02-Data-Cleaning-SQL"
+            repo_root / "scripts" / "run_cleaning_pipeline.py",
+            repo_root
         ),
         (
             "SQLite Star-Schema Database Build & Table Population",
-            repo_root / "Day-02-Data-Cleaning-SQL" / "scripts" / "build_database.py",
-            repo_root / "Day-02-Data-Cleaning-SQL"
+            repo_root / "scripts" / "build_database.py",
+            repo_root
         ),
         (
             "Analytical SQL Query Suite Execution",
-            repo_root / "Day-02-Data-Cleaning-SQL" / "scripts" / "execute_queries.py",
-            repo_root / "Day-02-Data-Cleaning-SQL"
+            repo_root / "scripts" / "execute_queries.py",
+            repo_root
         ),
         (
             "Fund Performance & Multi-Factor Scorecard Analytics",
-            repo_root / "Day-04-Fund-Performance-Analytics" / "scripts" / "run_final_verification.py",
-            repo_root / "Day-04-Fund-Performance-Analytics"
+            repo_root / "scripts" / "verify_performance.py",
+            repo_root
         ),
         (
             "Advanced Risk, Tail Loss (VaR/CVaR) & Investor Analytics",
-            repo_root / "Day-05-Advanced-Risk-Analytics" / "scripts" / "run_final_verification.py",
-            repo_root / "Day-05-Advanced-Risk-Analytics"
+            repo_root / "scripts" / "verify_risk.py",
+            repo_root
         )
     ]
 
@@ -131,8 +131,8 @@ def main() -> None:
     print("\n" + "*" * 80)
     print("🎉 ALL PIPELINE STAGES EXECUTED AND VALIDATED SUCCESSFULLY!")
     print(f"Total Pipeline Runtime: {total_duration:.2f}s")
-    print(f"Relational Database: {repo_root / 'Day-02-Data-Cleaning-SQL' / 'database' / 'bluestock_mf.db'}")
-    print(f"Tableau Deliverables: {repo_root / 'Day-06-PowerBI-Dashboard-Design' / 'tableau'}")
+    print(f"Relational Database: {repo_root / 'data' / 'database' / 'bluestock_mf.db'}")
+    print(f"Tableau Deliverables: {repo_root / 'dashboard'}")
     print("*" * 80 + "\n")
 
 
