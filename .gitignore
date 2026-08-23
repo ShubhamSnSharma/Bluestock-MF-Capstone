@@ -6,6 +6,12 @@ venv/
 __pycache__/
 *.pyc
 
+# Testing
+.pytest_cache/
+
+# Environment / secrets
+.env
+
 # Jupyter
 .ipynb_checkpoints/
 
@@ -14,6 +20,7 @@ __pycache__/
 
 # Database
 *.db
+!03-N100-Financial-Intelligence-Platform/Sprint-01-Data-Foundation/nifty100.db
 
 # VS Code
 .vscode/

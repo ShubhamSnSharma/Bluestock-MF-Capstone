@@ -1,0 +1,13 @@
+table_name,raw_source_records,normalized_records,accepted_db_records,orphan_rejected_records,duplicate_rejected_records,total_rejected_records,status
+companies,92,92,92,0,0,0,SUCCESS
+profitandloss,1276,1276,1164,99,13,112,SUCCESS
+balancesheet,1312,1312,1058,85,169,254,SUCCESS
+cashflow,1187,1187,1063,89,35,124,SUCCESS
+analysis,20,20,16,4,0,4,SUCCESS
+documents,1585,1585,1456,128,1,129,SUCCESS
+prosandcons,16,16,14,2,0,2,SUCCESS
+financial_ratios,1184,1184,1041,24,119,143,SUCCESS
+market_cap,552,552,552,0,0,0,SUCCESS
+peer_groups,56,56,56,0,0,0,SUCCESS
+sectors,92,92,92,0,0,0,SUCCESS
+stock_prices,5520,5520,5520,0,0,0,SUCCESS
