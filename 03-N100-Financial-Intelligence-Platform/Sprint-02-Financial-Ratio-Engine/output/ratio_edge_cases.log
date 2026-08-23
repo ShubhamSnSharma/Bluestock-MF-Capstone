@@ -1,0 +1,279 @@
+================================================================================
+N100 FINANCIAL INTELLIGENCE PLATFORM — SPRINT 2 RATIO EDGE CASES & ANOMALIES LOG
+================================================================================
+
+Total Logged Anomalies: 271
+
+Company      | Year   | Metric | Calculated | Source     | Diff     | Category               | Explanation
+------------------------------------------------------------------------------------------------------------------------
+ADANIENSOL   | 2024   | OPM    | 34.39      | 30.00      | 4.39     | FORMULA_DISCREPANCY    | Calculated OPM (34.39%) differs from reported OPM (30.00%) by 4.39%
+ADANIGREEN   | 2024   | ROCE   | 11.49      | 96.50      | 85.01    | VERSION_DIFFERENCE     | Calculated ROCE (11.49%) differs from companies snapshot (96.50%) by 85.01% (snapshot based on TTM/different methodology)
+AMBUJACEM    | 2024   | ROCE   | 18.51      | 12.80      | 5.71     | VERSION_DIFFERENCE     | Calculated ROCE (18.51%) differs from companies snapshot (12.80%) by 5.71% (snapshot based on TTM/different methodology)
+AXISBANK     | 2013   | OPM    | 30.58      | 1353.00    | 1322.42  | FORMULA_DISCREPANCY    | Calculated OPM (30.58%) differs from reported OPM (1353.00%) by 1322.42%
+AXISBANK     | 2014   | OPM    | 31.47      | 2307.00    | 2275.53  | FORMULA_DISCREPANCY    | Calculated OPM (31.47%) differs from reported OPM (2307.00%) by 2275.53%
+AXISBANK     | 2015   | OPM    | 31.36      | 3097.00    | 3065.64  | FORMULA_DISCREPANCY    | Calculated OPM (31.36%) differs from reported OPM (3097.00%) by 3065.64%
+AXISBANK     | 2016   | OPM    | 32.61      | 3466.00    | 3433.39  | FORMULA_DISCREPANCY    | Calculated OPM (32.61%) differs from reported OPM (3466.00%) by 3433.39%
+AXISBANK     | 2017   | OPM    | 53.45      | -5715.00   | 5768.45  | FORMULA_DISCREPANCY    | Calculated OPM (53.45%) differs from reported OPM (-5715.00%) by 5768.45%
+AXISBANK     | 2018   | OPM    | 63.12      | -10277.00  | 10340.12 | FORMULA_DISCREPANCY    | Calculated OPM (63.12%) differs from reported OPM (-10277.00%) by 10340.12%
+AXISBANK     | 2019   | OPM    | 49.39      | -5447.00   | 5496.39  | FORMULA_DISCREPANCY    | Calculated OPM (49.39%) differs from reported OPM (-5447.00%) by 5496.39%
+AXISBANK     | 2020   | OPM    | 55.98      | -9859.00   | 9914.98  | FORMULA_DISCREPANCY    | Calculated OPM (55.98%) differs from reported OPM (-9859.00%) by 9914.98%
+AXISBANK     | 2021   | OPM    | 50.12      | -2510.00   | 2560.12  | FORMULA_DISCREPANCY    | Calculated OPM (50.12%) differs from reported OPM (-2510.00%) by 2560.12%
+AXISBANK     | 2022   | OPM    | 44.47      | 3170.00    | 3125.53  | FORMULA_DISCREPANCY    | Calculated OPM (44.47%) differs from reported OPM (3170.00%) by 3125.53%
+AXISBANK     | 2023   | OPM    | 34.16      | 13857.00   | 13822.84 | FORMULA_DISCREPANCY    | Calculated OPM (34.16%) differs from reported OPM (13857.00%) by 13822.84%
+AXISBANK     | 2024   | OPM    | 34.69      | 11952.00   | 11917.31 | FORMULA_DISCREPANCY    | Calculated OPM (34.69%) differs from reported OPM (11952.00%) by 11917.31%
+BAJAJFINSV   | 2024   | ROCE   | 11.71      | 21.14      | 9.43     | DATA_SOURCE_ISSUE      | Calculated ROCE (11.71%) differs from companies snapshot (21.14%) by 9.43% (snapshot based on TTM/different methodology)
+BAJFINANCE   | 2015   | OPM    | 32.49      | 1367.00    | 1334.51  | FORMULA_DISCREPANCY    | Calculated OPM (32.49%) differs from reported OPM (1367.00%) by 1334.51%
+BAJFINANCE   | 2016   | OPM    | 32.25      | 1986.00    | 1953.75  | FORMULA_DISCREPANCY    | Calculated OPM (32.25%) differs from reported OPM (1986.00%) by 1953.75%
+BAJFINANCE   | 2017   | OPM    | 32.60      | 2867.00    | 2834.40  | FORMULA_DISCREPANCY    | Calculated OPM (32.60%) differs from reported OPM (2867.00%) by 2834.40%
+BAJFINANCE   | 2018   | OPM    | 32.28      | 3935.00    | 3902.72  | FORMULA_DISCREPANCY    | Calculated OPM (32.28%) differs from reported OPM (3935.00%) by 3902.72%
+BAJFINANCE   | 2019   | OPM    | 29.50      | 6310.00    | 6280.50  | FORMULA_DISCREPANCY    | Calculated OPM (29.50%) differs from reported OPM (6310.00%) by 6280.50%
+BAJFINANCE   | 2020   | OPM    | 34.73      | 7608.00    | 7573.27  | FORMULA_DISCREPANCY    | Calculated OPM (34.73%) differs from reported OPM (7608.00%) by 7573.27%
+BAJFINANCE   | 2021   | OPM    | 40.64      | 6314.00    | 6273.36  | FORMULA_DISCREPANCY    | Calculated OPM (40.64%) differs from reported OPM (6314.00%) by 6273.36%
+BAJFINANCE   | 2022   | OPM    | 37.55      | 9906.00    | 9868.45  | FORMULA_DISCREPANCY    | Calculated OPM (37.55%) differs from reported OPM (9906.00%) by 9868.45%
+BAJFINANCE   | 2023   | OPM    | 30.65      | 16018.00   | 15987.35 | FORMULA_DISCREPANCY    | Calculated OPM (30.65%) differs from reported OPM (16018.00%) by 15987.35%
+BAJFINANCE   | 2024   | OPM    | 29.29      | 19987.00   | 19957.71 | FORMULA_DISCREPANCY    | Calculated OPM (29.29%) differs from reported OPM (19987.00%) by 19957.71%
+BAJFINANCE   | 2024   | ROCE   | 4.36       | 11.90      | 7.54     | DATA_SOURCE_ISSUE      | Calculated ROCE (4.36%) differs from companies snapshot (11.90%) by 7.54% (snapshot based on TTM/different methodology)
+BANKBARODA   | 2013   | OPM    | 30.05      | 1006.00    | 975.95   | FORMULA_DISCREPANCY    | Calculated OPM (30.05%) differs from reported OPM (1006.00%) by 975.95%
+BANKBARODA   | 2014   | OPM    | 29.78      | 809.00     | 779.22   | FORMULA_DISCREPANCY    | Calculated OPM (29.78%) differs from reported OPM (809.00%) by 779.22%
+BANKBARODA   | 2015   | OPM    | 29.98      | 902.00     | 872.02   | FORMULA_DISCREPANCY    | Calculated OPM (29.98%) differs from reported OPM (902.00%) by 872.02%
+BANKBARODA   | 2016   | OPM    | 55.44      | -11700.00  | 11755.44 | FORMULA_DISCREPANCY    | Calculated OPM (55.44%) differs from reported OPM (-11700.00%) by 11755.44%
+BANKBARODA   | 2017   | OPM    | 43.28      | -4372.00   | 4415.28  | FORMULA_DISCREPANCY    | Calculated OPM (43.28%) differs from reported OPM (-4372.00%) by 4415.28%
+BANKBARODA   | 2018   | OPM    | 56.65      | -9197.00   | 9253.65  | FORMULA_DISCREPANCY    | Calculated OPM (56.65%) differs from reported OPM (-9197.00%) by 9253.65%
+BANKBARODA   | 2019   | OPM    | 48.79      | -5414.00   | 5462.79  | FORMULA_DISCREPANCY    | Calculated OPM (48.79%) differs from reported OPM (-5414.00%) by 5462.79%
+BANKBARODA   | 2020   | OPM    | 51.44      | -11728.00  | 11779.44 | FORMULA_DISCREPANCY    | Calculated OPM (51.44%) differs from reported OPM (-11728.00%) by 11779.44%
+BANKBARODA   | 2021   | OPM    | 51.23      | -6957.00   | 7008.23  | FORMULA_DISCREPANCY    | Calculated OPM (51.23%) differs from reported OPM (-6957.00%) by 7008.23%
+BANKBARODA   | 2022   | OPM    | 51.12      | -2948.00   | 2999.12  | FORMULA_DISCREPANCY    | Calculated OPM (51.12%) differs from reported OPM (-2948.00%) by 2999.12%
+BANKBARODA   | 2023   | OPM    | 40.45      | 6329.00    | 6288.55  | FORMULA_DISCREPANCY    | Calculated OPM (40.45%) differs from reported OPM (6329.00%) by 6288.55%
+BANKBARODA   | 2024   | OPM    | 37.49      | 4102.00    | 4064.51  | FORMULA_DISCREPANCY    | Calculated OPM (37.49%) differs from reported OPM (4102.00%) by 4064.51%
+BHARTIARTL   | 2024   | ROCE   | 25.10      | 13.10      | 12.00    | VERSION_DIFFERENCE     | Calculated ROCE (25.10%) differs from companies snapshot (13.10%) by 12.00% (snapshot based on TTM/different methodology)
+BEL          | 2024   | ROCE   | 4504.72    | 34.60      | 4470.12  | VERSION_DIFFERENCE     | Calculated ROCE (4504.72%) differs from companies snapshot (34.60%) by 4470.12% (snapshot based on TTM/different methodology)
+BOSCHLTD     | 2024   | ROCE   | 30.25      | 20.60      | 9.65     | VERSION_DIFFERENCE     | Calculated ROCE (30.25%) differs from companies snapshot (20.60%) by 9.65% (snapshot based on TTM/different methodology)
+BRITANNIA    | 2024   | ROCE   | 56.24      | 48.90      | 7.34     | VERSION_DIFFERENCE     | Calculated ROCE (56.24%) differs from companies snapshot (48.90%) by 7.34% (snapshot based on TTM/different methodology)
+CANBK        | 2013   | OPM    | 21.18      | 655.00     | 633.82   | FORMULA_DISCREPANCY    | Calculated OPM (21.18%) differs from reported OPM (655.00%) by 633.82%
+CANBK        | 2014   | OPM    | 24.35      | -672.00    | 696.35   | FORMULA_DISCREPANCY    | Calculated OPM (24.35%) differs from reported OPM (-672.00%) by 696.35%
+CANBK        | 2015   | OPM    | 23.51      | -621.00    | 644.51   | FORMULA_DISCREPANCY    | Calculated OPM (23.51%) differs from reported OPM (-621.00%) by 644.51%
+CANBK        | 2016   | OPM    | 40.38      | -8008.00   | 8048.38  | FORMULA_DISCREPANCY    | Calculated OPM (40.38%) differs from reported OPM (-8008.00%) by 8048.38%
+CANBK        | 2017   | OPM    | 37.85      | -5775.00   | 5812.85  | FORMULA_DISCREPANCY    | Calculated OPM (37.85%) differs from reported OPM (-5775.00%) by 5812.85%
+CANBK        | 2018   | OPM    | 61.87      | -13350.00  | 13411.87 | FORMULA_DISCREPANCY    | Calculated OPM (61.87%) differs from reported OPM (-13350.00%) by 13411.87%
+CANBK        | 2019   | OPM    | 56.73      | -11590.00  | 11646.73 | FORMULA_DISCREPANCY    | Calculated OPM (56.73%) differs from reported OPM (-11590.00%) by 11646.73%
+CANBK        | 2020   | OPM    | 53.88      | -12867.00  | 12920.88 | FORMULA_DISCREPANCY    | Calculated OPM (53.88%) differs from reported OPM (-12867.00%) by 12920.88%
+CANBK        | 2021   | OPM    | 61.83      | -18367.00  | 18428.83 | FORMULA_DISCREPANCY    | Calculated OPM (61.83%) differs from reported OPM (-18367.00%) by 18428.83%
+CANBK        | 2022   | OPM    | 58.39      | -13657.00  | 13715.39 | FORMULA_DISCREPANCY    | Calculated OPM (58.39%) differs from reported OPM (-13657.00%) by 13715.39%
+CANBK        | 2023   | OPM    | 49.80      | -9877.00   | 9926.80  | FORMULA_DISCREPANCY    | Calculated OPM (49.80%) differs from reported OPM (-9877.00%) by 9926.80%
+CANBK        | 2024   | OPM    | 41.75      | -7745.00   | 7786.75  | FORMULA_DISCREPANCY    | Calculated OPM (41.75%) differs from reported OPM (-7745.00%) by 7786.75%
+CHOLAFIN     | 2013   | OPM    | 26.77      | 472.00     | 445.23   | FORMULA_DISCREPANCY    | Calculated OPM (26.77%) differs from reported OPM (472.00%) by 445.23%
+CHOLAFIN     | 2014   | OPM    | 28.42      | 578.00     | 549.58   | FORMULA_DISCREPANCY    | Calculated OPM (28.42%) differs from reported OPM (578.00%) by 549.58%
+CHOLAFIN     | 2015   | OPM    | 28.56      | 696.00     | 667.44   | FORMULA_DISCREPANCY    | Calculated OPM (28.56%) differs from reported OPM (696.00%) by 667.44%
+CHOLAFIN     | 2016   | OPM    | 30.04      | 899.00     | 868.96   | FORMULA_DISCREPANCY    | Calculated OPM (30.04%) differs from reported OPM (899.00%) by 868.96%
+CHOLAFIN     | 2017   | OPM    | 28.16      | 1143.00    | 1114.84  | FORMULA_DISCREPANCY    | Calculated OPM (28.16%) differs from reported OPM (1143.00%) by 1114.84%
+CHOLAFIN     | 2018   | OPM    | 26.10      | 1451.00    | 1424.90  | FORMULA_DISCREPANCY    | Calculated OPM (26.10%) differs from reported OPM (1451.00%) by 1424.90%
+CHOLAFIN     | 2019   | OPM    | 22.96      | 1888.00    | 1865.04  | FORMULA_DISCREPANCY    | Calculated OPM (22.96%) differs from reported OPM (1888.00%) by 1865.04%
+CHOLAFIN     | 2020   | OPM    | 27.79      | 1699.00    | 1671.21  | FORMULA_DISCREPANCY    | Calculated OPM (27.79%) differs from reported OPM (1699.00%) by 1671.21%
+CHOLAFIN     | 2021   | OPM    | 30.40      | 2094.00    | 2063.60  | FORMULA_DISCREPANCY    | Calculated OPM (30.40%) differs from reported OPM (2094.00%) by 2063.60%
+CHOLAFIN     | 2022   | OPM    | 28.83      | 2924.00    | 2895.17  | FORMULA_DISCREPANCY    | Calculated OPM (28.83%) differs from reported OPM (2924.00%) by 2895.17%
+CHOLAFIN     | 2023   | OPM    | 28.10      | 3515.00    | 3486.90  | FORMULA_DISCREPANCY    | Calculated OPM (28.10%) differs from reported OPM (3515.00%) by 3486.90%
+CHOLAFIN     | 2024   | OPM    | 28.10      | 4548.00    | 4519.90  | FORMULA_DISCREPANCY    | Calculated OPM (28.10%) differs from reported OPM (4548.00%) by 4519.90%
+CHOLAFIN     | 2024   | ROCE   | 3.51       | 10.40      | 6.89     | DATA_SOURCE_ISSUE      | Calculated ROCE (3.51%) differs from companies snapshot (10.40%) by 6.89% (snapshot based on TTM/different methodology)
+CIPLA        | 2013   | OPM    | 73.26      | 2214.00    | 2140.74  | FORMULA_DISCREPANCY    | Calculated OPM (73.26%) differs from reported OPM (2214.00%) by 2140.74%
+CIPLA        | 2014   | OPM    | 78.90      | 2147.00    | 2068.10  | FORMULA_DISCREPANCY    | Calculated OPM (78.90%) differs from reported OPM (2147.00%) by 2068.10%
+CIPLA        | 2015   | OPM    | 80.94      | 2163.00    | 2082.06  | FORMULA_DISCREPANCY    | Calculated OPM (80.94%) differs from reported OPM (2163.00%) by 2082.06%
+CIPLA        | 2016   | OPM    | 82.02      | 2480.00    | 2397.98  | FORMULA_DISCREPANCY    | Calculated OPM (82.02%) differs from reported OPM (2480.00%) by 2397.98%
+CIPLA        | 2017   | OPM    | 82.66      | 2496.00    | 2413.34  | FORMULA_DISCREPANCY    | Calculated OPM (82.66%) differs from reported OPM (2496.00%) by 2413.34%
+CIPLA        | 2018   | OPM    | 81.35      | 2826.00    | 2744.65  | FORMULA_DISCREPANCY    | Calculated OPM (81.35%) differs from reported OPM (2826.00%) by 2744.65%
+CIPLA        | 2019   | OPM    | 81.07      | 3097.00    | 3015.93  | FORMULA_DISCREPANCY    | Calculated OPM (81.07%) differs from reported OPM (3097.00%) by 3015.93%
+CIPLA        | 2020   | OPM    | 81.29      | 3206.00    | 3124.71  | FORMULA_DISCREPANCY    | Calculated OPM (81.29%) differs from reported OPM (3206.00%) by 3124.71%
+CIPLA        | 2021   | OPM    | 77.80      | 4252.00    | 4174.20  | FORMULA_DISCREPANCY    | Calculated OPM (77.80%) differs from reported OPM (4252.00%) by 4174.20%
+CIPLA        | 2022   | OPM    | 79.08      | 4553.00    | 4473.92  | FORMULA_DISCREPANCY    | Calculated OPM (79.08%) differs from reported OPM (4553.00%) by 4473.92%
+CIPLA        | 2023   | OPM    | 77.91      | 5027.00    | 4949.09  | FORMULA_DISCREPANCY    | Calculated OPM (77.91%) differs from reported OPM (5027.00%) by 4949.09%
+CIPLA        | 2024   | OPM    | 75.59      | 6291.00    | 6215.41  | FORMULA_DISCREPANCY    | Calculated OPM (75.59%) differs from reported OPM (6291.00%) by 6215.41%
+CIPLA        | 2024   | ROCE   | 71.55      | 22.80      | 48.75    | VERSION_DIFFERENCE     | Calculated ROCE (71.55%) differs from companies snapshot (22.80%) by 48.75% (snapshot based on TTM/different methodology)
+COALINDIA    | 2013   | OPM    | 73.52      | 18087.00   | 18013.48 | FORMULA_DISCREPANCY    | Calculated OPM (73.52%) differs from reported OPM (18087.00%) by 18013.48%
+COALINDIA    | 2014   | OPM    | 74.84      | 17766.00   | 17691.16 | FORMULA_DISCREPANCY    | Calculated OPM (74.84%) differs from reported OPM (17766.00%) by 17691.16%
+COALINDIA    | 2015   | OPM    | 76.60      | 17343.00   | 17266.40 | FORMULA_DISCREPANCY    | Calculated OPM (76.60%) differs from reported OPM (17343.00%) by 17266.40%
+COALINDIA    | 2016   | OPM    | 75.96      | 18714.00   | 18638.04 | FORMULA_DISCREPANCY    | Calculated OPM (75.96%) differs from reported OPM (18714.00%) by 18638.04%
+COALINDIA    | 2017   | OPM    | 84.07      | 12448.00   | 12363.93 | FORMULA_DISCREPANCY    | Calculated OPM (84.07%) differs from reported OPM (12448.00%) by 12363.93%
+COALINDIA    | 2018   | OPM    | 89.10      | 9288.00    | 9198.90  | FORMULA_DISCREPANCY    | Calculated OPM (89.10%) differs from reported OPM (9288.00%) by 9198.90%
+COALINDIA    | 2019   | OPM    | 74.89      | 25007.00   | 24932.11 | FORMULA_DISCREPANCY    | Calculated OPM (74.89%) differs from reported OPM (25007.00%) by 24932.11%
+COALINDIA    | 2020   | OPM    | 77.54      | 21581.00   | 21503.46 | FORMULA_DISCREPANCY    | Calculated OPM (77.54%) differs from reported OPM (21581.00%) by 21503.46%
+COALINDIA    | 2021   | OPM    | 79.31      | 18628.00   | 18548.69 | FORMULA_DISCREPANCY    | Calculated OPM (79.31%) differs from reported OPM (18628.00%) by 18548.69%
+COALINDIA    | 2022   | OPM    | 77.47      | 24721.00   | 24643.53 | FORMULA_DISCREPANCY    | Calculated OPM (77.47%) differs from reported OPM (24721.00%) by 24643.53%
+COALINDIA    | 2023   | OPM    | 68.01      | 44232.00   | 44163.99 | FORMULA_DISCREPANCY    | Calculated OPM (68.01%) differs from reported OPM (44232.00%) by 44163.99%
+COALINDIA    | 2024   | OPM    | 66.29      | 47971.00   | 47904.71 | FORMULA_DISCREPANCY    | Calculated OPM (66.29%) differs from reported OPM (47971.00%) by 47904.71%
+COALINDIA    | 2024   | ROCE   | 105.75     | 63.60      | 42.15    | VERSION_DIFFERENCE     | Calculated ROCE (105.75%) differs from companies snapshot (63.60%) by 42.15% (snapshot based on TTM/different methodology)
+GODREJCP     | 2024   | ROCE   | 4.73       | 26.49      | 21.76    | VERSION_DIFFERENCE     | Calculated ROCE (4.73%) differs from companies snapshot (26.49%) by 21.76% (snapshot based on TTM/different methodology)
+HAL          | 2024   | ROCE   | 3617.39    | 38.90      | 3578.49  | VERSION_DIFFERENCE     | Calculated ROCE (3617.39%) differs from companies snapshot (38.90%) by 3578.49% (snapshot based on TTM/different methodology)
+HCLTECH      | 2024   | ROCE   | 34.71      | 29.60      | 5.11     | VERSION_DIFFERENCE     | Calculated ROCE (34.71%) differs from companies snapshot (29.60%) by 5.11% (snapshot based on TTM/different methodology)
+HDFCBANK     | 2013   | OPM    | 35.22      | 3534.00    | 3498.78  | FORMULA_DISCREPANCY    | Calculated OPM (35.22%) differs from reported OPM (3534.00%) by 3498.78%
+HDFCBANK     | 2014   | OPM    | 31.74      | 5602.00    | 5570.26  | FORMULA_DISCREPANCY    | Calculated OPM (31.74%) differs from reported OPM (5602.00%) by 5570.26%
+HDFCBANK     | 2015   | OPM    | 31.90      | 7214.00    | 7182.10  | FORMULA_DISCREPANCY    | Calculated OPM (31.90%) differs from reported OPM (7214.00%) by 7182.10%
+HDFCBANK     | 2016   | OPM    | 31.75      | 9037.00    | 9005.25  | FORMULA_DISCREPANCY    | Calculated OPM (31.75%) differs from reported OPM (9037.00%) by 9005.25%
+HDFCBANK     | 2017   | OPM    | 32.56      | 11374.00   | 11341.44 | FORMULA_DISCREPANCY    | Calculated OPM (32.56%) differs from reported OPM (11374.00%) by 11341.44%
+HDFCBANK     | 2018   | OPM    | 34.63      | 13374.00   | 13339.37 | FORMULA_DISCREPANCY    | Calculated OPM (34.63%) differs from reported OPM (13374.00%) by 13339.37%
+HDFCBANK     | 2019   | OPM    | 33.15      | 16592.00   | 16558.85 | FORMULA_DISCREPANCY    | Calculated OPM (33.15%) differs from reported OPM (16592.00%) by 16558.85%
+HDFCBANK     | 2020   | OPM    | 37.20      | 14593.00   | 14555.80 | FORMULA_DISCREPANCY    | Calculated OPM (37.20%) differs from reported OPM (14593.00%) by 14555.80%
+HDFCBANK     | 2021   | OPM    | 40.81      | 16848.00   | 16807.19 | FORMULA_DISCREPANCY    | Calculated OPM (40.81%) differs from reported OPM (16848.00%) by 16807.19%
+HDFCBANK     | 2022   | OPM    | 41.61      | 20795.00   | 20753.39 | FORMULA_DISCREPANCY    | Calculated OPM (41.61%) differs from reported OPM (20795.00%) by 20753.39%
+HDFCBANK     | 2023   | OPM    | 36.92      | 29932.00   | 29895.08 | FORMULA_DISCREPANCY    | Calculated OPM (36.92%) differs from reported OPM (29932.00%) by 29895.08%
+HDFCBANK     | 2024   | OPM    | 61.41      | -44685.00  | 44746.41 | FORMULA_DISCREPANCY    | Calculated OPM (61.41%) differs from reported OPM (-44685.00%) by 44746.41%
+HDFCLIFE     | 2013   | OPM    | 96.27      | 525.00     | 428.73   | FORMULA_DISCREPANCY    | Calculated OPM (96.27%) differs from reported OPM (525.00%) by 428.73%
+HDFCLIFE     | 2014   | OPM    | 96.48      | 605.00     | 508.52   | FORMULA_DISCREPANCY    | Calculated OPM (96.48%) differs from reported OPM (605.00%) by 508.52%
+HDFCLIFE     | 2015   | OPM    | 96.79      | 874.00     | 777.21   | FORMULA_DISCREPANCY    | Calculated OPM (96.79%) differs from reported OPM (874.00%) by 777.21%
+HDFCLIFE     | 2016   | OPM    | 94.74      | 953.00     | 858.26   | FORMULA_DISCREPANCY    | Calculated OPM (94.74%) differs from reported OPM (953.00%) by 858.26%
+HDFCLIFE     | 2017   | OPM    | 96.83      | 972.00     | 875.17   | FORMULA_DISCREPANCY    | Calculated OPM (96.83%) differs from reported OPM (972.00%) by 875.17%
+HDFCLIFE     | 2018   | OPM    | 96.67      | 1074.00    | 977.33   | FORMULA_DISCREPANCY    | Calculated OPM (96.67%) differs from reported OPM (1074.00%) by 977.33%
+HDFCLIFE     | 2019   | OPM    | 96.87      | 1215.00    | 1118.13  | FORMULA_DISCREPANCY    | Calculated OPM (96.87%) differs from reported OPM (1215.00%) by 1118.13%
+HDFCLIFE     | 2020   | OPM    | 96.12      | 1141.00    | 1044.88  | FORMULA_DISCREPANCY    | Calculated OPM (96.12%) differs from reported OPM (1141.00%) by 1044.88%
+HDFCLIFE     | 2021   | OPM    | 98.27      | 1235.00    | 1136.73  | FORMULA_DISCREPANCY    | Calculated OPM (98.27%) differs from reported OPM (1235.00%) by 1136.73%
+HDFCLIFE     | 2022   | OPM    | 98.84      | 778.00     | 679.16   | FORMULA_DISCREPANCY    | Calculated OPM (98.84%) differs from reported OPM (778.00%) by 679.16%
+HDFCLIFE     | 2023   | OPM    | 99.89      | 80.00      | 19.89    | FORMULA_DISCREPANCY    | Calculated OPM (99.89%) differs from reported OPM (80.00%) by 19.89%
+HDFCLIFE     | 2024   | OPM    | 99.48      | 531.00     | 431.52   | FORMULA_DISCREPANCY    | Calculated OPM (99.48%) differs from reported OPM (531.00%) by 431.52%
+HDFCLIFE     | 2024   | ROCE   | 646.47     | 6.61       | 639.86   | DATA_SOURCE_ISSUE      | Calculated ROCE (646.47%) differs from companies snapshot (6.61%) by 639.86% (snapshot based on TTM/different methodology)
+HEROMOTOCO   | 2014   | OPM    | 85.94      | 3553.00    | 3467.06  | FORMULA_DISCREPANCY    | Calculated OPM (85.94%) differs from reported OPM (3553.00%) by 3467.06%
+HEROMOTOCO   | 2015   | OPM    | 87.22      | 3520.00    | 3432.78  | FORMULA_DISCREPANCY    | Calculated OPM (87.22%) differs from reported OPM (3520.00%) by 3432.78%
+HEROMOTOCO   | 2016   | OPM    | 84.45      | 4424.00    | 4339.55  | FORMULA_DISCREPANCY    | Calculated OPM (84.45%) differs from reported OPM (4424.00%) by 4339.55%
+HEROMOTOCO   | 2017   | OPM    | 83.97      | 4585.00    | 4501.03  | FORMULA_DISCREPANCY    | Calculated OPM (83.97%) differs from reported OPM (4585.00%) by 4501.03%
+HEROMOTOCO   | 2018   | OPM    | 83.57      | 5334.00    | 5250.43  | FORMULA_DISCREPANCY    | Calculated OPM (83.57%) differs from reported OPM (5334.00%) by 5250.43%
+HEROMOTOCO   | 2019   | OPM    | 85.21      | 5025.00    | 4939.79  | FORMULA_DISCREPANCY    | Calculated OPM (85.21%) differs from reported OPM (5025.00%) by 4939.79%
+HEROMOTOCO   | 2020   | OPM    | 86.09      | 4070.00    | 3983.91  | FORMULA_DISCREPANCY    | Calculated OPM (86.09%) differs from reported OPM (4070.00%) by 3983.91%
+HEROMOTOCO   | 2021   | OPM    | 86.90      | 4058.00    | 3971.10  | FORMULA_DISCREPANCY    | Calculated OPM (86.90%) differs from reported OPM (4058.00%) by 3971.10%
+HEROMOTOCO   | 2022   | OPM    | 88.98      | 3256.00    | 3167.02  | FORMULA_DISCREPANCY    | Calculated OPM (88.98%) differs from reported OPM (3256.00%) by 3167.02%
+HEROMOTOCO   | 2023   | OPM    | 88.00      | 4099.00    | 4011.00  | FORMULA_DISCREPANCY    | Calculated OPM (88.00%) differs from reported OPM (4099.00%) by 4011.00%
+HEROMOTOCO   | 2024   | OPM    | 86.15      | 5235.00    | 5148.85  | FORMULA_DISCREPANCY    | Calculated OPM (86.15%) differs from reported OPM (5235.00%) by 5148.85%
+HEROMOTOCO   | 2024   | ROCE   | 177.92     | 29.10      | 148.82   | VERSION_DIFFERENCE     | Calculated ROCE (177.92%) differs from companies snapshot (29.10%) by 148.82% (snapshot based on TTM/different methodology)
+HINDALCO     | 2013   | OPM    | 90.40      | 7699.00    | 7608.60  | FORMULA_DISCREPANCY    | Calculated OPM (90.40%) differs from reported OPM (7699.00%) by 7608.60%
+HINDALCO     | 2014   | OPM    | 90.85      | 8024.00    | 7933.15  | FORMULA_DISCREPANCY    | Calculated OPM (90.85%) differs from reported OPM (8024.00%) by 7933.15%
+HINDALCO     | 2015   | OPM    | 91.52      | 8844.00    | 8752.48  | FORMULA_DISCREPANCY    | Calculated OPM (91.52%) differs from reported OPM (8844.00%) by 8752.48%
+HINDALCO     | 2016   | OPM    | 92.12      | 7778.00    | 7685.88  | FORMULA_DISCREPANCY    | Calculated OPM (92.12%) differs from reported OPM (7778.00%) by 7685.88%
+HINDALCO     | 2017   | OPM    | 87.71      | 12317.00   | 12229.29 | FORMULA_DISCREPANCY    | Calculated OPM (87.71%) differs from reported OPM (12317.00%) by 12229.29%
+HINDALCO     | 2018   | OPM    | 88.11      | 13695.00   | 13606.89 | FORMULA_DISCREPANCY    | Calculated OPM (88.11%) differs from reported OPM (13695.00%) by 13606.89%
+HINDALCO     | 2019   | OPM    | 88.12      | 15511.00   | 15422.88 | FORMULA_DISCREPANCY    | Calculated OPM (88.12%) differs from reported OPM (15511.00%) by 15422.88%
+HINDALCO     | 2020   | OPM    | 87.89      | 14306.00   | 14218.11 | FORMULA_DISCREPANCY    | Calculated OPM (87.89%) differs from reported OPM (14306.00%) by 14218.11%
+HINDALCO     | 2021   | OPM    | 86.70      | 17559.00   | 17472.30 | FORMULA_DISCREPANCY    | Calculated OPM (86.70%) differs from reported OPM (17559.00%) by 17472.30%
+HINDALCO     | 2022   | OPM    | 85.47      | 28347.00   | 28261.53 | FORMULA_DISCREPANCY    | Calculated OPM (85.47%) differs from reported OPM (28347.00%) by 28261.53%
+HINDALCO     | 2023   | OPM    | 89.85      | 22666.00   | 22576.15 | FORMULA_DISCREPANCY    | Calculated OPM (89.85%) differs from reported OPM (22666.00%) by 22576.15%
+HINDALCO     | 2024   | OPM    | 88.95      | 23872.00   | 23783.05 | FORMULA_DISCREPANCY    | Calculated OPM (88.95%) differs from reported OPM (23872.00%) by 23783.05%
+HINDALCO     | 2024   | ROCE   | 118.21     | 11.30      | 106.91   | VERSION_DIFFERENCE     | Calculated ROCE (118.21%) differs from companies snapshot (11.30%) by 106.91% (snapshot based on TTM/different methodology)
+HINDUNILVR   | 2013   | OPM    | 84.37      | 4220.00    | 4135.63  | FORMULA_DISCREPANCY    | Calculated OPM (84.37%) differs from reported OPM (4220.00%) by 4135.63%
+HINDUNILVR   | 2014   | OPM    | 83.72      | 4759.00    | 4675.28  | FORMULA_DISCREPANCY    | Calculated OPM (83.72%) differs from reported OPM (4759.00%) by 4675.28%
+HINDUNILVR   | 2015   | OPM    | 83.07      | 5412.00    | 5328.93  | FORMULA_DISCREPANCY    | Calculated OPM (83.07%) differs from reported OPM (5412.00%) by 5328.93%
+HINDUNILVR   | 2016   | OPM    | 81.64      | 5910.00    | 5828.36  | FORMULA_DISCREPANCY    | Calculated OPM (81.64%) differs from reported OPM (5910.00%) by 5828.36%
+HINDUNILVR   | 2017   | OPM    | 80.92      | 6328.00    | 6247.08  | FORMULA_DISCREPANCY    | Calculated OPM (80.92%) differs from reported OPM (6328.00%) by 6247.08%
+HINDUNILVR   | 2018   | OPM    | 78.90      | 7499.00    | 7420.10  | FORMULA_DISCREPANCY    | Calculated OPM (78.90%) differs from reported OPM (7499.00%) by 7420.10%
+HINDUNILVR   | 2019   | OPM    | 77.41      | 8880.00    | 8802.59  | FORMULA_DISCREPANCY    | Calculated OPM (77.41%) differs from reported OPM (8880.00%) by 8802.59%
+HINDUNILVR   | 2020   | OPM    | 75.21      | 9861.00    | 9785.79  | FORMULA_DISCREPANCY    | Calculated OPM (75.21%) differs from reported OPM (9861.00%) by 9785.79%
+HINDUNILVR   | 2021   | OPM    | 75.28      | 11626.00   | 11550.72 | FORMULA_DISCREPANCY    | Calculated OPM (75.28%) differs from reported OPM (11626.00%) by 11550.72%
+HINDUNILVR   | 2022   | OPM    | 75.49      | 12857.00   | 12781.51 | FORMULA_DISCREPANCY    | Calculated OPM (75.49%) differs from reported OPM (12857.00%) by 12781.51%
+HINDUNILVR   | 2023   | OPM    | 76.65      | 14147.00   | 14070.35 | FORMULA_DISCREPANCY    | Calculated OPM (76.65%) differs from reported OPM (14147.00%) by 14070.35%
+HINDUNILVR   | 2024   | OPM    | 76.32      | 14659.00   | 14582.68 | FORMULA_DISCREPANCY    | Calculated OPM (76.32%) differs from reported OPM (14659.00%) by 14582.68%
+HINDUNILVR   | 2024   | ROCE   | 89.68      | 27.20      | 62.48    | VERSION_DIFFERENCE     | Calculated ROCE (89.68%) differs from companies snapshot (27.20%) by 62.48% (snapshot based on TTM/different methodology)
+ICICIBANK    | 2013   | OPM    | 70.59      | -15085.00  | 15155.59 | FORMULA_DISCREPANCY    | Calculated OPM (70.59%) differs from reported OPM (-15085.00%) by 15155.59%
+ICICIBANK    | 2014   | OPM    | 66.40      | -13084.00  | 13150.40 | FORMULA_DISCREPANCY    | Calculated OPM (66.40%) differs from reported OPM (-13084.00%) by 13150.40%
+ICICIBANK    | 2015   | OPM    | 70.53      | -16120.00  | 16190.53 | FORMULA_DISCREPANCY    | Calculated OPM (70.53%) differs from reported OPM (-16120.00%) by 16190.53%
+ICICIBANK    | 2016   | OPM    | 88.12      | -26955.00  | 27043.12 | FORMULA_DISCREPANCY    | Calculated OPM (88.12%) differs from reported OPM (-26955.00%) by 27043.12%
+ICICIBANK    | 2017   | OPM    | 104.76     | -37737.00  | 37841.76 | FORMULA_DISCREPANCY    | Calculated OPM (104.76%) differs from reported OPM (-37737.00%) by 37841.76%
+ICICIBANK    | 2018   | OPM    | 117.12     | -44906.00  | 45023.12 | FORMULA_DISCREPANCY    | Calculated OPM (117.12%) differs from reported OPM (-44906.00%) by 45023.12%
+ICICIBANK    | 2019   | OPM    | 116.38     | -50971.00  | 51087.38 | FORMULA_DISCREPANCY    | Calculated OPM (116.38%) differs from reported OPM (-50971.00%) by 51087.38%
+ICICIBANK    | 2020   | OPM    | 100.62     | -45190.00  | 45290.62 | FORMULA_DISCREPANCY    | Calculated OPM (100.62%) differs from reported OPM (-45190.00%) by 45290.62%
+ICICIBANK    | 2021   | OPM    | 102.41     | -44805.00  | 44907.41 | FORMULA_DISCREPANCY    | Calculated OPM (102.41%) differs from reported OPM (-44805.00%) by 44907.41%
+ICICIBANK    | 2022   | OPM    | 84.69      | -26558.00  | 26642.69 | FORMULA_DISCREPANCY    | Calculated OPM (84.69%) differs from reported OPM (-26558.00%) by 26642.69%
+ICICIBANK    | 2023   | OPM    | 72.57      | -17341.00  | 17413.57 | FORMULA_DISCREPANCY    | Calculated OPM (72.57%) differs from reported OPM (-17341.00%) by 17413.57%
+ICICIBANK    | 2024   | OPM    | 62.41      | -14152.00  | 14214.41 | FORMULA_DISCREPANCY    | Calculated OPM (62.41%) differs from reported OPM (-14152.00%) by 14214.41%
+ICICIGI      | 2013   | OPM    | 104.46     | -178.00    | 282.46   | FORMULA_DISCREPANCY    | Calculated OPM (104.46%) differs from reported OPM (-178.00%) by 282.46%
+ICICIGI      | 2014   | OPM    | 105.19     | -225.00    | 330.19   | FORMULA_DISCREPANCY    | Calculated OPM (105.19%) differs from reported OPM (-225.00%) by 330.19%
+ICICIGI      | 2015   | OPM    | 105.24     | -221.00    | 326.24   | FORMULA_DISCREPANCY    | Calculated OPM (105.24%) differs from reported OPM (-221.00%) by 326.24%
+ICICIGI      | 2016   | OPM    | 87.34      | 764.00     | 676.66   | FORMULA_DISCREPANCY    | Calculated OPM (87.34%) differs from reported OPM (764.00%) by 676.66%
+ICICIGI      | 2017   | OPM    | 87.78      | 919.00     | 831.22   | FORMULA_DISCREPANCY    | Calculated OPM (87.78%) differs from reported OPM (919.00%) by 831.22%
+ICICIGI      | 2018   | OPM    | 103.79     | -262.00    | 365.79   | FORMULA_DISCREPANCY    | Calculated OPM (103.79%) differs from reported OPM (-262.00%) by 365.79%
+ICICIGI      | 2019   | OPM    | 85.05      | 1669.00    | 1583.95  | FORMULA_DISCREPANCY    | Calculated OPM (85.05%) differs from reported OPM (1669.00%) by 1583.95%
+ICICIGI      | 2020   | OPM    | 84.61      | 1772.00    | 1687.39  | FORMULA_DISCREPANCY    | Calculated OPM (84.61%) differs from reported OPM (1772.00%) by 1687.39%
+ICICIGI      | 2021   | OPM    | 82.97      | 2072.00    | 1989.03  | FORMULA_DISCREPANCY    | Calculated OPM (82.97%) differs from reported OPM (2072.00%) by 1989.03%
+ICICIGI      | 2022   | OPM    | 93.66      | 1016.00    | 922.34   | FORMULA_DISCREPANCY    | Calculated OPM (93.66%) differs from reported OPM (1016.00%) by 922.34%
+ICICIGI      | 2023   | OPM    | 92.93      | 1264.00    | 1171.07  | FORMULA_DISCREPANCY    | Calculated OPM (92.93%) differs from reported OPM (1264.00%) by 1171.07%
+ICICIGI      | 2024   | OPM    | 87.42      | 2577.00    | 2489.58  | FORMULA_DISCREPANCY    | Calculated OPM (87.42%) differs from reported OPM (2577.00%) by 2489.58%
+ICICIGI      | 2024   | ROCE   | 146.43     | 22.50      | 123.93   | DATA_SOURCE_ISSUE      | Calculated ROCE (146.43%) differs from companies snapshot (22.50%) by 123.93% (snapshot based on TTM/different methodology)
+ICICIPRULI   | 2013   | OPM    | 96.28      | 745.00     | 648.72   | FORMULA_DISCREPANCY    | Calculated OPM (96.28%) differs from reported OPM (745.00%) by 648.72%
+ICICIPRULI   | 2014   | OPM    | 93.13      | 1504.00    | 1410.87  | FORMULA_DISCREPANCY    | Calculated OPM (93.13%) differs from reported OPM (1504.00%) by 1410.87%
+ICICIPRULI   | 2015   | OPM    | 95.20      | 1655.00    | 1559.80  | FORMULA_DISCREPANCY    | Calculated OPM (95.20%) differs from reported OPM (1655.00%) by 1559.80%
+ICICIPRULI   | 2016   | OPM    | 91.17      | 1842.00    | 1750.83  | FORMULA_DISCREPANCY    | Calculated OPM (91.17%) differs from reported OPM (1842.00%) by 1750.83%
+ICICIPRULI   | 2017   | OPM    | 95.22      | 1806.00    | 1710.78  | FORMULA_DISCREPANCY    | Calculated OPM (95.22%) differs from reported OPM (1806.00%) by 1710.78%
+ICICIPRULI   | 2018   | OPM    | 95.44      | 1771.00    | 1675.56  | FORMULA_DISCREPANCY    | Calculated OPM (95.44%) differs from reported OPM (1771.00%) by 1675.56%
+ICICIPRULI   | 2019   | OPM    | 98.70      | 541.00     | 442.30   | FORMULA_DISCREPANCY    | Calculated OPM (98.70%) differs from reported OPM (541.00%) by 442.30%
+ICICIPRULI   | 2020   | OPM    | 101.52     | -319.00    | 420.52   | FORMULA_DISCREPANCY    | Calculated OPM (101.52%) differs from reported OPM (-319.00%) by 420.52%
+ICICIPRULI   | 2021   | OPM    | 100.47     | -390.00    | 490.47   | FORMULA_DISCREPANCY    | Calculated OPM (100.47%) differs from reported OPM (-390.00%) by 490.47%
+ICICIPRULI   | 2022   | OPM    | 103.40     | -2163.00   | 2266.40  | FORMULA_DISCREPANCY    | Calculated OPM (103.40%) differs from reported OPM (-2163.00%) by 2266.40%
+ICICIPRULI   | 2023   | OPM    | 103.48     | -1757.00   | 1860.48  | FORMULA_DISCREPANCY    | Calculated OPM (103.48%) differs from reported OPM (-1757.00%) by 1860.48%
+ICICIPRULI   | 2024   | OPM    | 102.03     | -1829.00   | 1931.03  | FORMULA_DISCREPANCY    | Calculated OPM (102.03%) differs from reported OPM (-1829.00%) by 1931.03%
+ICICIPRULI   | 2024   | ROCE   | 754.89     | 8.75       | 746.14   | DATA_SOURCE_ISSUE      | Calculated ROCE (754.89%) differs from companies snapshot (8.75%) by 746.14% (snapshot based on TTM/different methodology)
+INDUSINDBK   | 2013   | OPM    | 27.88      | 286.00     | 258.12   | FORMULA_DISCREPANCY    | Calculated OPM (27.88%) differs from reported OPM (286.00%) by 258.12%
+INDUSINDBK   | 2014   | OPM    | 30.95      | 335.00     | 304.05   | FORMULA_DISCREPANCY    | Calculated OPM (30.95%) differs from reported OPM (335.00%) by 304.05%
+INDUSINDBK   | 2015   | OPM    | 32.33      | 288.00     | 255.67   | FORMULA_DISCREPANCY    | Calculated OPM (32.33%) differs from reported OPM (288.00%) by 255.67%
+INDUSINDBK   | 2016   | OPM    | 35.28      | 329.00     | 293.72   | FORMULA_DISCREPANCY    | Calculated OPM (35.28%) differs from reported OPM (329.00%) by 293.72%
+INDUSINDBK   | 2017   | OPM    | 39.46      | 379.00     | 339.54   | FORMULA_DISCREPANCY    | Calculated OPM (39.46%) differs from reported OPM (379.00%) by 339.54%
+INDUSINDBK   | 2018   | OPM    | 37.93      | 942.00     | 904.07   | FORMULA_DISCREPANCY    | Calculated OPM (37.93%) differs from reported OPM (942.00%) by 904.07%
+INDUSINDBK   | 2019   | OPM    | 41.70      | -437.00    | 478.70   | FORMULA_DISCREPANCY    | Calculated OPM (41.70%) differs from reported OPM (-437.00%) by 478.70%
+INDUSINDBK   | 2020   | OPM    | 43.81      | -553.00    | 596.81   | FORMULA_DISCREPANCY    | Calculated OPM (43.81%) differs from reported OPM (-553.00%) by 596.81%
+INDUSINDBK   | 2021   | OPM    | 55.16      | -2469.00   | 2524.16  | FORMULA_DISCREPANCY    | Calculated OPM (55.16%) differs from reported OPM (-2469.00%) by 2524.16%
+INDUSINDBK   | 2022   | OPM    | 51.39      | -839.00    | 890.39   | FORMULA_DISCREPANCY    | Calculated OPM (51.39%) differs from reported OPM (-839.00%) by 890.39%
+INDUSINDBK   | 2023   | OPM    | 42.69      | 2067.00    | 2024.31  | FORMULA_DISCREPANCY    | Calculated OPM (42.69%) differs from reported OPM (2067.00%) by 2024.31%
+INDUSINDBK   | 2024   | OPM    | 38.55      | 2978.00    | 2939.45  | FORMULA_DISCREPANCY    | Calculated OPM (38.55%) differs from reported OPM (2978.00%) by 2939.45%
+IRCTC        | 2024   | ROCE   | 47.78      | 53.80      | 6.02     | VERSION_DIFFERENCE     | Calculated ROCE (47.78%) differs from companies snapshot (53.80%) by 6.02% (snapshot based on TTM/different methodology)
+JIOFIN       | 2023   | OPM    | 86.67      | 88.00      | 1.33     | FORMULA_DISCREPANCY    | Calculated OPM (86.67%) differs from reported OPM (88.00%) by 1.33%
+KOTAKBANK    | 2013   | OPM    | 60.92      | -1789.00   | 1849.92  | FORMULA_DISCREPANCY    | Calculated OPM (60.92%) differs from reported OPM (-1789.00%) by 1849.92%
+KOTAKBANK    | 2014   | OPM    | 58.84      | -1379.00   | 1437.84  | FORMULA_DISCREPANCY    | Calculated OPM (58.84%) differs from reported OPM (-1379.00%) by 1437.84%
+KOTAKBANK    | 2015   | OPM    | 72.96      | -3366.00   | 3438.96  | FORMULA_DISCREPANCY    | Calculated OPM (72.96%) differs from reported OPM (-3366.00%) by 3438.96%
+KOTAKBANK    | 2016   | OPM    | 56.57      | -2263.00   | 2319.57  | FORMULA_DISCREPANCY    | Calculated OPM (56.57%) differs from reported OPM (-2263.00%) by 2319.57%
+KOTAKBANK    | 2017   | OPM    | 66.44      | -3965.00   | 4031.44  | FORMULA_DISCREPANCY    | Calculated OPM (66.44%) differs from reported OPM (-3965.00%) by 4031.44%
+KOTAKBANK    | 2018   | OPM    | 66.87      | -4141.00   | 4207.87  | FORMULA_DISCREPANCY    | Calculated OPM (66.87%) differs from reported OPM (-4141.00%) by 4207.87%
+KOTAKBANK    | 2019   | OPM    | 66.23      | -5114.00   | 5180.23  | FORMULA_DISCREPANCY    | Calculated OPM (66.23%) differs from reported OPM (-5114.00%) by 5180.23%
+KOTAKBANK    | 2020   | OPM    | 67.45      | -5005.00   | 5072.45  | FORMULA_DISCREPANCY    | Calculated OPM (67.45%) differs from reported OPM (-5005.00%) by 5072.45%
+KOTAKBANK    | 2021   | OPM    | 90.83      | -9958.00   | 10048.83 | FORMULA_DISCREPANCY    | Calculated OPM (90.83%) differs from reported OPM (-9958.00%) by 10048.83%
+KOTAKBANK    | 2022   | OPM    | 90.98      | -8512.00   | 8602.98  | FORMULA_DISCREPANCY    | Calculated OPM (90.98%) differs from reported OPM (-8512.00%) by 8602.98%
+KOTAKBANK    | 2023   | OPM    | 79.44      | -5746.00   | 5825.44  | FORMULA_DISCREPANCY    | Calculated OPM (79.44%) differs from reported OPM (-5746.00%) by 5825.44%
+KOTAKBANK    | 2024   | OPM    | 83.67      | -13382.00  | 13465.67 | FORMULA_DISCREPANCY    | Calculated OPM (83.67%) differs from reported OPM (-13382.00%) by 13465.67%
+LICI         | 2024   | ROCE   | 57.53      | 63.79      | 6.26     | DATA_SOURCE_ISSUE      | Calculated ROCE (57.53%) differs from companies snapshot (63.79%) by 6.26% (snapshot based on TTM/different methodology)
+LT           | 2024   | ROCE   | 152.62     | 17.18      | 135.44   | VERSION_DIFFERENCE     | Calculated ROCE (152.62%) differs from companies snapshot (17.18%) by 135.44% (snapshot based on TTM/different methodology)
+M&M          | 2024   | ROCE   | 16.12      | 26.98      | 10.86    | VERSION_DIFFERENCE     | Calculated ROCE (16.12%) differs from companies snapshot (26.98%) by 10.86% (snapshot based on TTM/different methodology)
+MOTHERSON    | 2024   | ROCE   | 20.54      | 13.70      | 6.84     | VERSION_DIFFERENCE     | Calculated ROCE (20.54%) differs from companies snapshot (13.70%) by 6.84% (snapshot based on TTM/different methodology)
+NESTLEIND    | 2024   | ROCE   | 162.06     | 185.43     | 23.37    | VERSION_DIFFERENCE     | Calculated ROCE (162.06%) differs from companies snapshot (185.43%) by 23.37% (snapshot based on TTM/different methodology)
+PFC          | 2024   | ROCE   | 3.49       | 9.96       | 6.47     | DATA_SOURCE_ISSUE      | Calculated ROCE (3.49%) differs from companies snapshot (9.96%) by 6.47% (snapshot based on TTM/different methodology)
+POWERGRID    | 2024   | ROCE   | 19.17      | 13.20      | 5.97     | VERSION_DIFFERENCE     | Calculated ROCE (19.17%) differs from companies snapshot (13.20%) by 5.97% (snapshot based on TTM/different methodology)
+SHREECEM     | 2024   | ROCE   | 22.88      | 14.80      | 8.08     | VERSION_DIFFERENCE     | Calculated ROCE (22.88%) differs from companies snapshot (14.80%) by 8.08% (snapshot based on TTM/different methodology)
+SHRIRAMFIN   | 2024   | ROCE   | 4.32       | 11.30      | 6.98     | DATA_SOURCE_ISSUE      | Calculated ROCE (4.32%) differs from companies snapshot (11.30%) by 6.98% (snapshot based on TTM/different methodology)
+SUNPHARMA    | 2024   | OPM    | 26.84      | 28.00      | 1.16     | FORMULA_DISCREPANCY    | Calculated OPM (26.84%) differs from reported OPM (28.00%) by 1.16%
+TATAMOTORS   | 2024   | ROCE   | 33.93      | 20.10      | 13.83    | VERSION_DIFFERENCE     | Calculated ROCE (33.93%) differs from companies snapshot (20.10%) by 13.83% (snapshot based on TTM/different methodology)
+TATAPOWER    | 2024   | ROCE   | 16.45      | 11.10      | 5.35     | VERSION_DIFFERENCE     | Calculated ROCE (16.45%) differs from companies snapshot (11.10%) by 5.35% (snapshot based on TTM/different methodology)
+TCS          | 2024   | ROE    | 50.94      | 0.52       | 50.42    | DATA_SOURCE_ISSUE      | Source snapshot ROE (0.52%) appears corrupted/scaled in companies.xlsx; calculated ROE (50.94%) is verified from audited statements
+TECHM        | 2024   | ROCE   | 18.60      | 11.90      | 6.70     | VERSION_DIFFERENCE     | Calculated ROCE (18.60%) differs from companies snapshot (11.90%) by 6.70% (snapshot based on TTM/different methodology)
+TORNTPHARM   | 2024   | ROCE   | 32.30      | 23.20      | 9.10     | VERSION_DIFFERENCE     | Calculated ROCE (32.30%) differs from companies snapshot (23.20%) by 9.10% (snapshot based on TTM/different methodology)
+TRENT        | 2024   | ROCE   | 50.85      | 23.80      | 27.05    | VERSION_DIFFERENCE     | Calculated ROCE (50.85%) differs from companies snapshot (23.80%) by 27.05% (snapshot based on TTM/different methodology)
+INDIGO       | 2013   | OPM    | 90.71      | 855.00     | 764.29   | FORMULA_DISCREPANCY    | Calculated OPM (90.71%) differs from reported OPM (855.00%) by 764.29%
+INDIGO       | 2014   | OPM    | 96.11      | 433.00     | 336.89   | FORMULA_DISCREPANCY    | Calculated OPM (96.11%) differs from reported OPM (433.00%) by 336.89%
+INDIGO       | 2015   | OPM    | 86.33      | 1904.00    | 1817.67  | FORMULA_DISCREPANCY    | Calculated OPM (86.33%) differs from reported OPM (1904.00%) by 1817.67%
+INDIGO       | 2016   | OPM    | 80.40      | 3164.00    | 3083.60  | FORMULA_DISCREPANCY    | Calculated OPM (80.40%) differs from reported OPM (3164.00%) by 3083.60%
+INDIGO       | 2017   | OPM    | 88.06      | 2219.00    | 2130.94  | FORMULA_DISCREPANCY    | Calculated OPM (88.06%) differs from reported OPM (2219.00%) by 2130.94%
+INDIGO       | 2018   | OPM    | 86.84      | 3030.00    | 2943.16  | FORMULA_DISCREPANCY    | Calculated OPM (86.84%) differs from reported OPM (3030.00%) by 2943.16%
+INDIGO       | 2019   | OPM    | 100.53     | -151.00    | 251.53   | FORMULA_DISCREPANCY    | Calculated OPM (100.53%) differs from reported OPM (-151.00%) by 251.53%
+INDIGO       | 2020   | OPM    | 88.62      | 4069.00    | 3980.38  | FORMULA_DISCREPANCY    | Calculated OPM (88.62%) differs from reported OPM (4069.00%) by 3980.38%
+INDIGO       | 2021   | OPM    | 99.98      | 2.00       | 97.98    | FORMULA_DISCREPANCY    | Calculated OPM (99.98%) differs from reported OPM (2.00%) by 97.98%
+INDIGO       | 2022   | OPM    | 97.85      | 558.00     | 460.15   | FORMULA_DISCREPANCY    | Calculated OPM (97.85%) differs from reported OPM (558.00%) by 460.15%
+INDIGO       | 2023   | OPM    | 88.02      | 6521.00    | 6432.98  | FORMULA_DISCREPANCY    | Calculated OPM (88.02%) differs from reported OPM (6521.00%) by 6432.98%
+INDIGO       | 2024   | OPM    | 76.30      | 16331.00   | 16254.70 | FORMULA_DISCREPANCY    | Calculated OPM (76.30%) differs from reported OPM (16331.00%) by 16254.70%
+INDIGO       | 2024   | ROCE   | 5643.45    | 24.50      | 5618.95  | VERSION_DIFFERENCE     | Calculated ROCE (5643.45%) differs from companies snapshot (24.50%) by 5618.95% (snapshot based on TTM/different methodology)
+AXISBANK     | TTM    | OPM    | 36.94      | 9061.00    | 9024.06  | FORMULA_DISCREPANCY    | Calculated OPM (36.94%) differs from reported OPM (9061.00%) by 9024.06%
+BAJFINANCE   | TTM    | OPM    | 30.42      | 21417.00   | 21386.58 | FORMULA_DISCREPANCY    | Calculated OPM (30.42%) differs from reported OPM (21417.00%) by 21386.58%
+BANKBARODA   | TTM    | OPM    | 37.42      | 3526.00    | 3488.58  | FORMULA_DISCREPANCY    | Calculated OPM (37.42%) differs from reported OPM (3526.00%) by 3488.58%
+CANBK        | TTM    | OPM    | 40.23      | -8985.00   | 9025.23  | FORMULA_DISCREPANCY    | Calculated OPM (40.23%) differs from reported OPM (-8985.00%) by 9025.23%
+CHOLAFIN     | TTM    | OPM    | 28.67      | 5175.00    | 5146.33  | FORMULA_DISCREPANCY    | Calculated OPM (28.67%) differs from reported OPM (5175.00%) by 5146.33%
+CIPLA        | TTM    | OPM    | 74.40      | 6906.00    | 6831.60  | FORMULA_DISCREPANCY    | Calculated OPM (74.40%) differs from reported OPM (6906.00%) by 6831.60%
+COALINDIA    | TTM    | OPM    | 66.78      | 46610.00   | 46543.22 | FORMULA_DISCREPANCY    | Calculated OPM (66.78%) differs from reported OPM (46610.00%) by 46543.22%
+HDFCBANK     | TTM    | OPM    | 62.61      | -57587.00  | 57649.61 | FORMULA_DISCREPANCY    | Calculated OPM (62.61%) differs from reported OPM (-57587.00%) by 57649.61%
+HDFCLIFE     | TTM    | OPM    | 99.28      | 725.00     | 625.72   | FORMULA_DISCREPANCY    | Calculated OPM (99.28%) differs from reported OPM (725.00%) by 625.72%
+HEROMOTOCO   | TTM    | OPM    | 86.13      | 5561.00    | 5474.87  | FORMULA_DISCREPANCY    | Calculated OPM (86.13%) differs from reported OPM (5561.00%) by 5474.87%
+HINDALCO     | TTM    | OPM    | 87.53      | 27931.00   | 27843.47 | FORMULA_DISCREPANCY    | Calculated OPM (87.53%) differs from reported OPM (27931.00%) by 27843.47%
+HINDUNILVR   | TTM    | OPM    | 76.45      | 14759.00   | 14682.55 | FORMULA_DISCREPANCY    | Calculated OPM (76.45%) differs from reported OPM (14759.00%) by 14682.55%
+ICICIBANK    | TTM    | OPM    | 69.63      | -31575.00  | 31644.63 | FORMULA_DISCREPANCY    | Calculated OPM (69.63%) differs from reported OPM (-31575.00%) by 31644.63%
+ICICIGI      | TTM    | OPM    | 85.57      | 3363.00    | 3277.43  | FORMULA_DISCREPANCY    | Calculated OPM (85.57%) differs from reported OPM (3363.00%) by 3277.43%
+ICICIPRULI   | TTM    | OPM    | 99.59      | 321.00     | 221.41   | FORMULA_DISCREPANCY    | Calculated OPM (99.59%) differs from reported OPM (321.00%) by 221.41%
+INDIGO       | TTM    | OPM    | 79.20      | 15908.00   | 15828.80 | FORMULA_DISCREPANCY    | Calculated OPM (79.20%) differs from reported OPM (15908.00%) by 15828.80%
+INDUSINDBK   | TTM    | OPM    | 41.03      | 1323.00    | 1281.97  | FORMULA_DISCREPANCY    | Calculated OPM (41.03%) differs from reported OPM (1323.00%) by 1281.97%
+KOTAKBANK    | TTM    | OPM    | 79.42      | -14146.00  | 14225.42 | FORMULA_DISCREPANCY    | Calculated OPM (79.42%) differs from reported OPM (-14146.00%) by 14225.42%
