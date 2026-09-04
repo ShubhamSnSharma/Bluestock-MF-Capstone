@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+
+# macOS
+.DS_Store
+__MACOSX/
+
+# Streamlit
+.streamlit/
+
+# Editor
+.vscode/
+.idea/
+
+# Logs generated during testing
+*.log
