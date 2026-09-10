@@ -1,0 +1,93 @@
+company_id,cluster_id,cluster_name,distance_from_centroid
+ABB,0,Capital Efficient,0.651821
+ADANIENSOL,0,Capital Efficient,1.325855
+ADANIENT,0,Capital Efficient,1.352937
+ADANIGREEN,3,Financial Sector — High Leverage Growth,2.503133
+ADANIPORTS,1,Premium Margin Leaders,1.376311
+ADANIPOWER,0,Capital Efficient,1.116068
+AMBUJACEM,0,Capital Efficient,1.010872
+APOLLOHOSP,0,Capital Efficient,0.53962
+ASIANPAINT,0,Capital Efficient,0.38709
+ATGL,0,Capital Efficient,1.863175
+AXISBANK,3,Financial Sector — High Leverage Growth,0.897144
+BAJAJ-AUTO,0,Capital Efficient,0.654992
+BAJAJFINSV,3,Financial Sector — High Leverage Growth,1.025356
+BAJAJHLDNG,1,Premium Margin Leaders,2.442922
+BAJFINANCE,3,Financial Sector — High Leverage Growth,1.6029
+BANKBARODA,3,Financial Sector — High Leverage Growth,1.803054
+BEL,2,Defense PSU — Extreme ROE Outlier,0.760545
+BHARTIARTL,1,Premium Margin Leaders,1.280765
+BHEL,0,Capital Efficient,2.391477
+BOSCHLTD,0,Capital Efficient,0.935261
+BPCL,0,Capital Efficient,0.530603
+BRITANNIA,0,Capital Efficient,1.61394
+CANBK,3,Financial Sector — High Leverage Growth,2.704419
+CHOLAFIN,3,Financial Sector — High Leverage Growth,0.921979
+CIPLA,4,High FCF Growth Outlier,0.0
+COALINDIA,1,Premium Margin Leaders,1.12557
+DABUR,0,Capital Efficient,0.853978
+DIVISLAB,0,Capital Efficient,0.778395
+DLF,0,Capital Efficient,2.437481
+DMART,0,Capital Efficient,1.332284
+DRREDDY,0,Capital Efficient,1.212521
+EICHERMOT,0,Capital Efficient,0.48049
+GAIL,0,Capital Efficient,0.364753
+GODREJCP,0,Capital Efficient,0.686706
+GRASIM,0,Capital Efficient,0.791094
+HAL,2,Defense PSU — Extreme ROE Outlier,0.760545
+HAVELLS,0,Capital Efficient,0.896486
+HCLTECH,0,Capital Efficient,0.488488
+HDFCBANK,3,Financial Sector — High Leverage Growth,0.590183
+HDFCLIFE,1,Premium Margin Leaders,1.348334
+HEROMOTOCO,1,Premium Margin Leaders,1.708992
+HINDALCO,1,Premium Margin Leaders,0.613212
+HINDUNILVR,1,Premium Margin Leaders,0.731718
+ICICIBANK,3,Financial Sector — High Leverage Growth,0.575579
+ICICIGI,1,Premium Margin Leaders,0.739103
+ICICIPRULI,1,Premium Margin Leaders,2.265381
+INDIGO,1,Premium Margin Leaders,2.417734
+INDUSINDBK,3,Financial Sector — High Leverage Growth,0.662255
+INFY,0,Capital Efficient,0.363342
+IOC,0,Capital Efficient,0.581876
+IRCTC,0,Capital Efficient,1.35323
+IRFC,3,Financial Sector — High Leverage Growth,1.848842
+ITC,0,Capital Efficient,0.902684
+JINDALSTEL,0,Capital Efficient,1.362611
+JIOFIN,1,Premium Margin Leaders,0.836611
+JSWENERGY,0,Capital Efficient,1.395841
+JSWSTEEL,0,Capital Efficient,0.622305
+KOTAKBANK,1,Premium Margin Leaders,1.348341
+LICI,0,Capital Efficient,2.047183
+LODHA,0,Capital Efficient,2.097043
+LT,0,Capital Efficient,0.788303
+LTIM,0,Capital Efficient,2.629062
+M&M,0,Capital Efficient,0.837333
+MARUTI,0,Capital Efficient,0.3366
+MOTHERSON,0,Capital Efficient,0.607351
+NAUKRI,0,Capital Efficient,0.875996
+NESTLEIND,0,Capital Efficient,0.557167
+NHPC,0,Capital Efficient,1.991208
+NTPC,0,Capital Efficient,0.476321
+ONGC,0,Capital Efficient,0.603046
+PFC,3,Financial Sector — High Leverage Growth,1.280158
+PIDILITIND,0,Capital Efficient,0.487259
+PNB,3,Financial Sector — High Leverage Growth,1.372473
+POWERGRID,1,Premium Margin Leaders,1.521768
+RECLTD,3,Financial Sector — High Leverage Growth,2.027052
+RELIANCE,0,Capital Efficient,0.24796
+SBILIFE,0,Capital Efficient,1.994559
+SBIN,0,Capital Efficient,1.91468
+SHREECEM,0,Capital Efficient,0.272081
+SHRIRAMFIN,3,Financial Sector — High Leverage Growth,1.387089
+SIEMENS,0,Capital Efficient,1.428636
+SUNPHARMA,0,Capital Efficient,1.125792
+TATACONSUM,0,Capital Efficient,1.678533
+TATAMOTORS,0,Capital Efficient,0.587355
+TATAPOWER,0,Capital Efficient,0.819054
+TATASTEEL,0,Capital Efficient,0.619146
+TCS,0,Capital Efficient,0.349204
+TECHM,0,Capital Efficient,0.630431
+TITAN,0,Capital Efficient,1.504631
+TORNTPHARM,0,Capital Efficient,0.761319
+TRENT,0,Capital Efficient,3.414626
+TVSMOTOR,0,Capital Efficient,1.212765

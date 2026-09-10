@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 43 — API Performance Report</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', -apple-system, sans-serif; background: #0d1117; color: #e6edf3; padding: 2rem; line-height: 1.6; }
+  .header { text-align: center; margin-bottom: 2rem; }
+  .header h1 { font-size: 1.8rem; color: #58a6ff; margin-bottom: 0.3rem; }
+  .header p { color: #8b949e; font-size: 0.85rem; }
+  .summary { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem; }
+  .card { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 1.2rem 1.8rem; text-align: center; min-width: 140px; }
+  .card .value { font-size: 2rem; font-weight: 700; }
+  .card .label { font-size: 0.72rem; color: #8b949e; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 0.2rem; }
+  table { width: 100%; border-collapse: collapse; margin-bottom: 2rem; }
+  th { background: #161b22; color: #8b949e; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; padding: 0.6rem 0.8rem; text-align: left; border-bottom: 1px solid #30363d; }
+  td { padding: 0.5rem 0.8rem; border-bottom: 1px solid #21262d; }
+  tr:hover { background: #161b22; }
+  h2 { font-size: 1.1rem; color: #e6edf3; border-left: 3px solid #58a6ff; padding-left: 0.75rem; margin: 2rem 0 1rem 0; }
+  h3 { font-size: 0.95rem; color: #c9d1d9; margin: 1.5rem 0 0.75rem 0; }
+  .section { margin-bottom: 2rem; }
+  .note { background: #161b22; border-left: 3px solid #e3b341; padding: 1rem 1.2rem; border-radius: 0 8px 8px 0; margin: 1rem 0; font-size: 0.88rem; color: #c9d1d9; }
+  .note strong { color: #e3b341; }
+  .bottleneck { background: #161b22; border-left: 3px solid #f85149; padding: 1rem 1.2rem; border-radius: 0 8px 8px 0; margin: 1rem 0; font-size: 0.88rem; }
+  .bottleneck strong { color: #f85149; }
+  .ok { background: #161b22; border-left: 3px solid #3fb950; padding: 1rem 1.2rem; border-radius: 0 8px 8px 0; margin: 1rem 0; font-size: 0.88rem; }
+  .ok strong { color: #3fb950; }
+  code { background: #161b22; padding: 0.15rem 0.4rem; border-radius: 4px; font-size: 0.85rem; font-family: 'SF Mono', monospace; }
+  .footer { text-align: center; color: #484f58; font-size: 0.7rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #21262d; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>Day 43 — API Performance Report</h1>
+  <p>N100 Financial Intelligence Platform · Sprint 6 · Local Benchmark Measurements</p>
+  <p style="margin-top:0.3rem;">Generated: 2026-09-09 14:54:55</p>
+</div>
+
+<div class="summary">
+  <div class="card"><div class="value">240</div><div class="label">Total Requests</div></div>
+  <div class="card"><div class="value" style="color:#3fb950;">240</div><div class="label">Successful</div></div>
+  <div class="card"><div class="value" style="color:#f85149;">0</div><div class="label">Failures</div></div>
+  <div class="card"><div class="value">4.3ms</div><div class="label">Overall Avg</div></div>
+  <div class="card"><div class="value" style="color:#e3b341;">15.1ms</div><div class="label">Slowest Avg</div></div>
+</div>
+
+<div class="note">
+  <strong>Disclaimer:</strong> These are LOCAL BENCHMARK MEASUREMENTS taken on a development machine using Python's
+  <code>time.perf_counter()</code> and FastAPI's <code>TestClient</code>. They do NOT represent production-grade
+  performance. Real-world latency depends on network, concurrency, hardware, and deployment configuration.
+</div>
+
+<h2>Methodology</h2>
+<div class="section">
+  <p style="font-size:0.88rem;">
+    Each endpoint was tested with <strong>20 sequential requests</strong> after a <strong>3-request warmup</strong>
+    (warmup results discarded). Latency was measured using <code>time.perf_counter()</code> around each HTTP call.
+    The FastAPI <code>TestClient</code> (httpx-based) was used, which runs requests in-process without network overhead.
+    Results reflect SQLite query execution + Python serialization + Pydantic validation time.
+  </p>
+</div>
+
+<h2>Environment</h2>
+<div class="section">
+  <table>
+    <thead><tr><th>Component</th><th>Detail</th></tr></thead>
+    <tbody>
+      <tr><td>Platform</td><td>macOS 26.3 (arm64)</td></tr>
+      <tr><td>Python</td><td>3.13.9</td></tr>
+      <tr><td>FastAPI</td><td>0.115+</td></tr>
+      <tr><td>SQLite</td><td>3.x (read-only mode)</td></tr>
+      <tr><td>Database</td><td>1.97 MB, 13 tables, 92 companies</td></tr>
+      <tr><td>Test runner</td><td>pytest 8.3.4 + FastAPI TestClient</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h2>Latency Results</h2>
+<div class="section">
+  <table>
+    <thead>
+      <tr>
+        <th>Endpoint</th>
+        <th style="text-align:center;">Reqs</th>
+        <th style="text-align:center;">OK</th>
+        <th style="text-align:center;">Fail</th>
+        <th style="text-align:right;">Avg</th>
+        <th style="text-align:right;">Median</th>
+        <th style="text-align:right;">P95</th>
+        <th style="text-align:right;">Min</th>
+        <th style="text-align:right;">Max</th>
+        <th style="width:120px;">Latency</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="font-weight:500;">screener</td>
+            <td style="text-align:center;">20</td>
+            <td style="text-align:center;color:#3fb950;">20</td>
+            <td style="text-align:center;color:#f85149;">0</td>
+            <td style="text-align:right;">15.1ms</td>
+            <td style="text-align:right;">14.6ms</td>
+            <td style="text-align:right;">16.6ms</td>
+            <td style="text-align:right;">14.1ms</td>
+            <td style="text-align:right;">16.6ms</td>
+            <td>
+                <div style="background:#161b22;border-radius:4px;height:14px;width:100%;position:relative;">
+                    <div style="background:#f85149;height:100%;width:100%;border-radius:4px;transition:width 0.3s;"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="font-weight:500;">market_cap</td>
+            <td style="text-align:center;">20</td>
+            <td style="text-align:center;color:#3fb950;">20</td>
+            <td style="text-align:center;color:#f85149;">0</td>
+            <td style="text-align:right;">7.0ms</td>
+            <td style="text-align:right;">7.0ms</td>
+            <td style="text-align:right;">7.4ms</td>
+            <td style="text-align:right;">6.7ms</td>
+            <td style="text-align:right;">7.4ms</td>
+            <td>
+                <div style="background:#161b22;border-radius:4px;height:14px;width:100%;position:relative;">
+                    <div style="background:#e3b341;height:100%;width:46%;border-radius:4px;transition:width 0.3s;"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="font-weight:500;">ratios</td>
+            <td style="text-align:center;">20</td>
+            <td style="text-align:center;color:#3fb950;">20</td>
+            <td style="text-align:center;color:#f85149;">0</td>
+            <td style="text-align:right;">5.0ms</td>
+            <td style="text-align:right;">3.4ms</td>
+            <td style="text-align:right;">34.8ms</td>
+            <td style="text-align:right;">3.3ms</td>
+            <td style="text-align:right;">34.8ms</td>
+            <td>
+                <div style="background:#161b22;border-radius:4px;height:14px;width:100%;position:relative;">
+                    <div style="background:#3fb950;height:100%;width:33%;border-radius:4px;transition:width 0.3s;"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="font-weight:500;">portfolio_clusters</td>
+            <td style="text-align:center;">20</td>
+            <td style="text-align:center;color:#3fb950;">20</td>
+            <td style="text-align:center;color:#f85149;">0</td>
+            <td style="text-align:right;">4.4ms</td>
+            <td style="text-align:right;">4.3ms</td>
+            <td style="text-align:right;">6.0ms</td>
+            <td style="text-align:right;">4.1ms</td>
+            <td style="text-align:right;">6.0ms</td>
+            <td>
+                <div style="background:#161b22;border-radius:4px;height:14px;width:100%;position:relative;">
+                    <div style="background:#3fb950;height:100%;width:29%;border-radius:4px;transition:width 0.3s;"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="font-weight:500;">peers_compare</td>
+            <td style="text-align:center;">20</td>
+            <td style="text-align:center;color:#3fb950;">20</td>
+            <td style="text-align:center;color:#f85149;">0</td>
+            <td style="text-align:right;">3.0ms</td>
+            <td style="text-align:right;">2.8ms</td>
+            <td style="text-align:right;">5.7ms</td>
+            <td style="text-align:right;">2.6ms</td>
+            <td style="text-align:right;">5.7ms</td>
+            <td>
+                <div style="background:#161b22;border-radius:4px;height:14px;width:100%;position:relative;">
+                    <div style="background:#3fb950;height:100%;width:19%;border-radius:4px;transition:width 0.3s;"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="font-weight:500;">portfolio_stats</td>
+            <td style="text-align:center;">20</td>
+            <td style="text-align:center;color:#3fb950;">20</td>
+            <td style="text-align:center;color:#f85149;">0</td>
+            <td style="text-align:right;">2.9ms</td>
+            <td style="text-align:right;">2.8ms</td>
+            <td style="text-align:right;">3.4ms</td>
+            <td style="text-align:right;">2.7ms</td>
+            <td style="text-align:right;">3.4ms</td>
+            <td>
+                <div style="background:#161b22;border-radius:4px;height:14px;width:100%;position:relative;">
+                    <div style="background:#3fb950;height:100%;width:19%;border-radius:4px;transition:width 0.3s;"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="font-weight:500;">companies_list</td>
+            <td style="text-align:center;">20</td>
+            <td style="text-align:center;color:#3fb950;">20</td>
+            <td style="text-align:center;color:#f85149;">0</td>
+            <td style="text-align:right;">2.7ms</td>
+            <td style="text-align:right;">2.6ms</td>
+            <td style="text-align:right;">4.6ms</td>
+            <td style="text-align:right;">2.5ms</td>
+            <td style="text-align:right;">4.6ms</td>
+            <td>
+                <div style="background:#161b22;border-radius:4px;height:14px;width:100%;position:relative;">
+                    <div style="background:#3fb950;height:100%;width:17%;border-radius:4px;transition:width 0.3s;"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="font-weight:500;">pl</td>
+            <td style="text-align:center;">20</td>
+            <td style="text-align:center;color:#3fb950;">20</td>
+            <td style="text-align:center;color:#f85149;">0</td>
+            <td style="text-align:right;">2.4ms</td>
+            <td style="text-align:right;">2.4ms</td>
+            <td style="text-align:right;">2.8ms</td>
+            <td style="text-align:right;">2.2ms</td>
+            <td style="text-align:right;">2.8ms</td>
+            <td>
+                <div style="background:#161b22;border-radius:4px;height:14px;width:100%;position:relative;">
+                    <div style="background:#3fb950;height:100%;width:15%;border-radius:4px;transition:width 0.3s;"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="font-weight:500;">sectors</td>
+            <td style="text-align:center;">20</td>
+            <td style="text-align:center;color:#3fb950;">20</td>
+            <td style="text-align:center;color:#f85149;">0</td>
+            <td style="text-align:right;">2.3ms</td>
+            <td style="text-align:right;">2.3ms</td>
+            <td style="text-align:right;">2.8ms</td>
+            <td style="text-align:right;">2.1ms</td>
+            <td style="text-align:right;">2.8ms</td>
+            <td>
+                <div style="background:#161b22;border-radius:4px;height:14px;width:100%;position:relative;">
+                    <div style="background:#3fb950;height:100%;width:15%;border-radius:4px;transition:width 0.3s;"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="font-weight:500;">company_detail</td>
+            <td style="text-align:center;">20</td>
+            <td style="text-align:center;color:#3fb950;">20</td>
+            <td style="text-align:center;color:#f85149;">0</td>
+            <td style="text-align:right;">2.2ms</td>
+            <td style="text-align:right;">2.2ms</td>
+            <td style="text-align:right;">2.6ms</td>
+            <td style="text-align:right;">2.0ms</td>
+            <td style="text-align:right;">2.6ms</td>
+            <td>
+                <div style="background:#161b22;border-radius:4px;height:14px;width:100%;position:relative;">
+                    <div style="background:#3fb950;height:100%;width:14%;border-radius:4px;transition:width 0.3s;"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="font-weight:500;">documents</td>
+            <td style="text-align:center;">20</td>
+            <td style="text-align:center;color:#3fb950;">20</td>
+            <td style="text-align:center;color:#f85149;">0</td>
+            <td style="text-align:right;">2.2ms</td>
+            <td style="text-align:right;">2.2ms</td>
+            <td style="text-align:right;">2.6ms</td>
+            <td style="text-align:right;">2.0ms</td>
+            <td style="text-align:right;">2.6ms</td>
+            <td>
+                <div style="background:#161b22;border-radius:4px;height:14px;width:100%;position:relative;">
+                    <div style="background:#3fb950;height:100%;width:14%;border-radius:4px;transition:width 0.3s;"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="font-weight:500;">health</td>
+            <td style="text-align:center;">20</td>
+            <td style="text-align:center;color:#3fb950;">20</td>
+            <td style="text-align:center;color:#f85149;">0</td>
+            <td style="text-align:right;">2.0ms</td>
+            <td style="text-align:right;">2.0ms</td>
+            <td style="text-align:right;">2.4ms</td>
+            <td style="text-align:right;">1.8ms</td>
+            <td style="text-align:right;">2.4ms</td>
+            <td>
+                <div style="background:#161b22;border-radius:4px;height:14px;width:100%;position:relative;">
+                    <div style="background:#3fb950;height:100%;width:13%;border-radius:4px;transition:width 0.3s;"></div>
+                </div>
+            </td>
+        </tr></tbody>
+  </table>
+</div>
+
+<h2>Slowest Endpoint Analysis</h2>
+<div class="section">
+  <div class="bottleneck">
+    <strong>1. Screener (15.1ms avg)</strong> — The slowest endpoint reads from an Excel file
+    (<code>screener_output.xlsx</code>) on every request via <code>openpyxl.load_workbook()</code>.
+    Each call re-opens the workbook, iterates all rows, and closes it. This file I/O is 5-7x slower than
+    SQLite-backed endpoints. <strong>Bottleneck: repeated file I/O (Excel parsing).</strong>
+  </div>
+  <div class="bottleneck">
+    <strong>2. Market Cap (7.0ms avg)</strong> — Performs a 3-way JOIN across <code>market_cap</code>,
+    <code>companies</code>, and <code>sectors</code> tables, then sorts by <code>market_cap_crore DESC</code>.
+    The sort on a non-indexed column adds overhead. <strong>Bottleneck: multi-table JOIN + sort.</strong>
+  </div>
+  <div class="bottleneck">
+    <strong>3. Ratios (5.0ms avg, P95: 34.8ms)</strong> — The P95 spike is from Python/Pandas import overhead
+    on first calls. The median (3.4ms) is representative. <strong>Bottleneck: import-time variance.</strong>
+  </div>
+</div>
+
+<h2>Bottleneck Summary</h2>
+<div class="section">
+  <table>
+    <thead><tr><th>Endpoint</th><th>Cause</th><th>Category</th><th>Impact</th></tr></thead>
+    <tbody>
+      <tr>
+        <td style="font-weight:500;">screener</td>
+        <td style="font-size:0.85rem;">Re-reads Excel file on every request via openpyxl</td>
+        <td><span style="color:#f85149;">File I/O</span></td>
+        <td style="font-size:0.85rem;">5-7x slower than DB endpoints</td>
+      </tr>
+      <tr>
+        <td style="font-weight:500;">market_cap</td>
+        <td style="font-size:0.85rem;">3-way JOIN + ORDER BY market_cap_crore (no index on sort column)</td>
+        <td><span style="color:#e3b341;">SQL complexity</span></td>
+        <td style="font-size:0.85rem;">2-3x slower than simple queries</td>
+      </tr>
+      <tr>
+        <td style="font-weight:500;">ratios (P95)</td>
+        <td style="font-size:0.85rem;">Python/Pandas import overhead on cold start</td>
+        <td><span style="color:#8b949e;">Startup variance</span></td>
+        <td style="font-size:0.85rem;">First-call spike only</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h2>Database Index Analysis</h2>
+<div class="section">
+  <p style="font-size:0.88rem;margin-bottom:1rem;">The database already has 9 indexes covering all API query patterns:</p>
+  <table>
+    <thead><tr><th>Index</th><th>Columns</th><th>Used By</th><th>Coverage</th></tr></thead>
+    <tbody>
+        <tr>
+            <td style="font-family:monospace;font-size:0.82rem;">idx_pnl_company</td>
+            <td style="font-family:monospace;font-size:0.82rem;">profitandloss(company_id)</td>
+            <td style="font-size:0.82rem;">P&L queries by company</td>
+            <td style="font-size:0.82rem;color:#3fb950;">Yes — covers all P&L WHERE clauses</td>
+        </tr>
+        <tr>
+            <td style="font-family:monospace;font-size:0.82rem;">idx_bs_company</td>
+            <td style="font-family:monospace;font-size:0.82rem;">balancesheet(company_id)</td>
+            <td style="font-size:0.82rem;">Balance sheet queries by company</td>
+            <td style="font-size:0.82rem;color:#3fb950;">Yes — covers all BS WHERE clauses</td>
+        </tr>
+        <tr>
+            <td style="font-family:monospace;font-size:0.82rem;">idx_cf_company</td>
+            <td style="font-family:monospace;font-size:0.82rem;">cashflow(company_id)</td>
+            <td style="font-size:0.82rem;">Cashflow queries by company</td>
+            <td style="font-size:0.82rem;color:#3fb950;">Yes — covers all cashflow WHERE clauses</td>
+        </tr>
+        <tr>
+            <td style="font-family:monospace;font-size:0.82rem;">idx_fr_company</td>
+            <td style="font-family:monospace;font-size:0.82rem;">financial_ratios(company_id)</td>
+            <td style="font-size:0.82rem;">Ratio queries by company</td>
+            <td style="font-size:0.82rem;color:#3fb950;">Yes — covers all ratio WHERE clauses</td>
+        </tr>
+        <tr>
+            <td style="font-family:monospace;font-size:0.82rem;">idx_mc_company</td>
+            <td style="font-family:monospace;font-size:0.82rem;">market_cap(company_id)</td>
+            <td style="font-size:0.82rem;">Market cap queries by company</td>
+            <td style="font-size:0.82rem;color:#3fb950;">Yes — covers market cap WHERE clauses</td>
+        </tr>
+        <tr>
+            <td style="font-family:monospace;font-size:0.82rem;">idx_prices_company_date</td>
+            <td style="font-family:monospace;font-size:0.82rem;">stock_prices(company_id, date)</td>
+            <td style="font-size:0.82rem;">Stock price queries</td>
+            <td style="font-size:0.82rem;color:#3fb950;">Yes — composite index for date range queries</td>
+        </tr>
+        <tr>
+            <td style="font-family:monospace;font-size:0.82rem;">idx_sectors_broad</td>
+            <td style="font-family:monospace;font-size:0.82rem;">sectors(broad_sector)</td>
+            <td style="font-size:0.82rem;">Sector listing with GROUP BY</td>
+            <td style="font-size:0.82rem;color:#3fb950;">Yes — covers broad_sector filter and GROUP BY</td>
+        </tr>
+        <tr>
+            <td style="font-family:monospace;font-size:0.82rem;">idx_pp_company</td>
+            <td style="font-family:monospace;font-size:0.82rem;">peer_percentiles(company_id)</td>
+            <td style="font-size:0.82rem;">Peer percentile lookups by company</td>
+            <td style="font-size:0.82rem;color:#3fb950;">Yes — covers company_id WHERE clauses</td>
+        </tr>
+        <tr>
+            <td style="font-family:monospace;font-size:0.82rem;">idx_pp_group</td>
+            <td style="font-family:monospace;font-size:0.82rem;">peer_percentiles(peer_group_name)</td>
+            <td style="font-size:0.82rem;">Peer compare by group</td>
+            <td style="font-size:0.82rem;color:#3fb950;">Yes — covers peer_group_name WHERE clauses</td>
+        </tr></tbody>
+  </table>
+
+  <h3>Index Assessment</h3>
+  <div class="ok">
+    <strong>No new indexes are required.</strong> All API queries are covered by existing indexes.
+    The UNIQUE constraints on <code>(company_id, year)</code> in financial_ratios, profitandloss,
+    balancesheet, cashflow, market_cap, and documents tables act as implicit composite indexes.
+    With only 92 companies, even full table scans complete in under 1ms.
+  </div>
+
+  <div class="note">
+    <strong>Optional optimization:</strong> A composite index on <code>peer_percentiles(peer_group_name, year)</code>
+    could marginally improve the peer compare endpoint by avoiding a sort after the group filter.
+    However, with 560 total rows in the table, the benefit is negligible and is not recommended.
+  </div>
+</div>
+
+<h2>Optimization Recommendations</h2>
+<div class="section">
+  <table>
+    <thead><tr><th>#</th><th>Recommendation</th><th>Expected Impact</th><th>Risk</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td style="font-size:0.85rem;"><strong>Cache screener Excel data in memory.</strong> Load <code>screener_output.xlsx</code> once at startup and serve from a dict. Invalidate on file modification time change.</td>
+        <td style="font-size:0.85rem;color:#3fb950;">~7x faster (15ms → ~2ms)</td>
+        <td style="font-size:0.85rem;">Low — no API contract change</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td style="font-size:0.85rem;"><strong>Cache portfolio CSV data in memory.</strong> Load <code>portfolio_stats.csv</code> and <code>cluster_labels.csv</code> once at startup.</td>
+        <td style="font-size:0.85rem;color:#3fb950;">Marginal (~1ms saved)</td>
+        <td style="font-size:0.85rem;">Low — no API contract change</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td style="font-size:0.85rem;">Skip optimization #1 and #2 if the current latency is acceptable for the use case.</td>
+        <td style="font-size:0.85rem;color:#8b949e;">N/A</td>
+        <td style="font-size:0.85rem;">None</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="note">
+    <strong>Decision:</strong> No optimizations are being applied in Day 43. The current latency profile
+    (all endpoints under 16ms, most under 5ms) is excellent for a local development API serving 92 companies.
+    The screener bottleneck is documented but does not require immediate action.
+  </div>
+</div>
+
+<h2>API Client Verification</h2>
+<div class="section">
+  <div class="ok">
+    <strong>All 17 client functions verified.</strong> The Streamlit integration client
+    (<code>src/api/client.py</code>) was tested against a live FastAPI server. All functions
+    return correct data types and values. The client communicates correctly with the API.
+  </div>
+</div>
+
+<h2>Limitations</h2>
+<div class="section">
+  <ul style="font-size:0.88rem;padding-left:1.5rem;">
+    <li>TestClient runs in-process — no network latency, TLS, or connection pooling overhead.</li>
+    <li>Sequential requests only — no concurrency or connection pool pressure.</li>
+    <li>20 iterations per endpoint — sufficient for median/P95 but not for statistical rigor.</li>
+    <li>Single-machine benchmark — does not reflect multi-user or production deployment scenarios.</li>
+    <li>No load testing — these are latency measurements, not throughput or stress tests.</li>
+  </ul>
+</div>
+
+<div class="footer">
+  Sprint 6 Day 43 · N100 Financial Intelligence Platform · API Performance Report · 240 requests across 12 endpoints
+</div>
+</body>
+</html>

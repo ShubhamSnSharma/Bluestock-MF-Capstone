@@ -1,0 +1,2825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sprint 6 — Test Report</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', -apple-system, sans-serif; background: #0d1117; color: #e6edf3; padding: 2rem; }
+  .header { text-align: center; margin-bottom: 2rem; }
+  .header h1 { font-size: 1.8rem; color: #58a6ff; margin-bottom: 0.3rem; }
+  .header p { color: #8b949e; font-size: 0.85rem; }
+  .summary { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem; }
+  .card { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 1.2rem 1.8rem; text-align: center; min-width: 140px; }
+  .card .value { font-size: 2rem; font-weight: 700; }
+  .card .label { font-size: 0.72rem; color: #8b949e; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 0.2rem; }
+  table { width: 100%; border-collapse: collapse; margin-bottom: 2rem; }
+  th { background: #161b22; color: #8b949e; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; padding: 0.6rem 0.8rem; text-align: left; border-bottom: 1px solid #30363d; }
+  td { padding: 0.5rem 0.8rem; border-bottom: 1px solid #21262d; }
+  tr:hover { background: #161b22; }
+  h2 { font-size: 1.1rem; color: #e6edf3; border-left: 3px solid #58a6ff; padding-left: 0.75rem; margin: 2rem 0 1rem 0; }
+  .footer { text-align: center; color: #484f58; font-size: 0.7rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #21262d; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>Sprint 6 — Test Report</h1>
+  <p>N100 Financial Intelligence Platform · API Integration & Data Quality · Day 42</p>
+  <p style="margin-top:0.3rem;">Generated: 2026-09-09 14:31:45</p>
+</div>
+
+<div class="summary">
+  <div class="card"><div class="value">336</div><div class="label">Total Tests</div></div>
+  <div class="card"><div class="value" style="color:#3fb950;">333</div><div class="label">Passed</div></div>
+  <div class="card"><div class="value" style="color:#f85149;">0</div><div class="label">Failed</div></div>
+  <div class="card"><div class="value" style="color:#e3b341;">3</div><div class="label">Skipped</div></div>
+  <div class="card"><div class="value">99.1%</div><div class="label">Pass Rate</div></div>
+  <div class="card"><div class="value" style="color:#3fb950;">ALL PASS</div><div class="label">Overall Status</div></div>
+  <div class="card"><div class="value">7.9s</div><div class="label">Duration</div></div>
+</div>
+
+<h2>Suite Summary</h2>
+<table>
+  <thead><tr><th>Suite</th><th style="text-align:center;">Total</th><th style="text-align:center;">Pass</th><th style="text-align:center;">Fail</th><th style="text-align:center;">Skip</th><th style="text-align:center;">Status</th></tr></thead>
+  <tbody>
+        <tr>
+            <td style="font-size:0.85rem;font-weight:500;">api/test_companies</td>
+            <td style="text-align:center;">50</td>
+            <td style="text-align:center;color:#3fb950;">50</td>
+            <td style="text-align:center;color:#f85149;">0</td>
+            <td style="text-align:center;color:#e3b341;">0</td>
+            <td style="text-align:center;font-weight:600;color:#3fb950;">PASS</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.85rem;font-weight:500;">api/test_day40</td>
+            <td style="text-align:center;">44</td>
+            <td style="text-align:center;color:#3fb950;">44</td>
+            <td style="text-align:center;color:#f85149;">0</td>
+            <td style="text-align:center;color:#e3b341;">0</td>
+            <td style="text-align:center;font-weight:600;color:#3fb950;">PASS</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.85rem;font-weight:500;">api/test_day42</td>
+            <td style="text-align:center;">84</td>
+            <td style="text-align:center;color:#3fb950;">84</td>
+            <td style="text-align:center;color:#f85149;">0</td>
+            <td style="text-align:center;color:#e3b341;">0</td>
+            <td style="text-align:center;font-weight:600;color:#3fb950;">PASS</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.85rem;font-weight:500;">api/test_health</td>
+            <td style="text-align:center;">22</td>
+            <td style="text-align:center;color:#3fb950;">22</td>
+            <td style="text-align:center;color:#f85149;">0</td>
+            <td style="text-align:center;color:#e3b341;">0</td>
+            <td style="text-align:center;font-weight:600;color:#3fb950;">PASS</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.85rem;font-weight:500;">test_cluster_profiling</td>
+            <td style="text-align:center;">15</td>
+            <td style="text-align:center;color:#3fb950;">15</td>
+            <td style="text-align:center;color:#f85149;">0</td>
+            <td style="text-align:center;color:#e3b341;">0</td>
+            <td style="text-align:center;font-weight:600;color:#3fb950;">PASS</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.85rem;font-weight:500;">test_clustering</td>
+            <td style="text-align:center;">44</td>
+            <td style="text-align:center;color:#3fb950;">44</td>
+            <td style="text-align:center;color:#f85149;">0</td>
+            <td style="text-align:center;color:#e3b341;">0</td>
+            <td style="text-align:center;font-weight:600;color:#3fb950;">PASS</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.85rem;font-weight:500;">test_data_quality</td>
+            <td style="text-align:center;">53</td>
+            <td style="text-align:center;color:#3fb950;">50</td>
+            <td style="text-align:center;color:#f85149;">0</td>
+            <td style="text-align:center;color:#e3b341;">3</td>
+            <td style="text-align:center;font-weight:600;color:#3fb950;">PASS</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.85rem;font-weight:500;">test_outlier_detection</td>
+            <td style="text-align:center;">13</td>
+            <td style="text-align:center;color:#3fb950;">13</td>
+            <td style="text-align:center;color:#f85149;">0</td>
+            <td style="text-align:center;color:#e3b341;">0</td>
+            <td style="text-align:center;font-weight:600;color:#3fb950;">PASS</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.85rem;font-weight:500;">test_portfolio_stats</td>
+            <td style="text-align:center;">11</td>
+            <td style="text-align:center;color:#3fb950;">11</td>
+            <td style="text-align:center;color:#f85149;">0</td>
+            <td style="text-align:center;color:#e3b341;">0</td>
+            <td style="text-align:center;font-weight:600;color:#3fb950;">PASS</td>
+        </tr></tbody>
+</table>
+
+<h2>All Tests (336)</h2>
+<table>
+  <thead><tr><th>Suite</th><th>Test</th><th>Status</th><th>Duration</th><th>Markers</th></tr></thead>
+  <tbody>
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_returns_200</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_returns_92_companies</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_required_fields_present</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_sector_filter</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_market_cap_filter</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_search_by_name</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_search_by_ticker</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_combined_filters</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_empty_search_returns_valid_list</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_returns_200</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_correct_company</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_sector_data_present</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_latest_kpi_data_present</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_lowercase_ticker_works</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_invalid_ticker_returns_404</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_404_detail_message</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_returns_200</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_returns_array</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_from_year_filter</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_to_year_filter</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_both_filters</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_invalid_year_returns_400</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_reversed_range_returns_400</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_invalid_ticker_returns_404</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_returns_200</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_returns_array</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_from_year_filter</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_to_year_filter</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_invalid_year_returns_400</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_reversed_range_returns_400</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_invalid_ticker_returns_404</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_returns_200</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_returns_array</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_from_year_filter</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_to_year_filter</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_invalid_year_returns_400</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_invalid_ticker_returns_404</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_returns_200</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_returns_multiple_years</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_year_filter_single</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_year_filter_no_match</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_invalid_year_returns_400</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_invalid_ticker_returns_404</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_ttm_year_works</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_returns_200</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_content_type_is_pdf</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_response_contains_pdf_bytes</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_jiofin_missing_tearsheet_returns_404</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_invalid_ticker_returns_404</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_companies</td>
+            <td style="font-size:0.82rem;">test_lowercase_tearsheet_works</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day40</td>
+            <td style="font-size:0.82rem;">test_returns_200</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day40</td>
+            <td style="font-size:0.82rem;">test_returns_6_presets</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day40</td>
+            <td style="font-size:0.82rem;">test_preset_names_match</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day40</td>
+            <td style="font-size:0.82rem;">test_each_preset_has_company_count</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day40</td>
+            <td style="font-size:0.82rem;">test_quality_compounder</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day40</td>
+            <td style="font-size:0.82rem;">test_invalid_preset_returns_404</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day40</td>
+            <td style="font-size:0.82rem;">test_all_presets_accessible</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day40</td>
+            <td style="font-size:0.82rem;">test_returns_200</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day40</td>
+            <td style="font-size:0.82rem;">test_returns_10_sectors</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day40</td>
+            <td style="font-size:0.82rem;">test_has_required_fields</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day40</td>
+            <td style="font-size:0.82rem;">test_total_companies_sums_to_92</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day40</td>
+            <td style="font-size:0.82rem;">test_it_sector</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day40</td>
+            <td style="font-size:0.82rem;">test_invalid_sector_returns_404</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day40</td>
+            <td style="font-size:0.82rem;">test_market_cap_filter</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day40</td>
+            <td style="font-size:0.82rem;">test_all_sectors_accessible</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day40</td>
+            <td style="font-size:0.82rem;">test_hdfcbank_has_peers</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day40</td>
+            <td style="font-size:0.82rem;">test_peer_group_contains_members</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day40</td>
+            <td style="font-size:0.82rem;">test_invalid_ticker_returns_404</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day40</td>
+            <td style="font-size:0.82rem;">test_company_without_peers_returns_404</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day40</td>
+            <td style="font-size:0.82rem;">test_hdfcbank_compare</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day40</td>
+            <td style="font-size:0.82rem;">test_compare_has_metrics</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day40</td>
+            <td style="font-size:0.82rem;">test_year_filter</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day40</td>
+            <td style="font-size:0.82rem;">test_invalid_year_returns_400</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day40</td>
+            <td style="font-size:0.82rem;">test_invalid_ticker_returns_404</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day40</td>
+            <td style="font-size:0.82rem;">test_returns_200</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day40</td>
+            <td style="font-size:0.82rem;">test_returns_data</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day40</td>
+            <td style="font-size:0.82rem;">test_has_required_fields</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day40</td>
+            <td style="font-size:0.82rem;">test_year_filter</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day40</td>
+            <td style="font-size:0.82rem;">test_sector_filter</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day40</td>
+            <td style="font-size:0.82rem;">test_market_cap_category_filter</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day40</td>
+            <td style="font-size:0.82rem;">test_combined_filters</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day40</td>
+            <td style="font-size:0.82rem;">test_sorted_by_market_cap_desc</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day40</td>
+            <td style="font-size:0.82rem;">test_returns_200</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day40</td>
+            <td style="font-size:0.82rem;">test_returns_10_kpis</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day40</td>
+            <td style="font-size:0.82rem;">test_has_required_fields</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day40</td>
+            <td style="font-size:0.82rem;">test_percentiles_ordered</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day40</td>
+            <td style="font-size:0.82rem;">test_clusters_endpoint</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day40</td>
+            <td style="font-size:0.82rem;">test_returns_200</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day40</td>
+            <td style="font-size:0.82rem;">test_returns_array</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day40</td>
+            <td style="font-size:0.82rem;">test_has_required_fields</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day40</td>
+            <td style="font-size:0.82rem;">test_year_filter</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day40</td>
+            <td style="font-size:0.82rem;">test_invalid_year_returns_400</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day40</td>
+            <td style="font-size:0.82rem;">test_invalid_ticker_returns_404</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day40</td>
+            <td style="font-size:0.82rem;">test_lowercase_ticker_works</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_docs_accessible</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_openapi_json_accessible</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_openapi_version</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_all_18_endpoints_registered</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_cors_headers</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_health_returns_200</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_health_schema</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_200_and_count</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_required_fields</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_sector_filter</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_market_cap_filter</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_search_by_name</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_search_by_ticker</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_empty_search_result</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_combined_filters</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_tcs_200</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_reliance_200</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_lowercase_ticker</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_sector_data_present</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_latest_ratios_present</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_invalid_ticker_404</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_404_detail_message</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_tcs_200</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_from_year_filter</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_to_year_filter</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_both_filters</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_invalid_year_400</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_reversed_range_400</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_invalid_ticker_404</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_tcs_200</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_from_year_filter</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_invalid_year_400</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_invalid_ticker_404</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_tcs_200</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_from_year_filter</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_invalid_year_400</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_invalid_ticker_404</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_tcs_200</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_year_filter</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_no_match_year</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_ttm_year</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_invalid_year_400</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_invalid_ticker_404</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_tcs_200</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_tcs_pdf_content_type</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_tcs_pdf_bytes</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_reliance_200</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_jiofin_404</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_invalid_ticker_404</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_lowercase_ticker</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_list_presets_200</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_preset_names</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_quality_compounder</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_invalid_preset_404</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_all_presets_accessible</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_list_sectors_200</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_sector_counts_sum_to_92</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_sector_companies</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_invalid_sector_404</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_market_cap_filter</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_all_sectors_accessible</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_hdfcbank_200</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_peer_group_has_members</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_invalid_ticker_404</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_company_without_peers_404</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_compare_200</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_compare_year_filter</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_compare_invalid_year_400</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_compare_invalid_ticker_404</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_200_and_data</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_required_fields</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_year_filter</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_sector_filter</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_category_filter</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_sorted_by_market_cap</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_stats_200</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_stats_fields</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_clusters_200</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_cluster_fields</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_tcs_200</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_year_filter</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_invalid_year_400</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_invalid_ticker_404</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_day42</td>
+            <td style="font-size:0.82rem;">test_lowercase_ticker</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_health</td>
+            <td style="font-size:0.82rem;">test_app_is_fastapi_instance</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_health</td>
+            <td style="font-size:0.82rem;">test_app_title</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_health</td>
+            <td style="font-size:0.82rem;">test_app_version</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_health</td>
+            <td style="font-size:0.82rem;">test_health_returns_200</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_health</td>
+            <td style="font-size:0.82rem;">test_health_status_is_ok</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_health</td>
+            <td style="font-size:0.82rem;">test_health_version_exists</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_health</td>
+            <td style="font-size:0.82rem;">test_health_uptime_non_negative</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_health</td>
+            <td style="font-size:0.82rem;">test_health_db_row_counts_exists</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_health</td>
+            <td style="font-size:0.82rem;">test_health_db_row_counts_covers_all_tables</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_health</td>
+            <td style="font-size:0.82rem;">test_health_row_counts_are_non_negative_integers</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_health</td>
+            <td style="font-size:0.82rem;">test_docs_accessible</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_health</td>
+            <td style="font-size:0.82rem;">test_openapi_json_accessible</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_health</td>
+            <td style="font-size:0.82rem;">test_openapi_json_is_valid</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_health</td>
+            <td style="font-size:0.82rem;">test_health_router_registered</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_health</td>
+            <td style="font-size:0.82rem;">test_companies_router_registered</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_health</td>
+            <td style="font-size:0.82rem;">test_screener_router_registered</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_health</td>
+            <td style="font-size:0.82rem;">test_sectors_router_registered</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_health</td>
+            <td style="font-size:0.82rem;">test_peers_router_registered</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_health</td>
+            <td style="font-size:0.82rem;">test_valuation_router_registered</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_health</td>
+            <td style="font-size:0.82rem;">test_portfolio_router_registered</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_health</td>
+            <td style="font-size:0.82rem;">test_documents_router_registered</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">api/test_health</td>
+            <td style="font-size:0.82rem;">test_all_eight_routers_registered</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_cluster_profiling</td>
+            <td style="font-size:0.82rem;">test_profile_is_dataframe</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_cluster_profiling</td>
+            <td style="font-size:0.82rem;">test_profile_row_count</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_cluster_profiling</td>
+            <td style="font-size:0.82rem;">test_profile_has_required_columns</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_cluster_profiling</td>
+            <td style="font-size:0.82rem;">test_cluster_ids_are_0_through_4</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_cluster_profiling</td>
+            <td style="font-size:0.82rem;">test_company_count_sums_to_92</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_cluster_profiling</td>
+            <td style="font-size:0.82rem;">test_mean_columns_exist</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_cluster_profiling</td>
+            <td style="font-size:0.82rem;">test_median_columns_exist</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_cluster_profiling</td>
+            <td style="font-size:0.82rem;">test_mean_values_are_numeric</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_cluster_profiling</td>
+            <td style="font-size:0.82rem;">test_companies_in_profile_match_labels</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_cluster_profiling</td>
+            <td style="font-size:0.82rem;">test_company_counts_match_labels</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_cluster_profiling</td>
+            <td style="font-size:0.82rem;">test_each_cluster_has_at_least_one_company</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_cluster_profiling</td>
+            <td style="font-size:0.82rem;">test_full_dataset_has_92_rows</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_cluster_profiling</td>
+            <td style="font-size:0.82rem;">test_full_dataset_has_all_kpis</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_cluster_profiling</td>
+            <td style="font-size:0.82rem;">test_full_dataset_has_cluster_columns</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_cluster_profiling</td>
+            <td style="font-size:0.82rem;">test_full_dataset_has_sector</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_clustering</td>
+            <td style="font-size:0.82rem;">test_cluster_labels_csv_exists</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_clustering</td>
+            <td style="font-size:0.82rem;">test_elbow_plot_exists</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_clustering</td>
+            <td style="font-size:0.82rem;">test_required_columns</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_clustering</td>
+            <td style="font-size:0.82rem;">test_no_extra_columns</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_clustering</td>
+            <td style="font-size:0.82rem;">test_exactly_92_companies</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_clustering</td>
+            <td style="font-size:0.82rem;">test_no_duplicate_company_id</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_clustering</td>
+            <td style="font-size:0.82rem;">test_exactly_5_cluster_ids</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_clustering</td>
+            <td style="font-size:0.82rem;">test_cluster_ids_are_0_to_4</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_clustering</td>
+            <td style="font-size:0.82rem;">test_every_company_has_a_cluster</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_clustering</td>
+            <td style="font-size:0.82rem;">test_no_missing_cluster_name</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_clustering</td>
+            <td style="font-size:0.82rem;">test_distance_non_negative</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_clustering</td>
+            <td style="font-size:0.82rem;">test_all_five_features_present</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_clustering</td>
+            <td style="font-size:0.82rem;">test_no_null_features_after_imputation</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_clustering</td>
+            <td style="font-size:0.82rem;">test_imputation_log_has_required_columns</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_clustering</td>
+            <td style="font-size:0.82rem;">test_imputation_log_records_imputations</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_clustering</td>
+            <td style="font-size:0.82rem;">test_imputation_count_per_feature</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_clustering</td>
+            <td style="font-size:0.82rem;">test_sector_median_imputation_works</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_clustering</td>
+            <td style="font-size:0.82rem;">test_scaled_zero_mean</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_clustering</td>
+            <td style="font-size:0.82rem;">test_scaled_unit_variance</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_clustering</td>
+            <td style="font-size:0.82rem;">test_standard_scaler_applied</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_clustering</td>
+            <td style="font-size:0.82rem;">test_random_state_is_42</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_clustering</td>
+            <td style="font-size:0.82rem;">test_repeated_runs_identical</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_clustering</td>
+            <td style="font-size:0.82rem;">test_cluster_labels_csv_deterministic</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_clustering</td>
+            <td style="font-size:0.82rem;">test_elbow_inertias_has_all_k</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_clustering</td>
+            <td style="font-size:0.82rem;">test_elbow_inertias_decreasing</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_clustering</td>
+            <td style="font-size:0.82rem;">test_elbow_k_range</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_clustering</td>
+            <td style="font-size:0.82rem;">test_cluster_name_map_has_5_entries</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_clustering</td>
+            <td style="font-size:0.82rem;">test_cluster_ids_0_to_4_in_name_map</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_clustering</td>
+            <td style="font-size:0.82rem;">test_all_cluster_names_assigned</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_clustering</td>
+            <td style="font-size:0.82rem;">test_cluster_names_match_map</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_clustering</td>
+            <td style="font-size:0.82rem;">test_exact_five_final_names</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_clustering</td>
+            <td style="font-size:0.82rem;">test_final_name_to_cluster_mapping</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_clustering</td>
+            <td style="font-size:0.82rem;">test_all_92_companies_assigned</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_clustering</td>
+            <td style="font-size:0.82rem;">test_cluster_counts_positive</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_clustering</td>
+            <td style="font-size:0.82rem;">test_total_count_equals_92</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_clustering</td>
+            <td style="font-size:0.82rem;">test_no_duplicate_company_id</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_clustering</td>
+            <td style="font-size:0.82rem;">test_cluster_membership_unchanged</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_clustering</td>
+            <td style="font-size:0.82rem;">test_distance_from_centroid_unchanged</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_clustering</td>
+            <td style="font-size:0.82rem;">test_output_schema_unchanged</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_clustering</td>
+            <td style="font-size:0.82rem;">test_elbow_assessment_documented</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_clustering</td>
+            <td style="font-size:0.82rem;">test_reindex_clusters_by_roe</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_clustering</td>
+            <td style="font-size:0.82rem;">test_assign_cluster_names_deterministic</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_clustering</td>
+            <td style="font-size:0.82rem;">test_assign_cluster_names_covers_all_clusters</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_clustering</td>
+            <td style="font-size:0.82rem;">test_imputation_counts_match_expectations</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_92_companies_present</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_all_expected_tables_exist</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_table_row_counts_reasonable</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_companies_no_null_ids</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_companies_no_null_names</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_sectors_no_null_company_ids</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_sectors_no_null_sectors</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_ratios_no_null_ids_or_years</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_no_duplicate_companies</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_no_duplicate_sectors</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_no_duplicate_ratios</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_no_duplicate_pl</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_no_duplicate_bs</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_no_duplicate_cf</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_no_duplicate_mc</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_ratio_year_format_valid</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_pl_year_format_valid</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_bs_year_format_valid</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_cf_year_format_valid</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_ratios_finite_where_expected</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_roe_extreme_values_flagged</td>
+            <td><span style="color:#e3b341;font-weight:600;">SKIP</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_roce_extreme_values_flagged</td>
+            <td><span style="color:#e3b341;font-weight:600;">SKIP</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_npm_extreme_values_flagged</td>
+            <td><span style="color:#e3b341;font-weight:600;">SKIP</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_leverage_extreme_values_flagged</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_core_ratios_not_all_null</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_margin_values_reasonable</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_debt_to_equity_non_negative</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_interest_coverage_positive</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_eps_values_finite</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_referential_integrity_ratios</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_referential_integrity_sectors</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_referential_integrity_peer_groups</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_referential_integrity_market_cap</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_referential_integrity_pl</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_referential_integrity_bs</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_referential_integrity_cf</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_n100_sector_coverage</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_sector_values_valid</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_market_cap_categories_valid</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_peer_group_coverage_partial</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_cluster_label_coverage</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_cluster_ids_valid</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_cluster_names_meaningful</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_tearsheet_coverage_known_exception</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_documents_coverage</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_pros_cons_coverage_limited</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_stock_prices_coverage</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_market_cap_coverage</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_cluster_labels_preserved</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_portfolio_stats_preserved</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_outlier_report_preserved</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_db_schema_unchanged</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_data_quality</td>
+            <td style="font-size:0.82rem;">test_no_new_tables_created</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_outlier_detection</td>
+            <td style="font-size:0.82rem;">test_outlier_is_dataframe</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_outlier_detection</td>
+            <td style="font-size:0.82rem;">test_required_columns_exist</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_outlier_detection</td>
+            <td style="font-size:0.82rem;">test_all_kpis_present</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_outlier_detection</td>
+            <td style="font-size:0.82rem;">test_row_count_is_companies_times_kpis</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_outlier_detection</td>
+            <td style="font-size:0.82rem;">test_z_scores_within_threshold_are_not_outliers</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_outlier_detection</td>
+            <td style="font-size:0.82rem;">test_outlier_flag_implies_high_z_score</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_outlier_detection</td>
+            <td style="font-size:0.82rem;">test_z_score_sign_matches_deviation</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_outlier_detection</td>
+            <td style="font-size:0.82rem;">test_insufficient_sector_observations_handled</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_outlier_detection</td>
+            <td style="font-size:0.82rem;">test_zero_std_handled</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_outlier_detection</td>
+            <td style="font-size:0.82rem;">test_no_nans_in_outlier_flag</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_outlier_detection</td>
+            <td style="font-size:0.82rem;">test_handling_values_are_valid</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_outlier_detection</td>
+            <td style="font-size:0.82rem;">test_outlier_count_reasonable</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_outlier_detection</td>
+            <td style="font-size:0.82rem;">test_no_company_is_outlier_on_all_kpis</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_portfolio_stats</td>
+            <td style="font-size:0.82rem;">test_stats_is_dataframe</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_portfolio_stats</td>
+            <td style="font-size:0.82rem;">test_stats_has_10_rows</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_portfolio_stats</td>
+            <td style="font-size:0.82rem;">test_stats_has_required_columns</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_portfolio_stats</td>
+            <td style="font-size:0.82rem;">test_all_kpis_present</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_portfolio_stats</td>
+            <td style="font-size:0.82rem;">test_percentiles_ordered_for_each_kpi</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_portfolio_stats</td>
+            <td style="font-size:0.82rem;">test_n_valid_plus_n_missing_equals_92</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_portfolio_stats</td>
+            <td style="font-size:0.82rem;">test_n_valid_at_least_80</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_portfolio_stats</td>
+            <td style="font-size:0.82rem;">test_missing_kpi_documented</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_portfolio_stats</td>
+            <td style="font-size:0.82rem;">test_mean_matches_manual_calc</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_portfolio_stats</td>
+            <td style="font-size:0.82rem;">test_std_matches_manual_calc</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr>
+
+        <tr>
+            <td style="font-size:0.82rem;">test_portfolio_stats</td>
+            <td style="font-size:0.82rem;">test_p50_matches_median</td>
+            <td><span style="color:#3fb950;font-weight:600;">PASS</span></td>
+            <td style="font-size:0.82rem;">0.000s</td>
+            <td style="font-size:0.78rem;color:#8b949e;">-</td>
+        </tr></tbody>
+</table>
+
+<div class="footer">
+  Sprint 6 Day 42 · N100 Financial Intelligence Platform · 336 tests · 99.1% pass rate
+</div>
+</body>
+</html>

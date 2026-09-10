@@ -1,0 +1,913 @@
+company_id,broad_sector,cluster_id,metric,metric_label,metric_value,sector_mean,sector_std,sector_count,z_score,abs_z_score,outlier_flag,handling
+ABB,Industrials,0,net_profit_margin_pct,Net Profit Margin,20.533425,13.38406,9.880643,10,0.723573,0.723573,False,computed
+ABB,Industrials,0,operating_profit_margin_pct,Operating Profit Margin,24.841853,21.333371,15.56934,10,0.225346,0.225346,False,computed
+ABB,Industrials,0,return_on_equity_pct,Return on Equity,32.468235,874.176985,1808.577244,10,-0.465398,0.465398,False,computed
+ABB,Industrials,0,debt_to_equity,Debt to Equity,0.022438,0.583291,0.619304,10,-0.905617,0.905617,False,computed
+ABB,Industrials,0,return_on_capital_employed_pct,ROCE,44.976203,841.721338,1710.114178,10,-0.465902,0.465902,False,computed
+ABB,Industrials,0,asset_turnover,Asset Turnover,1.126324,20.647597,42.442182,10,-0.45995,0.45995,False,computed
+ABB,Industrials,0,revenue_cagr_5yr,Revenue CAGR 5Yr,9.716101,10.876325,6.638909,10,-0.174761,0.174761,False,computed
+ABB,Industrials,0,fcf_conversion_pct,FCF Conversion,54.85203,-30.851354,123.344214,10,0.694831,0.694831,False,computed
+ABB,Industrials,0,cfo_quality_score,CFO Quality Score,1.049043,1.17796,1.470801,10,-0.087651,0.087651,False,computed
+ABB,Industrials,0,capex_intensity_pct,Capex Intensity,7.112327,13.741162,10.040116,10,-0.660235,0.660235,False,computed
+ADANIENSOL,Energy,0,net_profit_margin_pct,Net Profit Margin,7.201782,16.022672,12.981687,14,-0.679487,0.679487,False,computed
+ADANIENSOL,Energy,0,operating_profit_margin_pct,Operating Profit Margin,34.389113,33.596854,24.659114,14,0.032128,0.032128,False,computed
+ADANIENSOL,Energy,0,return_on_equity_pct,Return on Equity,9.461277,17.933799,11.243965,14,-0.753517,0.753517,False,computed
+ADANIENSOL,Energy,0,debt_to_equity,Debt to Equity,2.932521,1.459648,1.634055,14,0.901361,0.901361,False,computed
+ADANIENSOL,Energy,0,return_on_capital_employed_pct,ROCE,12.717507,19.326477,8.626593,14,-0.766116,0.766116,False,computed
+ADANIENSOL,Energy,0,asset_turnover,Asset Turnover,0.283696,0.653519,0.612361,14,-0.60393,0.60393,False,computed
+ADANIENSOL,Energy,0,revenue_cagr_5yr,Revenue CAGR 5Yr,17.85125,12.446835,8.494439,14,0.63623,0.63623,False,computed
+ADANIENSOL,Energy,0,fcf_conversion_pct,FCF Conversion,19.173525,18.263863,65.003647,14,0.013994,0.013994,False,computed
+ADANIENSOL,Energy,0,cfo_quality_score,CFO Quality Score,4.389233,2.010569,1.208837,14,1.96773,1.96773,False,computed
+ADANIENSOL,Energy,0,capex_intensity_pct,Capex Intensity,29.764557,36.529155,59.038781,14,-0.114579,0.114579,False,computed
+ADANIENT,Industrials,0,net_profit_margin_pct,Net Profit Margin,3.45879,13.38406,9.880643,10,-1.004517,1.004517,False,computed
+ADANIENT,Industrials,0,operating_profit_margin_pct,Operating Profit Margin,11.799297,21.333371,15.56934,10,-0.612362,0.612362,False,computed
+ADANIENT,Industrials,0,return_on_equity_pct,Return on Equity,8.53465,874.176985,1808.577244,10,-0.478632,0.478632,False,computed
+ADANIENT,Industrials,0,debt_to_equity,Debt to Equity,1.671358,0.583291,0.619304,10,1.756918,1.756918,False,computed
+ADANIENT,Industrials,0,return_on_capital_employed_pct,ROCE,11.996819,841.721338,1710.114178,10,-0.485187,0.485187,False,computed
+ADANIENT,Industrials,0,asset_turnover,Asset Turnover,0.600432,20.647597,42.442182,10,-0.472341,0.472341,False,computed
+ADANIENT,Industrials,0,revenue_cagr_5yr,Revenue CAGR 5Yr,19.015415,10.876325,6.638909,10,1.225968,1.225968,False,computed
+ADANIENT,Industrials,0,fcf_conversion_pct,FCF Conversion,-74.316604,-30.851354,123.344214,10,-0.35239,0.35239,False,computed
+ADANIENT,Industrials,0,cfo_quality_score,CFO Quality Score,3.670388,1.17796,1.470801,10,1.694606,1.694606,False,computed
+ADANIENT,Industrials,0,capex_intensity_pct,Capex Intensity,19.463602,13.741162,10.040116,10,0.569958,0.569958,False,computed
+ADANIGREEN,Energy,3,net_profit_margin_pct,Net Profit Margin,13.665944,16.022672,12.981687,14,-0.181543,0.181543,False,computed
+ADANIGREEN,Energy,3,operating_profit_margin_pct,Operating Profit Margin,79.370933,33.596854,24.659114,14,1.856274,1.856274,False,computed
+ADANIGREEN,Energy,3,return_on_equity_pct,Return on Equity,12.812691,17.933799,11.243965,14,-0.455454,0.455454,False,computed
+ADANIGREEN,Energy,3,debt_to_equity,Debt to Equity,6.595282,1.459648,1.634055,14,3.142878,3.142878,True,computed
+ADANIGREEN,Energy,3,return_on_capital_employed_pct,ROCE,11.487174,19.326477,8.626593,14,-0.908737,0.908737,False,computed
+ADANIGREEN,Energy,3,asset_turnover,Asset Turnover,0.10467,0.653519,0.612361,14,-0.896283,0.896283,False,computed
+ADANIGREEN,Energy,3,revenue_cagr_5yr,Revenue CAGR 5Yr,34.976173,12.446835,8.494439,14,2.652245,2.652245,False,computed
+ADANIGREEN,Energy,3,fcf_conversion_pct,FCF Conversion,-182.385898,18.263863,65.003647,14,-3.086746,3.086746,True,computed
+ADANIGREEN,Energy,3,cfo_quality_score,CFO Quality Score,-0.023529,2.010569,1.208837,14,-1.682691,1.682691,False,computed
+ADANIGREEN,Energy,3,capex_intensity_pct,Capex Intensity,228.416486,36.529155,59.038781,14,3.250191,3.250191,True,computed
+ADANIPORTS,Industrials,1,net_profit_margin_pct,Net Profit Margin,30.33956,13.38406,9.880643,10,1.716032,1.716032,False,computed
+ADANIPORTS,Industrials,1,operating_profit_margin_pct,Operating Profit Margin,58.361724,21.333371,15.56934,10,2.378287,2.378287,False,computed
+ADANIPORTS,Industrials,1,return_on_equity_pct,Return on Equity,15.354883,874.176985,1808.577244,10,-0.474861,0.474861,False,computed
+ADANIPORTS,Industrials,1,debt_to_equity,Debt to Equity,0.937322,0.583291,0.619304,10,0.571659,0.571659,False,computed
+ADANIPORTS,Industrials,1,return_on_capital_employed_pct,ROCE,15.902512,841.721338,1710.114178,10,-0.482903,0.482903,False,computed
+ADANIPORTS,Industrials,1,asset_turnover,Asset Turnover,0.228301,20.647597,42.442182,10,-0.481109,0.481109,False,computed
+ADANIPORTS,Industrials,1,revenue_cagr_5yr,Revenue CAGR 5Yr,19.578676,10.876325,6.638909,10,1.310811,1.310811,False,computed
+ADANIPORTS,Industrials,1,fcf_conversion_pct,FCF Conversion,52.921932,-30.851354,123.344214,10,0.679183,0.679183,False,computed
+ADANIPORTS,Industrials,1,cfo_quality_score,CFO Quality Score,1.923293,1.17796,1.470801,10,0.506753,0.506753,False,computed
+ADANIPORTS,Industrials,1,capex_intensity_pct,Capex Intensity,25.337876,13.741162,10.040116,10,1.155038,1.155038,False,computed
+ADANIPOWER,Energy,0,net_profit_margin_pct,Net Profit Margin,41.367599,16.022672,12.981687,14,1.95236,1.95236,False,computed
+ADANIPOWER,Energy,0,operating_profit_margin_pct,Operating Profit Margin,36.201863,33.596854,24.659114,14,0.105641,0.105641,False,computed
+ADANIPOWER,Energy,0,return_on_equity_pct,Return on Equity,48.276741,17.933799,11.243965,14,2.698598,2.698598,False,computed
+ADANIPOWER,Energy,0,debt_to_equity,Debt to Equity,0.802318,1.459648,1.634055,14,-0.40227,0.40227,False,computed
+ADANIPOWER,Energy,0,return_on_capital_employed_pct,ROCE,36.150512,19.326477,8.626593,14,1.950252,1.950252,False,computed
+ADANIPOWER,Energy,0,asset_turnover,Asset Turnover,0.54724,0.653519,0.612361,14,-0.173557,0.173557,False,computed
+ADANIPOWER,Energy,0,revenue_cagr_5yr,Revenue CAGR 5Yr,16.086096,12.446835,8.494439,14,0.428429,0.428429,False,computed
+ADANIPOWER,Energy,0,fcf_conversion_pct,FCF Conversion,96.83454,18.263863,65.003647,14,1.208712,1.208712,False,computed
+ADANIPOWER,Energy,0,cfo_quality_score,CFO Quality Score,1.322341,2.010569,1.208837,14,-0.569331,0.569331,False,computed
+ADANIPOWER,Energy,0,capex_intensity_pct,Capex Intensity,6.913467,36.529155,59.038781,14,-0.501631,0.501631,False,computed
+AMBUJACEM,Materials,0,net_profit_margin_pct,Net Profit Margin,14.288299,10.916177,8.131072,9,0.414721,0.414721,False,computed
+AMBUJACEM,Materials,0,operating_profit_margin_pct,Operating Profit Margin,19.300362,31.761388,26.886179,9,-0.463473,0.463473,False,computed
+AMBUJACEM,Materials,0,return_on_equity_pct,Return on Equity,11.428985,16.069204,14.417459,9,-0.321847,0.321847,False,computed
+AMBUJACEM,Materials,0,debt_to_equity,Debt to Equity,0.016861,0.370539,0.417624,9,-0.84688,0.84688,False,computed
+AMBUJACEM,Materials,0,return_on_capital_employed_pct,ROCE,18.505515,42.281564,40.609741,9,-0.585477,0.585477,False,computed
+AMBUJACEM,Materials,0,asset_turnover,Asset Turnover,0.508114,0.805806,0.217015,9,-1.371759,1.371759,False,computed
+AMBUJACEM,Materials,0,revenue_cagr_5yr,Revenue CAGR 5Yr,4.115701,9.119603,4.440099,9,-1.12698,1.12698,False,computed
+AMBUJACEM,Materials,0,fcf_conversion_pct,FCF Conversion,-51.484375,9.854444,32.807634,9,-1.869651,1.869651,False,computed
+AMBUJACEM,Materials,0,cfo_quality_score,CFO Quality Score,1.105127,1.481354,1.979169,9,-0.190094,0.190094,False,computed
+AMBUJACEM,Materials,0,capex_intensity_pct,Capex Intensity,26.963209,10.683582,7.40191,9,2.199382,2.199382,False,computed
+APOLLOHOSP,Healthcare,0,net_profit_margin_pct,Net Profit Margin,4.905819,16.09725,5.874497,6,-1.905087,1.905087,False,computed
+APOLLOHOSP,Healthcare,0,operating_profit_margin_pct,Operating Profit Margin,12.560995,33.813647,21.510619,6,-0.988007,0.988007,False,computed
+APOLLOHOSP,Healthcare,0,return_on_equity_pct,Return on Equity,13.480392,16.635887,4.542244,6,-0.694699,0.694699,False,computed
+APOLLOHOSP,Healthcare,0,debt_to_equity,Debt to Equity,0.768887,0.249827,0.33733,6,1.538734,1.538734,False,computed
+APOLLOHOSP,Healthcare,0,return_on_capital_employed_pct,ROCE,20.368408,32.155045,20.046062,6,-0.587978,0.587978,False,computed
+APOLLOHOSP,Healthcare,0,asset_turnover,Asset Turnover,1.138394,0.744747,0.221416,6,1.777866,1.777866,False,computed
+APOLLOHOSP,Healthcare,0,revenue_cagr_5yr,Revenue CAGR 5Yr,14.660043,10.698731,2.687796,6,1.473814,1.473814,False,computed
+APOLLOHOSP,Healthcare,0,fcf_conversion_pct,FCF Conversion,15.998329,42.13186,39.57804,6,-0.660304,0.660304,False,computed
+APOLLOHOSP,Healthcare,0,cfo_quality_score,CFO Quality Score,3.488462,1.793315,0.891238,6,1.902015,1.902015,False,computed
+APOLLOHOSP,Healthcare,0,capex_intensity_pct,Capex Intensity,8.064432,6.754895,5.458638,6,0.239902,0.239902,False,computed
+ASIANPAINT,Materials,0,net_profit_margin_pct,Net Profit Margin,15.658543,10.916177,8.131072,9,0.58324,0.58324,False,computed
+ASIANPAINT,Materials,0,operating_profit_margin_pct,Operating Profit Margin,21.369207,31.761388,26.886179,9,-0.386525,0.386525,False,computed
+ASIANPAINT,Materials,0,return_on_equity_pct,Return on Equity,29.677488,16.069204,14.417459,9,0.943875,0.943875,False,computed
+ASIANPAINT,Materials,0,debt_to_equity,Debt to Equity,0.132102,0.370539,0.417624,9,-0.570937,0.570937,False,computed
+ASIANPAINT,Materials,0,return_on_capital_employed_pct,ROCE,39.647203,42.281564,40.609741,9,-0.06487,0.06487,False,computed
+ASIANPAINT,Materials,0,asset_turnover,Asset Turnover,1.187084,0.805806,0.217015,9,1.756919,1.756919,False,computed
+ASIANPAINT,Materials,0,revenue_cagr_5yr,Revenue CAGR 5Yr,13.02966,9.119603,4.440099,9,0.880624,0.880624,False,computed
+ASIANPAINT,Materials,0,fcf_conversion_pct,FCF Conversion,46.882004,9.854444,32.807634,9,1.128626,1.128626,False,computed
+ASIANPAINT,Materials,0,cfo_quality_score,CFO Quality Score,0.932193,1.481354,1.979169,9,-0.277471,0.277471,False,computed
+ASIANPAINT,Materials,0,capex_intensity_pct,Capex Intensity,7.178476,10.683582,7.40191,9,-0.473541,0.473541,False,computed
+BAJAJ-AUTO,Consumer Discretionary,0,net_profit_margin_pct,Net Profit Margin,17.178516,11.500325,6.968452,14,0.814843,0.814843,False,computed
+BAJAJ-AUTO,Consumer Discretionary,0,operating_profit_margin_pct,Operating Profit Margin,19.53421,25.536186,24.661573,14,-0.243374,0.243374,False,computed
+BAJAJ-AUTO,Consumer Discretionary,0,return_on_equity_pct,Return on Equity,26.614184,86.724106,232.104483,14,-0.258978,0.258978,False,computed
+BAJAJ-AUTO,Consumer Discretionary,0,debt_to_equity,Debt to Equity,0.066018,0.698619,1.0975,14,-0.576403,0.576403,False,computed
+BAJAJ-AUTO,Consumer Discretionary,0,return_on_capital_employed_pct,ROCE,33.895835,441.11496,1497.893148,14,-0.271861,0.271861,False,computed
+BAJAJ-AUTO,Consumer Discretionary,0,asset_turnover,Asset Turnover,1.140453,5.157839,14.752203,14,-0.272324,0.272324,False,computed
+BAJAJ-AUTO,Consumer Discretionary,0,revenue_cagr_5yr,Revenue CAGR 5Yr,8.127605,13.604579,8.800016,14,-0.622382,0.622382,False,computed
+BAJAJ-AUTO,Consumer Discretionary,0,fcf_conversion_pct,FCF Conversion,73.998859,24.626797,37.425658,14,1.319204,1.319204,False,computed
+BAJAJ-AUTO,Consumer Discretionary,0,cfo_quality_score,CFO Quality Score,0.756663,0.178076,4.295602,14,0.134693,0.134693,False,computed
+BAJAJ-AUTO,Consumer Discretionary,0,capex_intensity_pct,Capex Intensity,0.160464,5.868292,5.264319,14,-1.084248,1.084248,False,computed
+AXISBANK,Financials,3,net_profit_margin_pct,Net Profit Margin,22.731304,38.238003,87.706652,23,-0.176802,0.176802,False,computed
+AXISBANK,Financials,3,operating_profit_margin_pct,Operating Profit Margin,34.692646,53.425739,35.593822,22,-0.526302,0.526302,False,computed
+AXISBANK,Financials,3,return_on_equity_pct,Return on Equity,15.832712,19.007093,13.021442,22,-0.243781,0.243781,False,computed
+AXISBANK,Financials,3,debt_to_equity,Debt to Equity,8.249123,4.821046,4.225134,22,0.811354,0.811354,False,computed
+AXISBANK,Financials,3,return_on_capital_employed_pct,ROCE,2.613327,81.288225,209.120203,21,-0.376219,0.376219,False,computed
+AXISBANK,Financials,3,asset_turnover,Asset Turnover,0.072037,0.198326,0.309124,22,-0.408537,0.408537,False,computed
+AXISBANK,Financials,3,revenue_cagr_5yr,Revenue CAGR 5Yr,14.743587,17.744843,5.304504,22,-0.565794,0.565794,False,computed
+AXISBANK,Financials,3,fcf_conversion_pct,FCF Conversion,-38.362807,-132.589622,254.419738,22,0.37036,0.37036,False,computed
+AXISBANK,Financials,3,cfo_quality_score,CFO Quality Score,4.970635,2.380893,8.557163,23,0.30264,0.30264,False,computed
+AXISBANK,Financials,3,capex_intensity_pct,Capex Intensity,8.229937,14.614712,23.266484,23,-0.274419,0.274419,False,computed
+BAJAJFINSV,Financials,3,net_profit_margin_pct,Net Profit Margin,14.128209,38.238003,87.706652,23,-0.274891,0.274891,False,computed
+BAJAJFINSV,Financials,3,operating_profit_margin_pct,Operating Profit Margin,37.040459,53.425739,35.593822,22,-0.460341,0.460341,False,computed
+BAJAJFINSV,Financials,3,return_on_equity_pct,Return on Equity,25.850351,19.007093,13.021442,22,0.525538,0.525538,False,computed
+BAJAJFINSV,Financials,3,debt_to_equity,Debt to Equity,4.789368,4.821046,4.225134,22,-0.007497,0.007497,False,computed
+BAJAJFINSV,Financials,3,return_on_capital_employed_pct,ROCE,11.705286,81.288225,209.120203,21,-0.332741,0.332741,False,computed
+BAJAJFINSV,Financials,3,asset_turnover,Asset Turnover,0.205394,0.198326,0.309124,22,0.022867,0.022867,False,computed
+BAJAJFINSV,Financials,3,revenue_cagr_5yr,Revenue CAGR 5Yr,20.972746,17.744843,5.304504,22,0.608521,0.608521,False,computed
+BAJAJFINSV,Financials,3,fcf_conversion_pct,FCF Conversion,-194.770826,-132.589622,254.419738,22,-0.244404,0.244404,False,computed
+BAJAJFINSV,Financials,3,cfo_quality_score,CFO Quality Score,-2.993664,2.380893,8.557163,23,-0.628077,0.628077,False,computed
+BAJAJFINSV,Financials,3,capex_intensity_pct,Capex Intensity,9.929155,14.614712,23.266484,23,-0.201387,0.201387,False,computed
+BAJAJHLDNG,Financials,1,net_profit_margin_pct,Net Profit Margin,432.726204,38.238003,87.706652,23,4.497814,4.497814,True,computed
+BAJAJHLDNG,Financials,1,operating_profit_margin_pct,Operating Profit Margin,91.774383,53.425739,35.593822,22,1.077396,1.077396,False,computed
+BAJAJHLDNG,Financials,1,return_on_equity_pct,Return on Equity,13.576788,19.007093,13.021442,22,-0.417028,0.417028,False,computed
+BAJAJHLDNG,Financials,1,debt_to_equity,Debt to Equity,0.001161,4.821046,4.225134,22,-1.140765,1.140765,False,computed
+BAJAJHLDNG,Financials,1,return_on_capital_employed_pct,ROCE,13.863009,81.288225,209.120203,21,-0.322423,0.322423,False,computed
+BAJAJHLDNG,Financials,1,asset_turnover,Asset Turnover,0.02612,0.198326,0.309124,22,-0.557076,0.557076,False,computed
+BAJAJHLDNG,Financials,1,revenue_cagr_5yr,Revenue CAGR 5Yr,31.612293,17.744843,5.304504,22,2.614278,2.614278,False,computed
+BAJAJHLDNG,Financials,1,fcf_conversion_pct,FCF Conversion,94.046095,-132.589622,254.419738,22,0.890795,0.890795,False,computed
+BAJAJHLDNG,Financials,1,cfo_quality_score,CFO Quality Score,0.340188,2.380893,8.557163,23,-0.238479,0.238479,False,computed
+BAJAJHLDNG,Financials,1,capex_intensity_pct,Capex Intensity,27.73208,14.614712,23.266484,23,0.563788,0.563788,False,computed
+BAJFINANCE,Financials,3,net_profit_margin_pct,Net Profit Margin,26.287928,38.238003,87.706652,23,-0.13625,0.13625,False,computed
+BAJFINANCE,Financials,3,operating_profit_margin_pct,Operating Profit Margin,29.285818,53.425739,35.593822,22,-0.678205,0.678205,False,computed
+BAJFINANCE,Financials,3,return_on_equity_pct,Return on Equity,18.841921,19.007093,13.021442,22,-0.012685,0.012685,False,computed
+BAJFINANCE,Financials,3,debt_to_equity,Debt to Equity,3.824789,4.821046,4.225134,22,-0.235793,0.235793,False,computed
+BAJFINANCE,Financials,3,return_on_capital_employed_pct,ROCE,4.360316,81.288225,209.120203,21,-0.367865,0.367865,False,computed
+BAJFINANCE,Financials,3,asset_turnover,Asset Turnover,0.146303,0.198326,0.309124,22,-0.168292,0.168292,False,computed
+BAJFINANCE,Financials,3,revenue_cagr_5yr,Revenue CAGR 5Yr,24.352643,17.744843,5.304504,22,1.245696,1.245696,False,computed
+BAJFINANCE,Financials,3,fcf_conversion_pct,FCF Conversion,-496.496677,-132.589622,254.419738,22,-1.430341,1.430341,False,computed
+BAJFINANCE,Financials,3,cfo_quality_score,CFO Quality Score,-3.758378,2.380893,8.557163,23,-0.717442,0.717442,False,computed
+BAJFINANCE,Financials,3,capex_intensity_pct,Capex Intensity,13.044823,14.614712,23.266484,23,-0.067474,0.067474,False,computed
+BANKBARODA,Financials,3,net_profit_margin_pct,Net Profit Margin,15.939483,38.238003,87.706652,23,-0.25424,0.25424,False,computed
+BANKBARODA,Financials,3,operating_profit_margin_pct,Operating Profit Margin,37.488913,53.425739,35.593822,22,-0.447741,0.447741,False,computed
+BANKBARODA,Financials,3,return_on_equity_pct,Return on Equity,15.761864,19.007093,13.021442,22,-0.249222,0.249222,False,computed
+BANKBARODA,Financials,3,debt_to_equity,Debt to Equity,12.143719,4.821046,4.225134,22,1.733122,1.733122,False,computed
+BANKBARODA,Financials,3,return_on_capital_employed_pct,ROCE,2.820638,81.288225,209.120203,21,-0.375227,0.375227,False,computed
+BANKBARODA,Financials,3,asset_turnover,Asset Turnover,0.071538,0.198326,0.309124,22,-0.410151,0.410151,False,computed
+BANKBARODA,Financials,3,revenue_cagr_5yr,Revenue CAGR 5Yr,17.477298,17.744843,5.304504,22,-0.050437,0.050437,False,computed
+BANKBARODA,Financials,3,fcf_conversion_pct,FCF Conversion,-17.032831,-132.589622,254.419738,22,0.454197,0.454197,False,computed
+BANKBARODA,Financials,3,cfo_quality_score,CFO Quality Score,3.473911,2.380893,8.557163,23,0.127731,0.127731,False,computed
+BANKBARODA,Financials,3,capex_intensity_pct,Capex Intensity,1.085497,14.614712,23.266484,23,-0.581489,0.581489,False,computed
+BHARTIARTL,Communication Services,1,net_profit_margin_pct,Net Profit Margin,5.706018,14.584082,12.555478,2,,,False,insufficient_sector_observations
+BHARTIARTL,Communication Services,1,operating_profit_margin_pct,Operating Profit Margin,52.200931,40.118604,17.08699,2,,,False,insufficient_sector_observations
+BHARTIARTL,Communication Services,1,return_on_equity_pct,Return on Equity,10.358392,6.162277,5.934203,2,,,False,insufficient_sector_observations
+BHARTIARTL,Communication Services,1,debt_to_equity,Debt to Equity,2.609472,1.308801,1.839428,2,,,False,insufficient_sector_observations
+BHARTIARTL,Communication Services,1,return_on_capital_employed_pct,ROCE,25.104372,14.214045,15.401248,2,,,False,insufficient_sector_observations
+BHARTIARTL,Communication Services,1,asset_turnover,Asset Turnover,0.339311,0.204791,0.19024,2,,,False,insufficient_sector_observations
+BHARTIARTL,Communication Services,1,revenue_cagr_5yr,Revenue CAGR 5Yr,13.174102,15.144856,2.787067,2,,,False,insufficient_sector_observations
+BHARTIARTL,Communication Services,1,fcf_conversion_pct,FCF Conversion,35.519593,7.211273,40.03401,2,,,False,insufficient_sector_observations
+BHARTIARTL,Communication Services,1,cfo_quality_score,CFO Quality Score,3.334067,0.936264,3.391005,2,,,False,insufficient_sector_observations
+BHARTIARTL,Communication Services,1,capex_intensity_pct,Capex Intensity,34.063421,33.829818,0.330365,2,,,False,insufficient_sector_observations
+BEL,Industrials,2,net_profit_margin_pct,Net Profit Margin,19.661535,13.38406,9.880643,10,0.635331,0.635331,False,computed
+BEL,Industrials,2,operating_profit_margin_pct,Operating Profit Margin,24.921058,21.333371,15.56934,10,0.230433,0.230433,False,computed
+BEL,Industrials,2,return_on_equity_pct,Return on Equity,4744.047619,874.176985,1808.577244,10,2.139732,2.139732,False,computed
+BEL,Industrials,2,debt_to_equity,Debt to Equity,0.511905,0.583291,0.619304,10,-0.115269,0.115269,False,computed
+BEL,Industrials,2,return_on_capital_employed_pct,ROCE,4504.724409,841.721338,1710.114178,10,2.141964,2.141964,False,computed
+BEL,Industrials,2,asset_turnover,Asset Turnover,125.888199,20.647597,42.442182,10,2.479623,2.479623,False,computed
+BEL,Industrials,2,revenue_cagr_5yr,Revenue CAGR 5Yr,10.750806,10.876325,6.638909,10,-0.018906,0.018906,False,computed
+BEL,Industrials,2,fcf_conversion_pct,FCF Conversion,-25.044546,-30.851354,123.344214,10,0.047078,0.047078,False,computed
+BEL,Industrials,2,cfo_quality_score,CFO Quality Score,1.43141,1.17796,1.470801,10,0.172321,0.172321,False,computed
+BEL,Industrials,2,capex_intensity_pct,Capex Intensity,29.22834,13.741162,10.040116,10,1.54253,1.54253,False,computed
+BHEL,Industrials,0,net_profit_margin_pct,Net Profit Margin,1.180262,13.38406,9.880643,10,-1.235122,1.235122,False,computed
+BHEL,Industrials,0,operating_profit_margin_pct,Operating Profit Margin,2.975767,21.333371,15.56934,10,-1.179087,1.179087,False,computed
+BHEL,Industrials,0,return_on_equity_pct,Return on Equity,1.153941,874.176985,1808.577244,10,-0.482713,0.482713,False,computed
+BHEL,Industrials,0,debt_to_equity,Debt to Equity,0.362386,0.583291,0.619304,10,-0.356698,0.356698,False,computed
+BHEL,Industrials,0,return_on_capital_employed_pct,ROCE,3.961675,841.721338,1710.114178,10,-0.489885,0.489885,False,computed
+BHEL,Industrials,0,asset_turnover,Asset Turnover,0.399629,20.647597,42.442182,10,-0.477072,0.477072,False,computed
+BHEL,Industrials,0,revenue_cagr_5yr,Revenue CAGR 5Yr,-4.728642,10.876325,6.638909,10,-2.350532,2.350532,False,computed
+BHEL,Industrials,0,fcf_conversion_pct,FCF Conversion,-335.021097,-30.851354,123.344214,10,-2.466024,2.466024,False,computed
+BHEL,Industrials,0,cfo_quality_score,CFO Quality Score,-2.210786,1.17796,1.470801,10,-2.304013,2.304013,False,computed
+BHEL,Industrials,0,capex_intensity_pct,Capex Intensity,5.570669,13.741162,10.040116,10,-0.813785,0.813785,False,computed
+BOSCHLTD,Consumer Discretionary,0,net_profit_margin_pct,Net Profit Margin,14.886112,11.500325,6.968452,14,0.485874,0.485874,False,computed
+BOSCHLTD,Consumer Discretionary,0,operating_profit_margin_pct,Operating Profit Margin,12.524661,25.536186,24.661573,14,-0.527603,0.527603,False,computed
+BOSCHLTD,Consumer Discretionary,0,return_on_equity_pct,Return on Equity,20.63992,86.724106,232.104483,14,-0.284717,0.284717,False,computed
+BOSCHLTD,Consumer Discretionary,0,debt_to_equity,Debt to Equity,0.003233,0.698619,1.0975,14,-0.63361,0.63361,False,computed
+BOSCHLTD,Consumer Discretionary,0,return_on_capital_employed_pct,ROCE,30.248699,441.11496,1497.893148,14,-0.274296,0.274296,False,computed
+BOSCHLTD,Consumer Discretionary,0,asset_turnover,Asset Turnover,0.963814,5.157839,14.752203,14,-0.284298,0.284298,False,computed
+BOSCHLTD,Consumer Discretionary,0,revenue_cagr_5yr,Revenue CAGR 5Yr,6.717165,13.604579,8.800016,14,-0.782659,0.782659,False,computed
+BOSCHLTD,Consumer Discretionary,0,fcf_conversion_pct,FCF Conversion,73.317422,24.626797,37.425658,14,1.300996,1.300996,False,computed
+BOSCHLTD,Consumer Discretionary,0,cfo_quality_score,CFO Quality Score,1.073234,0.178076,4.295602,14,0.208389,0.208389,False,computed
+BOSCHLTD,Consumer Discretionary,0,capex_intensity_pct,Capex Intensity,1.691875,5.868292,5.264319,14,-0.793344,0.793344,False,computed
+BPCL,Energy,0,net_profit_margin_pct,Net Profit Margin,5.994202,16.022672,12.981687,14,-0.772509,0.772509,False,computed
+BPCL,Energy,0,operating_profit_margin_pct,Operating Profit Margin,9.837909,33.596854,24.659114,14,-0.963495,0.963495,False,computed
+BPCL,Energy,0,return_on_equity_pct,Return on Equity,35.511337,17.933799,11.243965,14,1.563286,1.563286,False,computed
+BPCL,Energy,0,debt_to_equity,Debt to Equity,0.721875,1.459648,1.634055,14,-0.451499,0.451499,False,computed
+BPCL,Energy,0,return_on_capital_employed_pct,ROCE,36.176421,19.326477,8.626593,14,1.953256,1.953256,False,computed
+BPCL,Energy,0,asset_turnover,Asset Turnover,2.213652,0.653519,0.612361,14,2.547731,2.547731,False,computed
+BPCL,Energy,0,revenue_cagr_5yr,Revenue CAGR 5Yr,8.483226,12.446835,8.494439,14,-0.466612,0.466612,False,computed
+BPCL,Energy,0,fcf_conversion_pct,FCF Conversion,57.653918,18.263863,65.003647,14,0.605967,0.605967,False,computed
+BPCL,Energy,0,cfo_quality_score,CFO Quality Score,2.486511,2.010569,1.208837,14,0.393719,0.393719,False,computed
+BPCL,Energy,0,capex_intensity_pct,Capex Intensity,2.348002,36.529155,59.038781,14,-0.578961,0.578961,False,computed
+BRITANNIA,Consumer Staples,0,net_profit_margin_pct,Net Profit Margin,12.725863,13.336141,10.026286,7,-0.060868,0.060868,False,computed
+BRITANNIA,Consumer Staples,0,operating_profit_margin_pct,Operating Profit Margin,18.88604,30.19953,21.505999,7,-0.526062,0.526062,False,computed
+BRITANNIA,Consumer Staples,0,return_on_equity_pct,Return on Equity,54.148693,34.471273,40.973641,7,0.480246,0.480246,False,computed
+BRITANNIA,Consumer Staples,0,debt_to_equity,Debt to Equity,0.523979,0.181566,0.176426,7,1.940823,1.940823,False,computed
+BRITANNIA,Consumer Staples,0,return_on_capital_employed_pct,ROCE,56.243756,55.494785,55.115404,7,0.013589,0.013589,False,computed
+BRITANNIA,Consumer Staples,0,asset_turnover,Asset Turnover,1.848435,1.122853,0.675973,7,1.073388,1.073388,False,computed
+BRITANNIA,Consumer Staples,0,revenue_cagr_5yr,Revenue CAGR 5Yr,8.690024,10.130855,3.643796,7,-0.39542,0.39542,False,computed
+BRITANNIA,Consumer Staples,0,fcf_conversion_pct,FCF Conversion,96.305652,34.023155,47.097394,7,1.322419,1.322419,False,computed
+BRITANNIA,Consumer Staples,0,cfo_quality_score,CFO Quality Score,1.046539,1.017625,0.457261,7,0.063235,0.063235,False,computed
+BRITANNIA,Consumer Staples,0,capex_intensity_pct,Capex Intensity,2.844535,9.069528,7.636651,7,-0.815147,0.815147,False,computed
+CANBK,Financials,3,net_profit_margin_pct,Net Profit Margin,13.93516,38.238003,87.706652,23,-0.277092,0.277092,False,computed
+CANBK,Financials,3,operating_profit_margin_pct,Operating Profit Margin,41.753907,53.425739,35.593822,22,-0.327917,0.327917,False,computed
+CANBK,Financials,3,return_on_equity_pct,Return on Equity,16.716052,19.007093,13.021442,22,-0.175944,0.175944,False,computed
+CANBK,Financials,3,debt_to_equity,Debt to Equity,14.86742,4.821046,4.225134,22,2.377765,2.377765,False,computed
+CANBK,Financials,3,return_on_capital_employed_pct,ROCE,3.15607,81.288225,209.120203,21,-0.373623,0.373623,False,computed
+CANBK,Financials,3,asset_turnover,Asset Turnover,0.071999,0.198326,0.309124,22,-0.408661,0.408661,False,computed
+CANBK,Financials,3,revenue_cagr_5yr,Revenue CAGR 5Yr,18.175611,17.744843,5.304504,22,0.081208,0.081208,False,computed
+CANBK,Financials,3,fcf_conversion_pct,FCF Conversion,28.812898,-132.589622,254.419738,22,0.634395,0.634395,False,computed
+CANBK,Financials,3,cfo_quality_score,CFO Quality Score,4.069631,2.380893,8.557163,23,0.197348,0.197348,False,computed
+CANBK,Financials,3,capex_intensity_pct,Capex Intensity,1.583438,14.614712,23.266484,23,-0.560088,0.560088,False,computed
+CHOLAFIN,Financials,3,net_profit_margin_pct,Net Profit Margin,17.846892,38.238003,87.706652,23,-0.232492,0.232492,False,computed
+CHOLAFIN,Financials,3,operating_profit_margin_pct,Operating Profit Margin,28.101028,53.425739,35.593822,22,-0.711492,0.711492,False,computed
+CHOLAFIN,Financials,3,return_on_equity_pct,Return on Equity,17.455214,19.007093,13.021442,22,-0.119179,0.119179,False,computed
+CHOLAFIN,Financials,3,debt_to_equity,Debt to Equity,6.863421,4.821046,4.225134,22,0.483387,0.483387,False,computed
+CHOLAFIN,Financials,3,return_on_capital_employed_pct,ROCE,3.510787,81.288225,209.120203,21,-0.371927,0.371927,False,computed
+CHOLAFIN,Financials,3,asset_turnover,Asset Turnover,0.122302,0.198326,0.309124,22,-0.245932,0.245932,False,computed
+CHOLAFIN,Financials,3,revenue_cagr_5yr,Revenue CAGR 5Yr,21.939165,17.744843,5.304504,22,0.790709,0.790709,False,computed
+CHOLAFIN,Financials,3,fcf_conversion_pct,FCF Conversion,-715.654596,-132.589622,254.419738,22,-2.291744,2.291744,False,computed
+CHOLAFIN,Financials,3,cfo_quality_score,CFO Quality Score,-6.195325,2.380893,8.557163,23,-1.002227,1.002227,False,computed
+CHOLAFIN,Financials,3,capex_intensity_pct,Capex Intensity,14.898502,14.614712,23.266484,23,0.012197,0.012197,False,computed
+CIPLA,Healthcare,4,net_profit_margin_pct,Net Profit Margin,16.117017,16.09725,5.874497,6,0.003365,0.003365,False,computed
+CIPLA,Healthcare,4,operating_profit_margin_pct,Operating Profit Margin,75.591682,33.813647,21.510619,6,1.942205,1.942205,False,computed
+CIPLA,Healthcare,4,return_on_equity_pct,Return on Equity,15.554557,16.635887,4.542244,6,-0.238061,0.238061,False,computed
+CIPLA,Healthcare,4,debt_to_equity,Debt to Equity,0.020932,0.249827,0.33733,6,-0.67855,0.67855,False,computed
+CIPLA,Healthcare,4,return_on_capital_employed_pct,ROCE,71.545938,32.155045,20.046062,6,1.965019,1.965019,False,computed
+CIPLA,Healthcare,4,asset_turnover,Asset Turnover,0.792242,0.744747,0.221416,6,0.214506,0.214506,False,computed
+CIPLA,Healthcare,4,revenue_cagr_5yr,Revenue CAGR 5Yr,9.51386,10.698731,2.687796,6,-0.440834,0.440834,False,computed
+CIPLA,Healthcare,4,fcf_conversion_pct,FCF Conversion,5.912847,42.13186,39.57804,6,-0.915129,0.915129,False,computed
+CIPLA,Healthcare,4,cfo_quality_score,CFO Quality Score,1.412223,1.793315,0.891238,6,-0.427599,0.427599,False,computed
+CIPLA,Healthcare,4,capex_intensity_pct,Capex Intensity,11.569799,6.754895,5.458638,6,0.882071,0.882071,False,computed
+COALINDIA,Materials,1,net_profit_margin_pct,Net Profit Margin,26.256288,10.916177,8.131072,9,1.886604,1.886604,False,computed
+COALINDIA,Materials,1,operating_profit_margin_pct,Operating Profit Margin,66.293808,31.761388,26.886179,9,1.284393,1.284393,False,computed
+COALINDIA,Materials,1,return_on_equity_pct,Return on Equity,45.16983,16.069204,14.417459,9,2.01843,2.01843,False,computed
+COALINDIA,Materials,1,debt_to_equity,Debt to Equity,0.078847,0.370539,0.417624,9,-0.698456,0.698456,False,computed
+COALINDIA,Materials,1,return_on_capital_employed_pct,ROCE,105.751067,42.281564,40.609741,9,1.562913,1.562913,False,computed
+COALINDIA,Materials,1,asset_turnover,Asset Turnover,0.601869,0.805806,0.217015,9,-0.939736,0.939736,False,computed
+COALINDIA,Materials,1,revenue_cagr_5yr,Revenue CAGR 5Yr,7.402891,9.119603,4.440099,9,-0.386638,0.386638,False,computed
+COALINDIA,Materials,1,fcf_conversion_pct,FCF Conversion,14.432127,9.854444,32.807634,9,0.139531,0.139531,False,computed
+COALINDIA,Materials,1,cfo_quality_score,CFO Quality Score,1.02165,1.481354,1.979169,9,-0.232272,0.232272,False,computed
+COALINDIA,Materials,1,capex_intensity_pct,Capex Intensity,3.151963,10.683582,7.40191,9,-1.017524,1.017524,False,computed
+DABUR,Consumer Staples,0,net_profit_margin_pct,Net Profit Margin,14.600129,13.336141,10.026286,7,0.126067,0.126067,False,computed
+DABUR,Consumer Staples,0,operating_profit_margin_pct,Operating Profit Margin,19.348597,30.19953,21.505999,7,-0.504554,0.504554,False,computed
+DABUR,Consumer Staples,0,return_on_equity_pct,Return on Equity,18.35597,34.471273,40.973641,7,-0.393309,0.393309,False,computed
+DABUR,Consumer Staples,0,debt_to_equity,Debt to Equity,0.138354,0.181566,0.176426,7,-0.24493,0.24493,False,computed
+DABUR,Consumer Staples,0,return_on_capital_employed_pct,ROCE,25.661117,55.494785,55.115404,7,-0.541295,0.541295,False,computed
+DABUR,Consumer Staples,0,asset_turnover,Asset Turnover,0.820587,1.122853,0.675973,7,-0.447157,0.447157,False,computed
+DABUR,Consumer Staples,0,revenue_cagr_5yr,Revenue CAGR 5Yr,7.814065,10.130855,3.643796,7,-0.635818,0.635818,False,computed
+DABUR,Consumer Staples,0,fcf_conversion_pct,FCF Conversion,43.416667,34.023155,47.097394,7,0.199449,0.199449,False,computed
+DABUR,Consumer Staples,0,cfo_quality_score,CFO Quality Score,1.076638,1.017625,0.457261,7,0.129059,0.129059,False,computed
+DABUR,Consumer Staples,0,capex_intensity_pct,Capex Intensity,7.82812,9.069528,7.636651,7,-0.162559,0.162559,False,computed
+DIVISLAB,Healthcare,0,net_profit_margin_pct,Net Profit Margin,20.395156,16.09725,5.874497,6,0.731621,0.731621,False,computed
+DIVISLAB,Healthcare,0,operating_profit_margin_pct,Operating Profit Margin,28.170809,33.813647,21.510619,6,-0.262328,0.262328,False,computed
+DIVISLAB,Healthcare,0,return_on_equity_pct,Return on Equity,11.789846,16.635887,4.542244,6,-1.066883,1.066883,False,computed
+DIVISLAB,Healthcare,0,debt_to_equity,Debt to Equity,0.000221,0.249827,0.33733,6,-0.739946,0.739946,False,computed
+DIVISLAB,Healthcare,0,return_on_capital_employed_pct,ROCE,18.749079,32.155045,20.046062,6,-0.668758,0.668758,False,computed
+DIVISLAB,Healthcare,0,asset_turnover,Asset Turnover,0.507439,0.744747,0.221416,6,-1.071776,1.071776,False,computed
+DIVISLAB,Healthcare,0,revenue_cagr_5yr,Revenue CAGR 5Yr,9.66493,10.698731,2.687796,6,-0.384628,0.384628,False,computed
+DIVISLAB,Healthcare,0,fcf_conversion_pct,FCF Conversion,44.886878,42.13186,39.57804,6,0.06961,0.06961,False,computed
+DIVISLAB,Healthcare,0,cfo_quality_score,CFO Quality Score,0.929327,1.793315,0.891238,6,-0.969424,0.969424,False,computed
+DIVISLAB,Healthcare,0,capex_intensity_pct,Capex Intensity,3.428936,6.754895,5.458638,6,-0.609302,0.609302,False,computed
+DLF,Real Estate,0,net_profit_margin_pct,Net Profit Margin,42.383694,28.723836,19.317956,2,,,False,insufficient_sector_observations
+DLF,Real Estate,0,operating_profit_margin_pct,Operating Profit Margin,33.048078,29.440867,5.101367,2,,,False,insufficient_sector_observations
+DLF,Real Estate,0,return_on_equity_pct,Return on Equity,6.90827,7.902014,1.405366,2,,,False,insufficient_sector_observations
+DLF,Real Estate,0,debt_to_equity,Debt to Equity,0.122594,0.28163,0.224911,2,,,False,insufficient_sector_observations
+DLF,Real Estate,0,return_on_capital_employed_pct,ROCE,5.997967,8.388978,3.381401,2,,,False,insufficient_sector_observations
+DLF,Real Estate,0,asset_turnover,Asset Turnover,0.108805,0.163687,0.077615,2,,,False,insufficient_sector_observations
+DLF,Real Estate,0,revenue_cagr_5yr,Revenue CAGR 5Yr,-5.136731,-3.982292,1.632623,2,,,False,insufficient_sector_observations
+DLF,Real Estate,0,fcf_conversion_pct,FCF Conversion,47.551789,15.614544,45.166086,2,,,False,insufficient_sector_observations
+DLF,Real Estate,0,cfo_quality_score,CFO Quality Score,0.94649,7.128204,8.742262,2,,,False,insufficient_sector_observations
+DLF,Real Estate,0,capex_intensity_pct,Capex Intensity,23.79026,26.178767,3.377859,2,,,False,insufficient_sector_observations
+DMART,Consumer Discretionary,0,net_profit_margin_pct,Net Profit Margin,4.993207,11.500325,6.968452,14,-0.933797,0.933797,False,computed
+DMART,Consumer Discretionary,0,operating_profit_margin_pct,Operating Profit Margin,8.084428,25.536186,24.661573,14,-0.70765,0.70765,False,computed
+DMART,Consumer Discretionary,0,return_on_equity_pct,Return on Equity,13.562948,86.724106,232.104483,14,-0.315208,0.315208,False,computed
+DMART,Consumer Discretionary,0,debt_to_equity,Debt to Equity,0.031661,0.698619,1.0975,14,-0.607707,0.607707,False,computed
+DMART,Consumer Discretionary,0,return_on_capital_employed_pct,ROCE,22.037325,441.11496,1497.893148,14,-0.279778,0.279778,False,computed
+DMART,Consumer Discretionary,0,asset_turnover,Asset Turnover,2.398876,5.157839,14.752203,14,-0.18702,0.18702,False,computed
+DMART,Consumer Discretionary,0,revenue_cagr_5yr,Revenue CAGR 5Yr,20.483124,13.604579,8.800016,14,0.781651,0.781651,False,computed
+DMART,Consumer Discretionary,0,fcf_conversion_pct,FCF Conversion,6.77058,24.626797,37.425658,14,-0.477112,0.477112,False,computed
+DMART,Consumer Discretionary,0,cfo_quality_score,CFO Quality Score,1.068669,0.178076,4.295602,14,0.207327,0.207327,False,computed
+DMART,Consumer Discretionary,0,capex_intensity_pct,Capex Intensity,4.85932,5.868292,5.264319,14,-0.191662,0.191662,False,computed
+DRREDDY,Healthcare,0,net_profit_margin_pct,Net Profit Margin,19.913605,16.09725,5.874497,6,0.649648,0.649648,False,computed
+DRREDDY,Healthcare,0,operating_profit_margin_pct,Operating Profit Margin,28.321017,33.813647,21.510619,6,-0.255345,0.255345,False,computed
+DRREDDY,Healthcare,0,return_on_equity_pct,Return on Equity,19.742337,16.635887,4.542244,6,0.683902,0.683902,False,computed
+DRREDDY,Healthcare,0,debt_to_equity,Debt to Equity,0.070857,0.249827,0.33733,6,-0.530548,0.530548,False,computed
+DRREDDY,Healthcare,0,return_on_capital_employed_pct,ROCE,29.223956,32.155045,20.046062,6,-0.146218,0.146218,False,computed
+DRREDDY,Healthcare,0,asset_turnover,Asset Turnover,0.722305,0.744747,0.221416,6,-0.101354,0.101354,False,computed
+DRREDDY,Healthcare,0,revenue_cagr_5yr,Revenue CAGR 5Yr,12.639644,10.698731,2.687796,6,0.722121,0.722121,False,computed
+DRREDDY,Healthcare,0,fcf_conversion_pct,FCF Conversion,6.416236,42.13186,39.57804,6,-0.90241,0.90241,False,computed
+DRREDDY,Healthcare,0,cfo_quality_score,CFO Quality Score,1.342175,1.793315,0.891238,6,-0.506195,0.506195,False,computed
+DRREDDY,Healthcare,0,capex_intensity_pct,Capex Intensity,14.401485,6.754895,5.458638,6,1.400824,1.400824,False,computed
+EICHERMOT,Consumer Discretionary,0,net_profit_margin_pct,Net Profit Margin,24.195694,11.500325,6.968452,14,1.821835,1.821835,False,computed
+EICHERMOT,Consumer Discretionary,0,operating_profit_margin_pct,Operating Profit Margin,26.179245,25.536186,24.661573,14,0.026075,0.026075,False,computed
+EICHERMOT,Consumer Discretionary,0,return_on_equity_pct,Return on Equity,22.172347,86.724106,232.104483,14,-0.278115,0.278115,False,computed
+EICHERMOT,Consumer Discretionary,0,debt_to_equity,Debt to Equity,0.02322,0.698619,1.0975,14,-0.615398,0.615398,False,computed
+EICHERMOT,Consumer Discretionary,0,return_on_capital_employed_pct,ROCE,31.683276,441.11496,1497.893148,14,-0.273338,0.273338,False,computed
+EICHERMOT,Consumer Discretionary,0,asset_turnover,Asset Turnover,0.71538,5.157839,14.752203,14,-0.301139,0.301139,False,computed
+EICHERMOT,Consumer Discretionary,0,revenue_cagr_5yr,Revenue CAGR 5Yr,11.036936,13.604579,8.800016,14,-0.291777,0.291777,False,computed
+EICHERMOT,Consumer Discretionary,0,fcf_conversion_pct,FCF Conversion,20.559021,24.626797,37.425658,14,-0.10869,0.10869,False,computed
+EICHERMOT,Consumer Discretionary,0,cfo_quality_score,CFO Quality Score,0.998536,0.178076,4.295602,14,0.191,0.191,False,computed
+EICHERMOT,Consumer Discretionary,0,capex_intensity_pct,Capex Intensity,17.138365,5.868292,5.264319,14,2.140842,2.140842,False,computed
+GAIL,Energy,0,net_profit_margin_pct,Net Profit Margin,7.433122,16.022672,12.981687,14,-0.661667,0.661667,False,computed
+GAIL,Energy,0,operating_profit_margin_pct,Operating Profit Margin,10.743988,33.596854,24.659114,14,-0.926751,0.926751,False,computed
+GAIL,Energy,0,return_on_equity_pct,Return on Equity,12.86154,17.933799,11.243965,14,-0.451109,0.451109,False,computed
+GAIL,Energy,0,debt_to_equity,Debt to Equity,0.28305,1.459648,1.634055,14,-0.720048,0.720048,False,computed
+GAIL,Energy,0,return_on_capital_employed_pct,ROCE,17.193874,19.326477,8.626593,14,-0.247213,0.247213,False,computed
+GAIL,Energy,0,asset_turnover,Asset Turnover,1.068088,0.653519,0.612361,14,0.677,0.677,False,computed
+GAIL,Energy,0,revenue_cagr_5yr,Revenue CAGR 5Yr,11.825155,12.446835,8.494439,14,-0.073187,0.073187,False,computed
+GAIL,Energy,0,fcf_conversion_pct,FCF Conversion,30.45969,18.263863,65.003647,14,0.187618,0.187618,False,computed
+GAIL,Energy,0,cfo_quality_score,CFO Quality Score,0.990048,2.010569,1.208837,14,-0.844217,0.844217,False,computed
+GAIL,Energy,0,capex_intensity_pct,Capex Intensity,6.174378,36.529155,59.038781,14,-0.51415,0.51415,False,computed
+GODREJCP,Consumer Staples,0,net_profit_margin_pct,Net Profit Margin,-3.979852,13.336141,10.026286,7,-1.72706,1.72706,False,computed
+GODREJCP,Consumer Staples,0,operating_profit_margin_pct,Operating Profit Margin,20.977582,30.19953,21.505999,7,-0.428808,0.428808,False,computed
+GODREJCP,Consumer Staples,0,return_on_equity_pct,Return on Equity,-4.453088,34.471273,40.973641,7,-0.949985,0.949985,False,computed
+GODREJCP,Consumer Staples,0,debt_to_equity,Debt to Equity,0.255755,0.181566,0.176426,7,0.420508,0.420508,False,computed
+GODREJCP,Consumer Staples,0,return_on_capital_employed_pct,ROCE,4.728192,55.494785,55.115404,7,-0.921096,0.921096,False,computed
+GODREJCP,Consumer Staples,0,asset_turnover,Asset Turnover,0.76642,1.122853,0.675973,7,-0.527289,0.527289,False,computed
+GODREJCP,Consumer Staples,0,revenue_cagr_5yr,Revenue CAGR 5Yr,6.44708,10.130855,3.643796,7,-1.010972,1.010972,False,computed
+GODREJCP,Consumer Staples,0,fcf_conversion_pct,FCF Conversion,-46.16165,34.023155,47.097394,7,-1.702532,1.702532,False,computed
+GODREJCP,Consumer Staples,0,cfo_quality_score,CFO Quality Score,0.12562,1.017625,0.457261,7,-1.950756,1.950756,False,computed
+GODREJCP,Consumer Staples,0,capex_intensity_pct,Capex Intensity,24.368615,9.069528,7.636651,7,2.003376,2.003376,False,computed
+GRASIM,Industrials,0,net_profit_margin_pct,Net Profit Margin,7.578372,13.38406,9.880643,10,-0.587582,0.587582,False,computed
+GRASIM,Industrials,0,operating_profit_margin_pct,Operating Profit Margin,20.763029,21.333371,15.56934,10,-0.036632,0.036632,False,computed
+GRASIM,Industrials,0,return_on_equity_pct,Return on Equity,11.196463,874.176985,1808.577244,10,-0.47716,0.47716,False,computed
+GRASIM,Industrials,0,debt_to_equity,Debt to Equity,1.547099,0.583291,0.619304,10,1.556276,1.556276,False,computed
+GRASIM,Industrials,0,return_on_capital_employed_pct,ROCE,12.390172,841.721338,1710.114178,10,-0.484957,0.484957,False,computed
+GRASIM,Industrials,0,asset_turnover,Asset Turnover,0.317818,20.647597,42.442182,10,-0.478999,0.478999,False,computed
+GRASIM,Industrials,0,revenue_cagr_5yr,Revenue CAGR 5Yr,11.151726,10.876325,6.638909,10,0.041483,0.041483,False,computed
+GRASIM,Industrials,0,fcf_conversion_pct,FCF Conversion,-124.408899,-30.851354,123.344214,10,-0.758508,0.758508,False,computed
+GRASIM,Industrials,0,cfo_quality_score,CFO Quality Score,0.612814,1.17796,1.470801,10,-0.384243,0.384243,False,computed
+GRASIM,Industrials,0,capex_intensity_pct,Capex Intensity,17.647238,13.741162,10.040116,10,0.389047,0.389047,False,computed
+HAL,Industrials,2,net_profit_margin_pct,Net Profit Margin,24.999177,13.38406,9.880643,10,1.175543,1.175543,False,computed
+HAL,Industrials,2,operating_profit_margin_pct,Operating Profit Margin,32.089135,21.333371,15.56934,10,0.69083,0.69083,False,computed
+HAL,Industrials,2,return_on_equity_pct,Return on Equity,3816.582915,874.176985,1808.577244,10,1.626917,1.626917,False,computed
+HAL,Industrials,2,debt_to_equity,Debt to Equity,0.61809,0.583291,0.619304,10,0.056191,0.056191,False,computed
+HAL,Industrials,2,return_on_capital_employed_pct,ROCE,3617.391304,841.721338,1710.114178,10,1.62309,1.62309,False,computed
+HAL,Industrials,2,asset_turnover,Asset Turnover,67.513333,20.647597,42.442182,10,1.104225,1.104225,False,computed
+HAL,Industrials,2,revenue_cagr_5yr,Revenue CAGR 5Yr,8.712549,10.876325,6.638909,10,-0.325923,0.325923,False,computed
+HAL,Industrials,2,fcf_conversion_pct,FCF Conversion,18.607037,-30.851354,123.344214,10,0.400979,0.400979,False,computed
+HAL,Industrials,2,cfo_quality_score,CFO Quality Score,1.963075,1.17796,1.470801,10,0.533801,0.533801,False,computed
+HAL,Industrials,2,capex_intensity_pct,Capex Intensity,21.105296,13.741162,10.040116,10,0.733471,0.733471,False,computed
+HAVELLS,Industrials,0,net_profit_margin_pct,Net Profit Margin,6.837009,13.38406,9.880643,10,-0.662614,0.662614,False,computed
+HAVELLS,Industrials,0,operating_profit_margin_pct,Operating Profit Margin,10.118343,21.333371,15.56934,10,-0.720328,0.720328,False,computed
+HAVELLS,Industrials,0,return_on_equity_pct,Return on Equity,17.067275,874.176985,1808.577244,10,-0.473914,0.473914,False,computed
+HAVELLS,Industrials,0,debt_to_equity,Debt to Equity,0.040688,0.583291,0.619304,10,-0.87615,0.87615,False,computed
+HAVELLS,Industrials,0,return_on_capital_employed_pct,ROCE,27.483871,841.721338,1710.114178,10,-0.47613,0.47613,False,computed
+HAVELLS,Industrials,0,asset_turnover,Asset Turnover,1.495214,20.647597,42.442182,10,-0.451258,0.451258,False,computed
+HAVELLS,Industrials,0,revenue_cagr_5yr,Revenue CAGR 5Yr,13.037908,10.876325,6.638909,10,0.325593,0.325593,False,computed
+HAVELLS,Industrials,0,fcf_conversion_pct,FCF Conversion,17.809676,-30.851354,123.344214,10,0.394514,0.394514,False,computed
+HAVELLS,Industrials,0,cfo_quality_score,CFO Quality Score,1.053162,1.17796,1.470801,10,-0.08485,0.08485,False,computed
+HAVELLS,Industrials,0,capex_intensity_pct,Capex Intensity,8.703604,13.741162,10.040116,10,-0.501743,0.501743,False,computed
+HCLTECH,Information Technology,0,net_profit_margin_pct,Net Profit Margin,14.293123,13.605975,5.580071,5,0.123143,0.123143,False,computed
+HCLTECH,Information Technology,0,operating_profit_margin_pct,Operating Profit Margin,22.015594,19.811732,6.9802,5,0.31573,0.31573,False,computed
+HCLTECH,Information Technology,0,return_on_equity_pct,Return on Equity,23.013931,27.12772,15.314355,5,-0.268623,0.268623,False,computed
+HCLTECH,Information Technology,0,debt_to_equity,Debt to Equity,0.08435,0.093288,0.007259,5,-1.231315,1.231315,False,computed
+HCLTECH,Information Technology,0,return_on_capital_employed_pct,ROCE,34.71042,39.365916,18.586864,5,-0.250472,0.250472,False,computed
+HCLTECH,Information Technology,0,asset_turnover,Asset Turnover,1.110165,1.278073,0.222732,5,-0.753855,0.753855,False,computed
+HCLTECH,Information Technology,0,revenue_cagr_5yr,Revenue CAGR 5Yr,12.7103,15.019887,8.769128,5,-0.263377,0.263377,False,computed
+HCLTECH,Information Technology,0,fcf_conversion_pct,FCF Conversion,65.459955,67.760424,31.153136,5,-0.073844,0.073844,False,computed
+HCLTECH,Information Technology,0,cfo_quality_score,CFO Quality Score,1.371284,1.201282,0.242393,5,0.701349,0.701349,False,computed
+HCLTECH,Information Technology,0,capex_intensity_pct,Capex Intensity,6.012028,5.084186,3.61915,5,0.25637,0.25637,False,computed
+HDFCBANK,Financials,3,net_profit_margin_pct,Net Profit Margin,23.072882,38.238003,87.706652,23,-0.172907,0.172907,False,computed
+HDFCBANK,Financials,3,operating_profit_margin_pct,Operating Profit Margin,61.41252,53.425739,35.593822,22,0.224387,0.224387,False,computed
+HDFCBANK,Financials,3,return_on_equity_pct,Return on Equity,14.33974,19.007093,13.021442,22,-0.358436,0.358436,False,computed
+HDFCBANK,Financials,3,debt_to_equity,Debt to Equity,6.808787,4.821046,4.225134,22,0.470456,0.470456,False,computed
+HDFCBANK,Financials,3,return_on_capital_employed_pct,ROCE,4.887344,81.288225,209.120203,21,-0.365344,0.365344,False,computed
+HDFCBANK,Financials,3,asset_turnover,Asset Turnover,0.070381,0.198326,0.309124,22,-0.413894,0.413894,False,computed
+HDFCBANK,Financials,3,revenue_cagr_5yr,Revenue CAGR 5Yr,21.950984,17.744843,5.304504,22,0.792938,0.792938,False,computed
+HDFCBANK,Financials,3,fcf_conversion_pct,FCF Conversion,20.47636,-132.589622,254.419738,22,0.601628,0.601628,False,computed
+HDFCBANK,Financials,3,cfo_quality_score,CFO Quality Score,0.228845,2.380893,8.557163,23,-0.251491,0.251491,False,computed
+HDFCBANK,Financials,3,capex_intensity_pct,Capex Intensity,5.852303,14.614712,23.266484,23,-0.376611,0.376611,False,computed
+HDFCLIFE,Financials,1,net_profit_margin_pct,Net Profit Margin,1.551014,38.238003,87.706652,23,-0.418292,0.418292,False,computed
+HDFCLIFE,Financials,1,operating_profit_margin_pct,Operating Profit Margin,99.476754,53.425739,35.593822,22,1.293792,1.293792,False,computed
+HDFCLIFE,Financials,1,return_on_equity_pct,Return on Equity,10.732306,19.007093,13.021442,22,-0.635474,0.635474,False,computed
+HDFCLIFE,Financials,1,debt_to_equity,Debt to Equity,0.064776,4.821046,4.225134,22,-1.125709,1.125709,False,computed
+HDFCLIFE,Financials,1,return_on_capital_employed_pct,ROCE,646.465164,81.288225,209.120203,21,2.702641,2.702641,False,computed
+HDFCLIFE,Financials,1,asset_turnover,Asset Turnover,0.33527,0.198326,0.309124,22,0.44301,0.44301,False,computed
+HDFCLIFE,Financials,1,revenue_cagr_5yr,Revenue CAGR 5Yr,21.168134,17.744843,5.304504,22,0.645355,0.645355,False,computed
+HDFCLIFE,Financials,1,fcf_conversion_pct,FCF Conversion,-2.865747,-132.589622,254.419738,22,0.509881,0.509881,False,computed
+HDFCLIFE,Financials,1,cfo_quality_score,CFO Quality Score,5.829361,2.380893,8.557163,23,0.402992,0.402992,False,computed
+HDFCLIFE,Financials,1,capex_intensity_pct,Capex Intensity,13.415187,14.614712,23.266484,23,-0.051556,0.051556,False,computed
+HEROMOTOCO,Consumer Discretionary,1,net_profit_margin_pct,Net Profit Margin,9.902353,11.500325,6.968452,14,-0.229315,0.229315,False,computed
+HEROMOTOCO,Consumer Discretionary,1,operating_profit_margin_pct,Operating Profit Margin,86.146762,25.536186,24.661573,14,2.457693,2.457693,False,computed
+HEROMOTOCO,Consumer Discretionary,1,return_on_equity_pct,Return on Equity,21.142437,86.724106,232.104483,14,-0.282552,0.282552,False,computed
+HEROMOTOCO,Consumer Discretionary,1,debt_to_equity,Debt to Equity,0.034239,0.698619,1.0975,14,-0.605358,0.605358,False,computed
+HEROMOTOCO,Consumer Discretionary,1,return_on_capital_employed_pct,ROCE,177.918601,441.11496,1497.893148,14,-0.175711,0.175711,False,computed
+HEROMOTOCO,Consumer Discretionary,1,asset_turnover,Asset Turnover,1.44492,5.157839,14.752203,14,-0.251686,0.251686,False,computed
+HEROMOTOCO,Consumer Discretionary,1,revenue_cagr_5yr,Revenue CAGR 5Yr,2.153068,13.604579,8.800016,14,-1.301306,1.301306,False,computed
+HEROMOTOCO,Consumer Discretionary,1,fcf_conversion_pct,FCF Conversion,9.50728,24.626797,37.425658,14,-0.403988,0.403988,False,computed
+HEROMOTOCO,Consumer Discretionary,1,cfo_quality_score,CFO Quality Score,1.212099,0.178076,4.295602,14,0.240717,0.240717,False,computed
+HEROMOTOCO,Consumer Discretionary,1,capex_intensity_pct,Capex Intensity,4.837387,5.868292,5.264319,14,-0.195829,0.195829,False,computed
+HINDALCO,Materials,1,net_profit_margin_pct,Net Profit Margin,4.702216,10.916177,8.131072,9,-0.764224,0.764224,False,computed
+HINDALCO,Materials,1,operating_profit_margin_pct,Operating Profit Margin,88.946203,31.761388,26.886179,9,2.126922,2.126922,False,computed
+HINDALCO,Materials,1,return_on_equity_pct,Return on Equity,9.567011,16.069204,14.417459,9,-0.450994,0.450994,False,computed
+HINDALCO,Materials,1,debt_to_equity,Debt to Equity,0.530929,0.370539,0.417624,9,0.384054,0.384054,False,computed
+HINDALCO,Materials,1,return_on_capital_employed_pct,ROCE,118.214545,42.281564,40.609741,9,1.869822,1.869822,False,computed
+HINDALCO,Materials,1,asset_turnover,Asset Turnover,0.936023,0.805806,0.217015,9,0.600036,0.600036,False,computed
+HINDALCO,Materials,1,revenue_cagr_5yr,Revenue CAGR 5Yr,10.592434,9.119603,4.440099,9,0.331711,0.331711,False,computed
+HINDALCO,Materials,1,fcf_conversion_pct,FCF Conversion,5.096049,9.854444,32.807634,9,-0.145039,0.145039,False,computed
+HINDALCO,Materials,1,cfo_quality_score,CFO Quality Score,2.765677,1.481354,1.979169,9,0.64892,0.64892,False,computed
+HINDALCO,Materials,1,capex_intensity_pct,Capex Intensity,6.606255,10.683582,7.40191,9,-0.550848,0.550848,False,computed
+HINDUNILVR,Consumer Staples,1,net_profit_margin_pct,Net Profit Margin,16.611736,13.336141,10.026286,7,0.326701,0.326701,False,computed
+HINDUNILVR,Consumer Staples,1,operating_profit_margin_pct,Operating Profit Margin,76.316725,30.19953,21.505999,7,2.144387,2.144387,False,computed
+HINDUNILVR,Consumer Staples,1,return_on_equity_pct,Return on Equity,20.074974,34.471273,40.973641,7,-0.351355,0.351355,False,computed
+HINDUNILVR,Consumer Staples,1,debt_to_equity,Debt to Equity,0.028974,0.181566,0.176426,7,-0.864904,0.864904,False,computed
+HINDUNILVR,Consumer Staples,1,return_on_capital_employed_pct,ROCE,89.675914,55.494785,55.115404,7,0.620174,0.620174,False,computed
+HINDUNILVR,Consumer Staples,1,asset_turnover,Asset Turnover,0.788595,1.122853,0.675973,7,-0.494485,0.494485,False,computed
+HINDUNILVR,Consumer Staples,1,revenue_cagr_5yr,Revenue CAGR 5Yr,9.504485,10.130855,3.643796,7,-0.1719,0.1719,False,computed
+HINDUNILVR,Consumer Staples,1,fcf_conversion_pct,FCF Conversion,21.476808,34.023155,47.097394,7,-0.266392,0.266392,False,computed
+HINDUNILVR,Consumer Staples,1,cfo_quality_score,CFO Quality Score,1.156176,1.017625,0.457261,7,0.303003,0.303003,False,computed
+HINDUNILVR,Consumer Staples,1,capex_intensity_pct,Capex Intensity,8.601525,9.069528,7.636651,7,-0.061284,0.061284,False,computed
+ICICIBANK,Financials,3,net_profit_margin_pct,Net Profit Margin,28.888011,38.238003,87.706652,23,-0.106605,0.106605,False,computed
+ICICIBANK,Financials,3,operating_profit_margin_pct,Operating Profit Margin,62.413802,53.425739,35.593822,22,0.252517,0.252517,False,computed
+ICICIBANK,Financials,3,return_on_equity_pct,Return on Equity,17.990271,19.007093,13.021442,22,-0.078088,0.078088,False,computed
+ICICIBANK,Financials,3,debt_to_equity,Debt to Equity,6.445624,4.821046,4.225134,22,0.384504,0.384504,False,computed
+ICICIBANK,Financials,3,return_on_capital_employed_pct,ROCE,5.219878,81.288225,209.120203,21,-0.363754,0.363754,False,computed
+ICICIBANK,Financials,3,asset_turnover,Asset Turnover,0.067475,0.198326,0.309124,22,-0.423293,0.423293,False,computed
+ICICIBANK,Financials,3,revenue_cagr_5yr,Revenue CAGR 5Yr,17.250869,17.744843,5.304504,22,-0.093124,0.093124,False,computed
+ICICIBANK,Financials,3,fcf_conversion_pct,FCF Conversion,12.602451,-132.589622,254.419738,22,0.570679,0.570679,False,computed
+ICICIBANK,Financials,3,cfo_quality_score,CFO Quality Score,3.872438,2.380893,8.557163,23,0.174304,0.174304,False,computed
+ICICIBANK,Financials,3,capex_intensity_pct,Capex Intensity,90.735099,14.614712,23.266484,23,3.271676,3.271676,True,computed
+ICICIGI,Financials,1,net_profit_margin_pct,Net Profit Margin,9.366916,38.238003,87.706652,23,-0.329178,0.329178,False,computed
+ICICIGI,Financials,1,operating_profit_margin_pct,Operating Profit Margin,87.421292,53.425739,35.593822,22,0.955097,0.955097,False,computed
+ICICIGI,Financials,1,return_on_equity_pct,Return on Equity,15.723064,19.007093,13.021442,22,-0.252202,0.252202,False,computed
+ICICIGI,Financials,1,debt_to_equity,Debt to Equity,0.002868,4.821046,4.225134,22,-1.140361,1.140361,False,computed
+ICICIGI,Financials,1,return_on_capital_employed_pct,ROCE,146.429739,81.288225,209.120203,21,0.311503,0.311503,False,computed
+ICICIGI,Financials,1,asset_turnover,Asset Turnover,0.323608,0.198326,0.309124,22,0.405283,0.405283,False,computed
+ICICIGI,Financials,1,revenue_cagr_5yr,Revenue CAGR 5Yr,12.911841,17.744843,5.304504,22,-0.911113,0.911113,False,computed
+ICICIGI,Financials,1,fcf_conversion_pct,FCF Conversion,2.713568,-132.589622,254.419738,22,0.531811,0.531811,False,computed
+ICICIGI,Financials,1,cfo_quality_score,CFO Quality Score,1.458965,2.380893,8.557163,23,-0.107738,0.107738,False,computed
+ICICIGI,Financials,1,capex_intensity_pct,Capex Intensity,9.376678,14.614712,23.266484,23,-0.225132,0.225132,False,computed
+ICICIPRULI,Financials,1,net_profit_margin_pct,Net Profit Margin,0.942341,38.238003,87.706652,23,-0.425232,0.425232,False,computed
+ICICIPRULI,Financials,1,operating_profit_margin_pct,Operating Profit Margin,102.025314,53.425739,35.593822,22,1.365394,1.365394,False,computed
+ICICIPRULI,Financials,1,return_on_equity_pct,Return on Equity,7.732849,19.007093,13.021442,22,-0.865821,0.865821,False,computed
+ICICIPRULI,Financials,1,debt_to_equity,Debt to Equity,0.109041,4.821046,4.225134,22,-1.115232,1.115232,False,computed
+ICICIPRULI,Financials,1,return_on_capital_employed_pct,ROCE,754.887341,81.288225,209.120203,21,3.22111,3.22111,True,computed
+ICICIPRULI,Financials,1,asset_turnover,Asset Turnover,0.302029,0.198326,0.309124,22,0.335476,0.335476,False,computed
+ICICIPRULI,Financials,1,revenue_cagr_5yr,Revenue CAGR 5Yr,16.84554,17.744843,5.304504,22,-0.169536,0.169536,False,computed
+ICICIPRULI,Financials,1,fcf_conversion_pct,FCF Conversion,0.113962,-132.589622,254.419738,22,0.521593,0.521593,False,computed
+ICICIPRULI,Financials,1,cfo_quality_score,CFO Quality Score,1.926589,2.380893,8.557163,23,-0.05309,0.05309,False,computed
+ICICIPRULI,Financials,1,capex_intensity_pct,Capex Intensity,8.216417,14.614712,23.266484,23,-0.275,0.275,False,computed
+INDUSINDBK,Financials,3,net_profit_margin_pct,Net Profit Margin,19.563697,38.238003,87.706652,23,-0.212918,0.212918,False,computed
+INDUSINDBK,Financials,3,operating_profit_margin_pct,Operating Profit Margin,38.554691,53.425739,35.593822,22,-0.417799,0.417799,False,computed
+INDUSINDBK,Financials,3,return_on_equity_pct,Return on Equity,14.252273,19.007093,13.021442,22,-0.365153,0.365153,False,computed
+INDUSINDBK,Financials,3,debt_to_equity,Debt to Equity,6.885743,4.821046,4.225134,22,0.48867,0.48867,False,computed
+INDUSINDBK,Financials,3,return_on_capital_employed_pct,ROCE,3.5632,81.288225,209.120203,21,-0.371676,0.371676,False,computed
+INDUSINDBK,Financials,3,asset_turnover,Asset Turnover,0.088842,0.198326,0.309124,22,-0.354172,0.354172,False,computed
+INDUSINDBK,Financials,3,revenue_cagr_5yr,Revenue CAGR 5Yr,15.495613,17.744843,5.304504,22,-0.424023,0.424023,False,computed
+INDUSINDBK,Financials,3,fcf_conversion_pct,FCF Conversion,-99.036172,-132.589622,254.419738,22,0.131882,0.131882,False,computed
+INDUSINDBK,Financials,3,cfo_quality_score,CFO Quality Score,2.610542,2.380893,8.557163,23,0.026837,0.026837,False,computed
+INDUSINDBK,Financials,3,capex_intensity_pct,Capex Intensity,1.36618,14.614712,23.266484,23,-0.569426,0.569426,False,computed
+INFY,Information Technology,0,net_profit_margin_pct,Net Profit Margin,17.080757,13.605975,5.580071,5,0.622713,0.622713,False,computed
+INFY,Information Technology,0,operating_profit_margin_pct,Operating Profit Margin,23.70339,19.811732,6.9802,5,0.557528,0.557528,False,computed
+INFY,Information Technology,0,return_on_equity_pct,Return on Equity,29.788007,27.12772,15.314355,5,0.173712,0.173712,False,computed
+INFY,Information Technology,0,debt_to_equity,Debt to Equity,0.094864,0.093288,0.007259,5,0.217046,0.217046,False,computed
+INFY,Information Technology,0,return_on_capital_employed_pct,ROCE,42.639026,39.365916,18.586864,5,0.176098,0.176098,False,computed
+INFY,Information Technology,0,asset_turnover,Asset Turnover,1.12976,1.278073,0.222732,5,-0.665878,0.665878,False,computed
+INFY,Information Technology,0,revenue_cagr_5yr,Revenue CAGR 5Yr,13.199101,15.019887,8.769128,5,-0.207636,0.207636,False,computed
+INFY,Information Technology,0,fcf_conversion_pct,FCF Conversion,55.228552,67.760424,31.153136,5,-0.402267,0.402267,False,computed
+INFY,Information Technology,0,cfo_quality_score,CFO Quality Score,1.037696,1.201282,0.242393,5,-0.674876,0.674876,False,computed
+INFY,Information Technology,0,capex_intensity_pct,Capex Intensity,3.314245,5.084186,3.61915,5,-0.489049,0.489049,False,computed
+IOC,Energy,0,net_profit_margin_pct,Net Profit Margin,5.559463,16.022672,12.981687,14,-0.805998,0.805998,False,computed
+IOC,Energy,0,operating_profit_margin_pct,Operating Profit Margin,9.743776,33.596854,24.659114,14,-0.967313,0.967313,False,computed
+IOC,Energy,0,return_on_equity_pct,Return on Equity,23.531625,17.933799,11.243965,14,0.497852,0.497852,False,computed
+IOC,Energy,0,debt_to_equity,Debt to Equity,0.723095,1.459648,1.634055,14,-0.450752,0.450752,False,computed
+IOC,Energy,0,return_on_capital_employed_pct,ROCE,25.640336,19.326477,8.626593,14,0.731906,0.731906,False,computed
+IOC,Energy,0,asset_turnover,Asset Turnover,1.60841,0.653519,0.612361,14,1.559357,1.559357,False,computed
+IOC,Energy,0,revenue_cagr_5yr,Revenue CAGR 5Yr,8.008756,12.446835,8.494439,14,-0.522469,0.522469,False,computed
+IOC,Energy,0,fcf_conversion_pct,FCF Conversion,52.395368,18.263863,65.003647,14,0.525071,0.525071,False,computed
+IOC,Energy,0,cfo_quality_score,CFO Quality Score,0.730643,2.010569,1.208837,14,-1.058808,1.058808,False,computed
+IOC,Energy,0,capex_intensity_pct,Capex Intensity,4.052801,36.529155,59.038781,14,-0.550085,0.550085,False,computed
+IRCTC,Consumer Discretionary,0,net_profit_margin_pct,Net Profit Margin,26.018735,11.500325,6.968452,14,2.083448,2.083448,False,computed
+IRCTC,Consumer Discretionary,0,operating_profit_margin_pct,Operating Profit Margin,34.332553,25.536186,24.661573,14,0.356683,0.356683,False,computed
+IRCTC,Consumer Discretionary,0,return_on_equity_pct,Return on Equity,34.396285,86.724106,232.104483,14,-0.225449,0.225449,False,computed
+IRCTC,Consumer Discretionary,0,debt_to_equity,Debt to Equity,0.018576,0.698619,1.0975,14,-0.61963,0.61963,False,computed
+IRCTC,Consumer Discretionary,0,return_on_capital_employed_pct,ROCE,47.781155,441.11496,1497.893148,14,-0.262591,0.262591,False,computed
+IRCTC,Consumer Discretionary,0,asset_turnover,Asset Turnover,0.701034,5.157839,14.752203,14,-0.302111,0.302111,False,computed
+IRCTC,Consumer Discretionary,0,revenue_cagr_5yr,Revenue CAGR 5Yr,17.955244,13.604579,8.800016,14,0.494393,0.494393,False,computed
+IRCTC,Consumer Discretionary,0,fcf_conversion_pct,FCF Conversion,45.497954,24.626797,37.425658,14,0.55767,0.55767,False,computed
+IRCTC,Consumer Discretionary,0,cfo_quality_score,CFO Quality Score,0.90369,0.178076,4.295602,14,0.16892,0.16892,False,computed
+IRCTC,Consumer Discretionary,0,capex_intensity_pct,Capex Intensity,5.035129,5.868292,5.264319,14,-0.158266,0.158266,False,computed
+IRFC,Financials,3,net_profit_margin_pct,Net Profit Margin,24.064552,38.238003,87.706652,23,-0.161601,0.161601,False,computed
+IRFC,Financials,3,operating_profit_margin_pct,Operating Profit Margin,99.504597,53.425739,35.593822,22,1.294575,1.294575,False,computed
+IRFC,Financials,3,return_on_equity_pct,Return on Equity,13.038085,19.007093,13.021442,22,-0.458398,0.458398,False,computed
+IRFC,Financials,3,debt_to_equity,Debt to Equity,8.378353,4.821046,4.225134,22,0.84194,0.84194,False,computed
+IRFC,Financials,3,return_on_capital_employed_pct,ROCE,5.750643,81.288225,209.120203,21,-0.361216,0.361216,False,computed
+IRFC,Financials,3,asset_turnover,Asset Turnover,0.054929,0.198326,0.309124,22,-0.463881,0.463881,False,computed
+IRFC,Financials,3,revenue_cagr_5yr,Revenue CAGR 5Yr,19.067409,17.744843,5.304504,22,0.249329,0.249329,False,computed
+IRFC,Financials,3,fcf_conversion_pct,FCF Conversion,29.819334,-132.589622,254.419738,22,0.63835,0.63835,False,computed
+IRFC,Financials,3,cfo_quality_score,CFO Quality Score,-10.796124,2.380893,8.557163,23,-1.539882,1.539882,False,computed
+IRFC,Financials,3,capex_intensity_pct,Capex Intensity,0.030024,14.614712,23.266484,23,-0.626854,0.626854,False,computed
+ITC,Consumer Staples,0,net_profit_margin_pct,Net Profit Margin,29.282025,13.336141,10.026286,7,1.590408,1.590408,False,computed
+ITC,Consumer Staples,0,operating_profit_margin_pct,Operating Profit Margin,37.017752,30.19953,21.505999,7,0.317038,0.317038,False,computed
+ITC,Consumer Staples,0,return_on_equity_pct,Return on Equity,27.851074,34.471273,40.973641,7,-0.161572,0.161572,False,computed
+ITC,Consumer Staples,0,debt_to_equity,Debt to Equity,0.004067,0.181566,0.176426,7,-1.006081,1.006081,False,computed
+ITC,Consumer Staples,0,return_on_capital_employed_pct,ROCE,38.81433,55.494785,55.115404,7,-0.302646,0.302646,False,computed
+ITC,Consumer Staples,0,asset_turnover,Asset Turnover,0.772348,1.122853,0.675973,7,-0.51852,0.51852,False,computed
+ITC,Consumer Staples,0,revenue_cagr_5yr,Revenue CAGR 5Yr,7.950897,10.130855,3.643796,7,-0.598266,0.598266,False,computed
+ITC,Consumer Staples,0,fcf_conversion_pct,FCF Conversion,71.444364,34.023155,47.097394,7,0.794549,0.794549,False,computed
+ITC,Consumer Staples,0,cfo_quality_score,CFO Quality Score,0.938569,1.017625,0.457261,7,-0.172889,0.172889,False,computed
+ITC,Consumer Staples,0,capex_intensity_pct,Capex Intensity,2.205571,9.069528,7.636651,7,-0.898818,0.898818,False,computed
+JINDALSTEL,Materials,0,net_profit_margin_pct,Net Profit Margin,11.802439,10.916177,8.131072,9,0.108997,0.108997,False,computed
+JINDALSTEL,Materials,0,operating_profit_margin_pct,Operating Profit Margin,20.260555,31.761388,26.886179,9,-0.42776,0.42776,False,computed
+JINDALSTEL,Materials,0,return_on_equity_pct,Return on Equity,13.410506,16.069204,14.417459,9,-0.184408,0.184408,False,computed
+JINDALSTEL,Materials,0,debt_to_equity,Debt to Equity,0.371694,0.370539,0.417624,9,0.002766,0.002766,False,computed
+JINDALSTEL,Materials,0,return_on_capital_employed_pct,ROCE,17.039547,42.281564,40.609741,9,-0.621575,0.621575,False,computed
+JINDALSTEL,Materials,0,asset_turnover,Asset Turnover,0.640017,0.805806,0.217015,9,-0.76395,0.76395,False,computed
+JINDALSTEL,Materials,0,revenue_cagr_5yr,Revenue CAGR 5Yr,1.402831,9.119603,4.440099,9,-1.737973,1.737973,False,computed
+JINDALSTEL,Materials,0,fcf_conversion_pct,FCF Conversion,-22.897471,9.854444,32.807634,9,-0.998302,0.998302,False,computed
+JINDALSTEL,Materials,0,cfo_quality_score,CFO Quality Score,-2.800059,1.481354,1.979169,9,-2.163238,2.163238,False,computed
+JINDALSTEL,Materials,0,capex_intensity_pct,Capex Intensity,16.57068,10.683582,7.40191,9,0.795348,0.795348,False,computed
+JIOFIN,Financials,1,net_profit_margin_pct,Net Profit Margin,86.522911,38.238003,87.706652,23,0.550527,0.550527,False,computed
+JIOFIN,Financials,1,operating_profit_margin_pct,Operating Profit Margin,84.043127,53.425739,35.593822,22,0.860188,0.860188,False,computed
+JIOFIN,Financials,1,return_on_equity_pct,Return on Equity,1.153456,19.007093,13.021442,22,-1.371095,1.371095,False,computed
+JIOFIN,Financials,1,debt_to_equity,Debt to Equity,0.0,4.821046,4.225134,22,-1.14104,1.14104,False,computed
+JIOFIN,Financials,1,return_on_capital_employed_pct,ROCE,1.428705,81.288225,209.120203,21,-0.381883,0.381883,False,computed
+JIOFIN,Financials,1,asset_turnover,Asset Turnover,0.012805,0.198326,0.309124,22,-0.600148,0.600148,False,computed
+JIOFIN,Financials,1,fcf_conversion_pct,FCF Conversion,48.941629,-132.589622,254.419738,22,0.713511,0.713511,False,computed
+JIOFIN,Financials,1,cfo_quality_score,CFO Quality Score,32.933946,2.380893,8.557163,23,3.570465,3.570465,True,computed
+JIOFIN,Financials,1,capex_intensity_pct,Capex Intensity,77.681941,14.614712,23.266484,23,2.710647,2.710647,False,computed
+JSWENERGY,Energy,0,net_profit_margin_pct,Net Profit Margin,15.018283,16.022672,12.981687,14,-0.07737,0.07737,False,computed
+JSWENERGY,Energy,0,operating_profit_margin_pct,Operating Profit Margin,46.857043,33.596854,24.659114,14,0.53774,0.53774,False,computed
+JSWENERGY,Energy,0,return_on_equity_pct,Return on Equity,8.28053,17.933799,11.243965,14,-0.858529,0.858529,False,computed
+JSWENERGY,Energy,0,debt_to_equity,Debt to Equity,1.515601,1.459648,1.634055,14,0.034242,0.034242,False,computed
+JSWENERGY,Energy,0,return_on_capital_employed_pct,ROCE,11.17069,19.326477,8.626593,14,-0.945424,0.945424,False,computed
+JSWENERGY,Energy,0,asset_turnover,Asset Turnover,0.198833,0.653519,0.612361,14,-0.742513,0.742513,False,computed
+JSWENERGY,Energy,0,revenue_cagr_5yr,Revenue CAGR 5Yr,4.679956,12.446835,8.494439,14,-0.914349,0.914349,False,computed
+JSWENERGY,Energy,0,fcf_conversion_pct,FCF Conversion,-36.47343,18.263863,65.003647,14,-0.842065,0.842065,False,computed
+JSWENERGY,Energy,0,cfo_quality_score,CFO Quality Score,2.627479,2.010569,1.208837,14,0.510334,0.510334,False,computed
+JSWENERGY,Energy,0,capex_intensity_pct,Capex Intensity,71.36514,36.529155,59.038781,14,0.590053,0.590053,False,computed
+JSWSTEEL,Materials,0,net_profit_margin_pct,Net Profit Margin,5.127253,10.916177,8.131072,9,-0.711951,0.711951,False,computed
+JSWSTEEL,Materials,0,operating_profit_margin_pct,Operating Profit Margin,16.089163,31.761388,26.886179,9,-0.58291,0.58291,False,computed
+JSWSTEEL,Materials,0,return_on_equity_pct,Return on Equity,11.552872,16.069204,14.417459,9,-0.313254,0.313254,False,computed
+JSWSTEEL,Materials,0,debt_to_equity,Debt to Equity,1.132807,0.370539,0.417624,9,1.825249,1.825249,False,computed
+JSWSTEEL,Materials,0,return_on_capital_employed_pct,ROCE,17.903087,42.281564,40.609741,9,-0.600311,0.600311,False,computed
+JSWSTEEL,Materials,0,asset_turnover,Asset Turnover,0.767914,0.805806,0.217015,9,-0.174607,0.174607,False,computed
+JSWSTEEL,Materials,0,revenue_cagr_5yr,Revenue CAGR 5Yr,15.604695,9.119603,4.440099,9,1.460574,1.460574,False,computed
+JSWSTEEL,Materials,0,fcf_conversion_pct,FCF Conversion,-8.484569,9.854444,32.807634,9,-0.558986,0.558986,False,computed
+JSWSTEEL,Materials,0,cfo_quality_score,CFO Quality Score,2.776891,1.481354,1.979169,9,0.654586,0.654586,False,computed
+JSWSTEEL,Materials,0,capex_intensity_pct,Capex Intensity,8.266574,10.683582,7.40191,9,-0.326538,0.326538,False,computed
+KOTAKBANK,Financials,1,net_profit_margin_pct,Net Profit Margin,32.386151,38.238003,87.706652,23,-0.066721,0.066721,False,computed
+KOTAKBANK,Financials,1,operating_profit_margin_pct,Operating Profit Margin,83.667336,53.425739,35.593822,22,0.849631,0.849631,False,computed
+KOTAKBANK,Financials,1,return_on_equity_pct,Return on Equity,14.013018,19.007093,13.021442,22,-0.383527,0.383527,False,computed
+KOTAKBANK,Financials,1,debt_to_equity,Debt to Equity,4.003739,4.821046,4.225134,22,-0.193439,0.193439,False,computed
+KOTAKBANK,Financials,1,return_on_capital_employed_pct,ROCE,7.231228,81.288225,209.120203,21,-0.354136,0.354136,False,computed
+KOTAKBANK,Financials,1,asset_turnover,Asset Turnover,0.073257,0.198326,0.309124,22,-0.40459,0.40459,False,computed
+KOTAKBANK,Financials,1,revenue_cagr_5yr,Revenue CAGR 5Yr,13.519604,17.744843,5.304504,22,-0.796538,0.796538,False,computed
+KOTAKBANK,Financials,1,fcf_conversion_pct,FCF Conversion,14.379835,-132.589622,254.419738,22,0.577665,0.577665,False,computed
+KOTAKBANK,Financials,1,cfo_quality_score,CFO Quality Score,1.475807,2.380893,8.557163,23,-0.105769,0.105769,False,computed
+KOTAKBANK,Financials,1,capex_intensity_pct,Capex Intensity,15.859665,14.614712,23.266484,23,0.053508,0.053508,False,computed
+LICI,Financials,0,net_profit_margin_pct,Net Profit Margin,4.836601,38.238003,87.706652,23,-0.380831,0.380831,False,computed
+LICI,Financials,0,operating_profit_margin_pct,Operating Profit Margin,3.874742,53.425739,35.593822,22,-1.392124,1.392124,False,computed
+LICI,Financials,0,return_on_equity_pct,Return on Equity,49.44711,19.007093,13.021442,22,2.337684,2.337684,False,computed
+LICI,Financials,0,debt_to_equity,Debt to Equity,0.0,4.821046,4.225134,22,-1.14104,1.14104,False,computed
+LICI,Financials,0,return_on_capital_employed_pct,ROCE,57.534412,81.288225,209.120203,21,-0.113589,0.113589,False,computed
+LICI,Financials,0,asset_turnover,Asset Turnover,0.159134,0.198326,0.309124,22,-0.126781,0.126781,False,computed
+LICI,Financials,0,revenue_cagr_5yr,Revenue CAGR 5Yr,8.159861,17.744843,5.304504,22,-1.806952,1.806952,False,computed
+LICI,Financials,0,fcf_conversion_pct,FCF Conversion,2.602276,-132.589622,254.419738,22,0.531373,0.531373,False,computed
+LICI,Financials,0,cfo_quality_score,CFO Quality Score,9.679945,2.380893,8.557163,23,0.852976,0.852976,False,computed
+LICI,Financials,0,capex_intensity_pct,Capex Intensity,2.986999,14.614712,23.266484,23,-0.499762,0.499762,False,computed
+LODHA,Real Estate,0,net_profit_margin_pct,Net Profit Margin,15.063978,28.723836,19.317956,2,,,False,insufficient_sector_observations
+LODHA,Real Estate,0,operating_profit_margin_pct,Operating Profit Margin,25.833656,29.440867,5.101367,2,,,False,insufficient_sector_observations
+LODHA,Real Estate,0,return_on_equity_pct,Return on Equity,8.895758,7.902014,1.405366,2,,,False,insufficient_sector_observations
+LODHA,Real Estate,0,debt_to_equity,Debt to Equity,0.440666,0.28163,0.224911,2,,,False,insufficient_sector_observations
+LODHA,Real Estate,0,return_on_capital_employed_pct,ROCE,10.77999,8.388978,3.381401,2,,,False,insufficient_sector_observations
+LODHA,Real Estate,0,asset_turnover,Asset Turnover,0.218569,0.163687,0.077615,2,,,False,insufficient_sector_observations
+LODHA,Real Estate,0,revenue_cagr_5yr,Revenue CAGR 5Yr,-2.827854,-3.982292,1.632623,2,,,False,insufficient_sector_observations
+LODHA,Real Estate,0,fcf_conversion_pct,FCF Conversion,-16.322702,15.614544,45.166086,2,,,False,insufficient_sector_observations
+LODHA,Real Estate,0,cfo_quality_score,CFO Quality Score,13.309917,7.128204,8.742262,2,,,False,insufficient_sector_observations
+LODHA,Real Estate,0,capex_intensity_pct,Capex Intensity,28.567274,26.178767,3.377859,2,,,False,insufficient_sector_observations
+LT,Industrials,0,net_profit_margin_pct,Net Profit Margin,7.031246,13.38406,9.880643,10,-0.642955,0.642955,False,computed
+LT,Industrials,0,operating_profit_margin_pct,Operating Profit Margin,13.506669,21.333371,15.56934,10,-0.5027,0.5027,False,computed
+LT,Industrials,0,return_on_equity_pct,Return on Equity,77.665101,874.176985,1808.577244,10,-0.440408,0.440408,False,computed
+LT,Industrials,0,debt_to_equity,Debt to Equity,0.103457,0.583291,0.619304,10,-0.774796,0.774796,False,computed
+LT,Industrials,0,return_on_capital_employed_pct,ROCE,152.618951,841.721338,1710.114178,10,-0.402957,0.402957,False,computed
+LT,Industrials,0,asset_turnover,Asset Turnover,8.027629,20.647597,42.442182,10,-0.297345,0.297345,False,computed
+LT,Industrials,0,revenue_cagr_5yr,Revenue CAGR 5Yr,10.335348,10.876325,6.638909,10,-0.081486,0.081486,False,computed
+LT,Industrials,0,fcf_conversion_pct,FCF Conversion,68.458061,-30.851354,123.344214,10,0.80514,0.80514,False,computed
+LT,Industrials,0,cfo_quality_score,CFO Quality Score,1.446423,1.17796,1.470801,10,0.182529,0.182529,False,computed
+LT,Industrials,0,capex_intensity_pct,Capex Intensity,0.985469,13.741162,10.040116,10,-1.270473,1.270473,False,computed
+LTIM,Information Technology,0,net_profit_margin_pct,Net Profit Margin,12.909311,13.605975,5.580071,5,-0.124849,0.124849,False,computed
+LTIM,Information Technology,0,operating_profit_margin_pct,Operating Profit Margin,17.982938,19.811732,6.9802,5,-0.261997,0.261997,False,computed
+LTIM,Information Technology,0,return_on_equity_pct,Return on Equity,22.904386,27.12772,15.314355,5,-0.275776,0.275776,False,computed
+LTIM,Information Technology,0,debt_to_equity,Debt to Equity,0.103457,0.093288,0.007259,5,1.400892,1.400892,False,computed
+LTIM,Information Technology,0,return_on_capital_employed_pct,ROCE,32.092897,39.365916,18.586864,5,-0.391299,0.391299,False,computed
+LTIM,Information Technology,0,asset_turnover,Asset Turnover,1.289464,1.278073,0.222732,5,0.051144,0.051144,False,computed
+LTIM,Information Technology,0,revenue_cagr_5yr,Revenue CAGR 5Yr,30.327981,15.019887,8.769128,5,1.74568,1.74568,False,computed
+LTIM,Information Technology,0,fcf_conversion_pct,FCF Conversion,27.430719,67.760424,31.153136,5,-1.294563,1.294563,False,computed
+LTIM,Information Technology,0,cfo_quality_score,CFO Quality Score,1.016292,1.201282,0.242393,5,-0.763178,0.763178,False,computed
+LTIM,Information Technology,0,capex_intensity_pct,Capex Intensity,11.031337,5.084186,3.61915,5,1.643245,1.643245,False,computed
+M&M,Consumer Discretionary,0,net_profit_margin_pct,Net Profit Margin,8.822387,11.500325,6.968452,14,-0.384294,0.384294,False,computed
+M&M,Consumer Discretionary,0,operating_profit_margin_pct,Operating Profit Margin,17.89787,25.536186,24.661573,14,-0.309725,0.309725,False,computed
+M&M,Consumer Discretionary,0,return_on_equity_pct,Return on Equity,18.537543,86.724106,232.104483,14,-0.293775,0.293775,False,computed
+M&M,Consumer Discretionary,0,debt_to_equity,Debt to Equity,1.641441,0.698619,1.0975,14,0.859063,0.859063,False,computed
+M&M,Consumer Discretionary,0,return_on_capital_employed_pct,ROCE,16.123589,441.11496,1497.893148,14,-0.283726,0.283726,False,computed
+M&M,Consumer Discretionary,0,asset_turnover,Asset Turnover,0.592522,5.157839,14.752203,14,-0.309467,0.309467,False,computed
+M&M,Consumer Discretionary,0,revenue_cagr_5yr,Revenue CAGR 5Yr,5.838806,13.604579,8.800016,14,-0.882473,0.882473,False,computed
+M&M,Consumer Discretionary,0,fcf_conversion_pct,FCF Conversion,-45.175157,24.626797,37.425658,14,-1.865083,1.865083,False,computed
+M&M,Consumer Discretionary,0,cfo_quality_score,CFO Quality Score,3.315558,0.178076,4.295602,14,0.730394,0.730394,False,computed
+M&M,Consumer Discretionary,0,capex_intensity_pct,Capex Intensity,4.037303,5.868292,5.264319,14,-0.347811,0.347811,False,computed
+MARUTI,Consumer Discretionary,0,net_profit_margin_pct,Net Profit Margin,9.5081,11.500325,6.968452,14,-0.285892,0.285892,False,computed
+MARUTI,Consumer Discretionary,0,operating_profit_margin_pct,Operating Profit Margin,13.130031,25.536186,24.661573,14,-0.503056,0.503056,False,computed
+MARUTI,Consumer Discretionary,0,return_on_equity_pct,Return on Equity,15.750385,86.724106,232.104483,14,-0.305783,0.305783,False,computed
+MARUTI,Consumer Discretionary,0,debt_to_equity,Debt to Equity,0.00139,0.698619,1.0975,14,-0.635289,0.635289,False,computed
+MARUTI,Consumer Discretionary,0,return_on_capital_employed_pct,ROCE,26.673663,441.11496,1497.893148,14,-0.276683,0.276683,False,computed
+MARUTI,Consumer Discretionary,0,asset_turnover,Asset Turnover,1.230296,5.157839,14.752203,14,-0.266234,0.266234,False,computed
+MARUTI,Consumer Discretionary,0,revenue_cagr_5yr,Revenue CAGR 5Yr,10.510215,13.604579,8.800016,14,-0.351632,0.351632,False,computed
+MARUTI,Consumer Discretionary,0,fcf_conversion_pct,FCF Conversion,26.500591,24.626797,37.425658,14,0.050067,0.050067,False,computed
+MARUTI,Consumer Discretionary,0,cfo_quality_score,CFO Quality Score,1.132404,0.178076,4.295602,14,0.222164,0.222164,False,computed
+MARUTI,Consumer Discretionary,0,capex_intensity_pct,Capex Intensity,8.363998,5.868292,5.264319,14,0.47408,0.47408,False,computed
+MOTHERSON,Consumer Discretionary,0,net_profit_margin_pct,Net Profit Margin,3.060025,11.500325,6.968452,14,-1.211216,1.211216,False,computed
+MOTHERSON,Consumer Discretionary,0,operating_profit_margin_pct,Operating Profit Margin,9.445548,25.536186,24.661573,14,-0.652458,0.652458,False,computed
+MOTHERSON,Consumer Discretionary,0,return_on_equity_pct,Return on Equity,11.546549,86.724106,232.104483,14,-0.323895,0.323895,False,computed
+MOTHERSON,Consumer Discretionary,0,debt_to_equity,Debt to Equity,0.76169,0.698619,1.0975,14,0.057467,0.057467,False,computed
+MOTHERSON,Consumer Discretionary,0,return_on_capital_employed_pct,ROCE,20.535191,441.11496,1497.893148,14,-0.280781,0.280781,False,computed
+MOTHERSON,Consumer Discretionary,0,asset_turnover,Asset Turnover,1.17242,5.157839,14.752203,14,-0.270158,0.270158,False,computed
+MOTHERSON,Consumer Discretionary,0,revenue_cagr_5yr,Revenue CAGR 5Yr,9.211957,13.604579,8.800016,14,-0.499161,0.499161,False,computed
+MOTHERSON,Consumer Discretionary,0,fcf_conversion_pct,FCF Conversion,9.922763,24.626797,37.425658,14,-0.392886,0.392886,False,computed
+MOTHERSON,Consumer Discretionary,0,cfo_quality_score,CFO Quality Score,3.099669,0.178076,4.295602,14,0.680136,0.680136,False,computed
+MOTHERSON,Consumer Discretionary,0,capex_intensity_pct,Capex Intensity,6.732055,5.868292,5.264319,14,0.164079,0.164079,False,computed
+NAUKRI,Communication Services,0,net_profit_margin_pct,Net Profit Margin,23.462145,14.584082,12.555478,2,,,False,insufficient_sector_observations
+NAUKRI,Communication Services,0,operating_profit_margin_pct,Operating Profit Margin,28.036278,40.118604,17.08699,2,,,False,insufficient_sector_observations
+NAUKRI,Communication Services,0,return_on_equity_pct,Return on Equity,1.966162,6.162277,5.934203,2,,,False,insufficient_sector_observations
+NAUKRI,Communication Services,0,debt_to_equity,Debt to Equity,0.008129,1.308801,1.839428,2,,,False,insufficient_sector_observations
+NAUKRI,Communication Services,0,return_on_capital_employed_pct,ROCE,3.323718,14.214045,15.401248,2,,,False,insufficient_sector_observations
+NAUKRI,Communication Services,0,asset_turnover,Asset Turnover,0.070271,0.204791,0.19024,2,,,False,insufficient_sector_observations
+NAUKRI,Communication Services,0,revenue_cagr_5yr,Revenue CAGR 5Yr,17.11561,15.144856,2.787067,2,,,False,insufficient_sector_observations
+NAUKRI,Communication Services,0,fcf_conversion_pct,FCF Conversion,-21.097046,7.211273,40.03401,2,,,False,insufficient_sector_observations
+NAUKRI,Communication Services,0,cfo_quality_score,CFO Quality Score,-1.461539,0.936264,3.391005,2,,,False,insufficient_sector_observations
+NAUKRI,Communication Services,0,capex_intensity_pct,Capex Intensity,33.596215,33.829818,0.330365,2,,,False,insufficient_sector_observations
+NESTLEIND,Consumer Staples,0,net_profit_margin_pct,Net Profit Margin,16.122817,13.336141,10.026286,7,0.277937,0.277937,False,computed
+NESTLEIND,Consumer Staples,0,operating_profit_margin_pct,Operating Profit Margin,23.82963,30.19953,21.505999,7,-0.296192,0.296192,False,computed
+NESTLEIND,Consumer Staples,0,return_on_equity_pct,Return on Equity,117.754491,34.471273,40.973641,7,2.032605,2.032605,False,computed
+NESTLEIND,Consumer Staples,0,debt_to_equity,Debt to Equity,0.103293,0.181566,0.176426,7,-0.443656,0.443656,False,computed
+NESTLEIND,Consumer Staples,0,return_on_capital_employed_pct,ROCE,162.062415,55.494785,55.115404,7,1.933536,1.933536,False,computed
+NESTLEIND,Consumer Staples,0,asset_turnover,Asset Turnover,2.31816,1.122853,0.675973,7,1.768275,1.768275,False,computed
+NESTLEIND,Consumer Staples,0,revenue_cagr_5yr,Revenue CAGR 5Yr,14.548574,10.130855,3.643796,7,1.212395,1.212395,False,computed
+NESTLEIND,Consumer Staples,0,fcf_conversion_pct,FCF Conversion,50.541889,34.023155,47.097394,7,0.350736,0.350736,False,computed
+NESTLEIND,Consumer Staples,0,cfo_quality_score,CFO Quality Score,1.114334,1.017625,0.457261,7,0.211498,0.211498,False,computed
+NESTLEIND,Consumer Staples,0,capex_intensity_pct,Capex Intensity,5.070919,9.069528,7.636651,7,-0.523608,0.523608,False,computed
+NHPC,Energy,0,net_profit_margin_pct,Net Profit Margin,41.818937,16.022672,12.981687,14,1.987127,1.987127,False,computed
+NHPC,Energy,0,operating_profit_margin_pct,Operating Profit Margin,49.906561,33.596854,24.659114,14,0.661407,0.661407,False,computed
+NHPC,Energy,0,return_on_equity_pct,Return on Equity,10.407731,17.933799,11.243965,14,-0.669343,0.669343,False,computed
+NHPC,Energy,0,debt_to_equity,Debt to Equity,0.841326,1.459648,1.634055,14,-0.378397,0.378397,False,computed
+NHPC,Energy,0,return_on_capital_employed_pct,ROCE,9.592636,19.326477,8.626593,14,-1.128353,1.128353,False,computed
+NHPC,Energy,0,asset_turnover,Asset Turnover,0.10324,0.653519,0.612361,14,-0.898618,0.898618,False,computed
+NHPC,Energy,0,revenue_cagr_5yr,Revenue CAGR 5Yr,1.404917,12.446835,8.494439,14,-1.2999,1.2999,False,computed
+NHPC,Energy,0,fcf_conversion_pct,FCF Conversion,20.178906,18.263863,65.003647,14,0.029461,0.029461,False,computed
+NHPC,Energy,0,cfo_quality_score,CFO Quality Score,1.269192,2.010569,1.208837,14,-0.613298,0.613298,False,computed
+NHPC,Energy,0,capex_intensity_pct,Capex Intensity,61.960133,36.529155,59.038781,14,0.43075,0.43075,False,computed
+NTPC,Energy,0,net_profit_margin_pct,Net Profit Margin,11.950633,16.022672,12.981687,14,-0.313676,0.313676,False,computed
+NTPC,Energy,0,operating_profit_margin_pct,Operating Profit Margin,28.826729,33.596854,24.659114,14,-0.193443,0.193443,False,computed
+NTPC,Energy,0,return_on_equity_pct,Return on Equity,13.273598,17.933799,11.243965,14,-0.414462,0.414462,False,computed
+NTPC,Energy,0,debt_to_equity,Debt to Equity,1.475521,1.459648,1.634055,14,0.009714,0.009714,False,computed
+NTPC,Energy,0,return_on_capital_employed_pct,ROCE,14.238352,19.326477,8.626593,14,-0.589819,0.589819,False,computed
+NTPC,Energy,0,asset_turnover,Asset Turnover,0.372437,0.653519,0.612361,14,-0.459013,0.459013,False,computed
+NTPC,Energy,0,revenue_cagr_5yr,Revenue CAGR 5Yr,12.22231,12.446835,8.494439,14,-0.026432,0.026432,False,computed
+NTPC,Energy,0,fcf_conversion_pct,FCF Conversion,16.798818,18.263863,65.003647,14,-0.022538,0.022538,False,computed
+NTPC,Energy,0,cfo_quality_score,CFO Quality Score,2.260903,2.010569,1.208837,14,0.207087,0.207087,False,computed
+NTPC,Energy,0,capex_intensity_pct,Capex Intensity,18.006062,36.529155,59.038781,14,-0.313745,0.313745,False,computed
+ONGC,Energy,0,net_profit_margin_pct,Net Profit Margin,9.65529,16.022672,12.981687,14,-0.49049,0.49049,False,computed
+ONGC,Energy,0,operating_profit_margin_pct,Operating Profit Margin,17.388518,33.596854,24.659114,14,-0.657296,0.657296,False,computed
+ONGC,Energy,0,return_on_equity_pct,Return on Equity,16.940398,17.933799,11.243965,14,-0.08835,0.08835,False,computed
+ONGC,Energy,0,debt_to_equity,Debt to Equity,0.454449,1.459648,1.634055,14,-0.615157,0.615157,False,computed
+ONGC,Energy,0,return_on_capital_employed_pct,ROCE,23.624021,19.326477,8.626593,14,0.498174,0.498174,False,computed
+ONGC,Energy,0,asset_turnover,Asset Turnover,0.833217,0.653519,0.612361,14,0.293451,0.293451,False,computed
+ONGC,Energy,0,revenue_cagr_5yr,Revenue CAGR 5Yr,7.001684,12.446835,8.494439,14,-0.641025,0.641025,False,computed
+ONGC,Energy,0,fcf_conversion_pct,FCF Conversion,40.900472,18.263863,65.003647,14,0.348236,0.348236,False,computed
+ONGC,Energy,0,cfo_quality_score,CFO Quality Score,2.864497,2.010569,1.208837,14,0.706405,0.706405,False,computed
+ONGC,Energy,0,capex_intensity_pct,Capex Intensity,9.672538,36.529155,59.038781,14,-0.454898,0.454898,False,computed
+PFC,Financials,3,net_profit_margin_pct,Net Profit Margin,28.916597,38.238003,87.706652,23,-0.106279,0.106279,False,computed
+PFC,Financials,3,operating_profit_margin_pct,Operating Profit Margin,36.688596,53.425739,35.593822,22,-0.470226,0.470226,False,computed
+PFC,Financials,3,return_on_equity_pct,Return on Equity,26.160934,19.007093,13.021442,22,0.549389,0.549389,False,computed
+PFC,Financials,3,debt_to_equity,Debt to Equity,8.521864,4.821046,4.225134,22,0.875906,0.875906,False,computed
+PFC,Financials,3,return_on_capital_employed_pct,ROCE,3.493066,81.288225,209.120203,21,-0.372012,0.372012,False,computed
+PFC,Financials,3,asset_turnover,Asset Turnover,0.088084,0.198326,0.309124,22,-0.356627,0.356627,False,computed
+PFC,Financials,3,revenue_cagr_5yr,Revenue CAGR 5Yr,11.081754,17.744843,5.304504,22,-1.256119,1.256119,False,computed
+PFC,Financials,3,fcf_conversion_pct,FCF Conversion,-301.519078,-132.589622,254.419738,22,-0.663979,0.663979,False,computed
+PFC,Financials,3,cfo_quality_score,CFO Quality Score,-3.034796,2.380893,8.557163,23,-0.632884,0.632884,False,computed
+PFC,Financials,3,capex_intensity_pct,Capex Intensity,3.725357,14.614712,23.266484,23,-0.468028,0.468028,False,computed
+PIDILITIND,Materials,0,net_profit_margin_pct,Net Profit Margin,14.108051,10.916177,8.131072,9,0.392553,0.392553,False,computed
+PIDILITIND,Materials,0,operating_profit_margin_pct,Operating Profit Margin,21.868691,31.761388,26.886179,9,-0.367947,0.367947,False,computed
+PIDILITIND,Materials,0,return_on_equity_pct,Return on Equity,20.780302,16.069204,14.417459,9,0.326763,0.326763,False,computed
+PIDILITIND,Materials,0,debt_to_equity,Debt to Equity,0.045438,0.370539,0.417624,9,-0.778452,0.778452,False,computed
+PIDILITIND,Materials,0,return_on_capital_employed_pct,ROCE,31.528046,42.281564,40.609741,9,-0.264801,0.264801,False,computed
+PIDILITIND,Materials,0,asset_turnover,Asset Turnover,1.025422,0.805806,0.217015,9,1.011986,1.011986,False,computed
+PIDILITIND,Materials,0,revenue_cagr_5yr,Revenue CAGR 5Yr,11.83637,9.119603,4.440099,9,0.611871,0.611871,False,computed
+PIDILITIND,Materials,0,fcf_conversion_pct,FCF Conversion,35.265879,9.854444,32.807634,9,0.774559,0.774559,False,computed
+PIDILITIND,Materials,0,cfo_quality_score,CFO Quality Score,1.187241,1.481354,1.979169,9,-0.148604,0.148604,False,computed
+PIDILITIND,Materials,0,capex_intensity_pct,Capex Intensity,14.285714,10.683582,7.40191,9,0.486649,0.486649,False,computed
+PNB,Financials,3,net_profit_margin_pct,Net Profit Margin,8.395911,38.238003,87.706652,23,-0.340249,0.340249,False,computed
+PNB,Financials,3,return_on_equity_pct,Return on Equity,61.320565,19.007093,13.021442,22,3.249523,3.249523,True,computed
+PNB,Financials,3,debt_to_equity,Debt to Equity,3.684256,4.821046,4.225134,22,-0.269054,0.269054,False,computed
+PNB,Financials,3,asset_turnover,Asset Turnover,1.507026,0.198326,0.309124,22,4.233577,4.233577,True,computed
+PNB,Financials,3,revenue_cagr_5yr,Revenue CAGR 5Yr,15.902076,17.744843,5.304504,22,-0.347397,0.347397,False,computed
+PNB,Financials,3,cfo_quality_score,CFO Quality Score,-1.218498,2.380893,8.557163,23,-0.420629,0.420629,False,computed
+PNB,Financials,3,capex_intensity_pct,Capex Intensity,1.380828,14.614712,23.266484,23,-0.568796,0.568796,False,computed
+POWERGRID,Energy,1,net_profit_margin_pct,Net Profit Margin,33.97029,16.022672,12.981687,14,1.382534,1.382534,False,computed
+POWERGRID,Energy,1,operating_profit_margin_pct,Operating Profit Margin,86.874768,33.596854,24.659114,14,2.160577,2.160577,False,computed
+POWERGRID,Energy,1,return_on_equity_pct,Return on Equity,17.870011,17.933799,11.243965,14,-0.005673,0.005673,False,computed
+POWERGRID,Energy,1,debt_to_equity,Debt to Equity,1.417346,1.459648,1.634055,14,-0.025888,0.025888,False,computed
+POWERGRID,Energy,1,return_on_capital_employed_pct,ROCE,19.169096,19.326477,8.626593,14,-0.018244,0.018244,False,computed
+POWERGRID,Energy,1,asset_turnover,Asset Turnover,0.182766,0.653519,0.612361,14,-0.768751,0.768751,False,computed
+POWERGRID,Energy,1,revenue_cagr_5yr,Revenue CAGR 5Yr,5.510262,12.446835,8.494439,14,-0.816602,0.816602,False,computed
+POWERGRID,Energy,1,fcf_conversion_pct,FCF Conversion,60.704063,18.263863,65.003647,14,0.65289,0.65289,False,computed
+POWERGRID,Energy,1,cfo_quality_score,CFO Quality Score,2.355395,2.010569,1.208837,14,0.285255,0.285255,False,computed
+POWERGRID,Energy,1,capex_intensity_pct,Capex Intensity,28.60633,36.529155,59.038781,14,-0.134197,0.134197,False,computed
+RECLTD,Financials,3,net_profit_margin_pct,Net Profit Margin,29.768293,38.238003,87.706652,23,-0.096569,0.096569,False,computed
+RECLTD,Financials,3,operating_profit_margin_pct,Operating Profit Margin,100.770251,53.425739,35.593822,22,1.330133,1.330133,False,computed
+RECLTD,Financials,3,return_on_equity_pct,Return on Equity,20.396539,19.007093,13.021442,22,0.106704,0.106704,False,computed
+RECLTD,Financials,3,debt_to_equity,Debt to Equity,6.424917,4.821046,4.225134,22,0.379603,0.379603,False,computed
+RECLTD,Financials,3,return_on_capital_employed_pct,ROCE,9.308472,81.288225,209.120203,21,-0.344203,0.344203,False,computed
+RECLTD,Financials,3,asset_turnover,Asset Turnover,0.08668,0.198326,0.309124,22,-0.361168,0.361168,False,computed
+RECLTD,Financials,3,revenue_cagr_5yr,Revenue CAGR 5Yr,13.338042,17.744843,5.304504,22,-0.830766,0.830766,False,computed
+RECLTD,Financials,3,fcf_conversion_pct,FCF Conversion,-124.373995,-132.589622,254.419738,22,0.032292,0.032292,False,computed
+RECLTD,Financials,3,cfo_quality_score,CFO Quality Score,-3.856166,2.380893,8.557163,23,-0.72887,0.72887,False,computed
+RECLTD,Financials,3,capex_intensity_pct,Capex Intensity,3.853358,14.614712,23.266484,23,-0.462526,0.462526,False,computed
+RELIANCE,Energy,0,net_profit_margin_pct,Net Profit Margin,8.789366,16.022672,12.981687,14,-0.557193,0.557193,False,computed
+RELIANCE,Energy,0,operating_profit_margin_pct,Operating Profit Margin,18.074593,33.596854,24.659114,14,-0.629474,0.629474,False,computed
+RELIANCE,Energy,0,return_on_equity_pct,Return on Equity,9.958651,17.933799,11.243965,14,-0.709283,0.709283,False,computed
+RELIANCE,Energy,0,debt_to_equity,Debt to Equity,0.578452,1.459648,1.634055,14,-0.539269,0.539269,False,computed
+RELIANCE,Energy,0,return_on_capital_employed_pct,ROCE,14.265948,19.326477,8.626593,14,-0.58662,0.58662,False,computed
+RELIANCE,Energy,0,asset_turnover,Asset Turnover,0.51226,0.653519,0.612361,14,-0.23068,0.23068,False,computed
+RELIANCE,Energy,0,revenue_cagr_5yr,Revenue CAGR 5Yr,9.606097,12.446835,8.494439,14,-0.334423,0.334423,False,computed
+RELIANCE,Energy,0,fcf_conversion_pct,FCF Conversion,27.820035,18.263863,65.003647,14,0.14701,0.14701,False,computed
+RELIANCE,Energy,0,cfo_quality_score,CFO Quality Score,1.614759,2.010569,1.208837,14,-0.32743,0.32743,False,computed
+RELIANCE,Energy,0,capex_intensity_pct,Capex Intensity,12.633573,36.529155,59.038781,14,-0.404744,0.404744,False,computed
+SBILIFE,Financials,0,net_profit_margin_pct,Net Profit Margin,1.434979,38.238003,87.706652,23,-0.419615,0.419615,False,computed
+SBILIFE,Financials,0,operating_profit_margin_pct,Operating Profit Margin,0.186381,53.425739,35.593822,22,-1.495747,1.495747,False,computed
+SBILIFE,Financials,0,return_on_equity_pct,Return on Equity,12.704588,19.007093,13.021442,22,-0.48401,0.48401,False,computed
+SBILIFE,Financials,0,debt_to_equity,Debt to Equity,0.0,4.821046,4.225134,22,-1.14104,1.14104,False,computed
+SBILIFE,Financials,0,return_on_capital_employed_pct,ROCE,14.508988,81.288225,209.120203,21,-0.319334,0.319334,False,computed
+SBILIFE,Financials,0,asset_turnover,Asset Turnover,0.331379,0.198326,0.309124,22,0.430422,0.430422,False,computed
+SBILIFE,Financials,0,revenue_cagr_5yr,Revenue CAGR 5Yr,24.231614,17.744843,5.304504,22,1.22288,1.22288,False,computed
+SBILIFE,Financials,0,fcf_conversion_pct,FCF Conversion,-853.252033,-132.589622,254.419738,22,-2.832573,2.832573,False,computed
+SBILIFE,Financials,0,cfo_quality_score,CFO Quality Score,15.301625,2.380893,8.557163,23,1.509932,1.509932,False,computed
+SBILIFE,Financials,0,capex_intensity_pct,Capex Intensity,23.654423,14.614712,23.266484,23,0.388529,0.388529,False,computed
+SHREECEM,Materials,0,net_profit_margin_pct,Net Profit Margin,8.445008,10.916177,8.131072,9,-0.303917,0.303917,False,computed
+SHREECEM,Materials,0,operating_profit_margin_pct,Operating Profit Margin,22.016471,31.761388,26.886179,9,-0.362451,0.362451,False,computed
+SHREECEM,Materials,0,return_on_equity_pct,Return on Equity,8.370768,16.069204,14.417459,9,-0.533966,0.533966,False,computed
+SHREECEM,Materials,0,debt_to_equity,Debt to Equity,0.079988,0.370539,0.417624,9,-0.695722,0.695722,False,computed
+SHREECEM,Materials,0,return_on_capital_employed_pct,ROCE,22.876694,42.281564,40.609741,9,-0.477838,0.477838,False,computed
+SHREECEM,Materials,0,asset_turnover,Asset Turnover,0.734861,0.805806,0.217015,9,-0.326912,0.326912,False,computed
+SHREECEM,Materials,0,revenue_cagr_5yr,Revenue CAGR 5Yr,10.325616,9.119603,4.440099,9,0.271619,0.271619,False,computed
+SHREECEM,Materials,0,fcf_conversion_pct,FCF Conversion,42.695883,9.854444,32.807634,9,1.00103,1.00103,False,computed
+SHREECEM,Materials,0,cfo_quality_score,CFO Quality Score,1.902334,1.481354,1.979169,9,0.212705,0.212705,False,computed
+SHREECEM,Materials,0,capex_intensity_pct,Capex Intensity,6.909995,10.683582,7.40191,9,-0.509813,0.509813,False,computed
+SHRIRAMFIN,Financials,3,net_profit_margin_pct,Net Profit Margin,20.333626,38.238003,87.706652,23,-0.204139,0.204139,False,computed
+SHRIRAMFIN,Financials,3,operating_profit_margin_pct,Operating Profit Margin,28.918874,53.425739,35.593822,22,-0.688515,0.688515,False,computed
+SHRIRAMFIN,Financials,3,return_on_equity_pct,Return on Equity,15.11635,19.007093,13.021442,22,-0.298795,0.298795,False,computed
+SHRIRAMFIN,Financials,3,debt_to_equity,Debt to Equity,3.994034,4.821046,4.225134,22,-0.195736,0.195736,False,computed
+SHRIRAMFIN,Financials,3,return_on_capital_employed_pct,ROCE,4.315116,81.288225,209.120203,21,-0.368081,0.368081,False,computed
+SHRIRAMFIN,Financials,3,asset_turnover,Asset Turnover,0.146569,0.198326,0.309124,22,-0.167431,0.167431,False,computed
+SHRIRAMFIN,Financials,3,revenue_cagr_5yr,Revenue CAGR 5Yr,18.55607,17.744843,5.304504,22,0.152932,0.152932,False,computed
+SHRIRAMFIN,Financials,3,fcf_conversion_pct,FCF Conversion,-298.004371,-132.589622,254.419738,22,-0.650165,0.650165,False,computed
+SHRIRAMFIN,Financials,3,cfo_quality_score,CFO Quality Score,-2.612821,2.380893,8.557163,23,-0.583571,0.583571,False,computed
+SHRIRAMFIN,Financials,3,capex_intensity_pct,Capex Intensity,0.709025,14.614712,23.266484,23,-0.59767,0.59767,False,computed
+SIEMENS,Industrials,0,net_profit_margin_pct,Net Profit Margin,12.221223,13.38406,9.880643,10,-0.117688,0.117688,False,computed
+SIEMENS,Industrials,0,operating_profit_margin_pct,Operating Profit Margin,13.956835,21.333371,15.56934,10,-0.473786,0.473786,False,computed
+SIEMENS,Industrials,0,return_on_equity_pct,Return on Equity,17.698769,874.176985,1808.577244,10,-0.473565,0.473565,False,computed
+SIEMENS,Industrials,0,debt_to_equity,Debt to Equity,0.018168,0.583291,0.619304,10,-0.912514,0.912514,False,computed
+SIEMENS,Industrials,0,return_on_capital_employed_pct,ROCE,25.76746,841.721338,1710.114178,10,-0.477134,0.477134,False,computed
+SIEMENS,Industrials,0,asset_turnover,Asset Turnover,0.879086,20.647597,42.442182,10,-0.465775,0.465775,False,computed
+SIEMENS,Industrials,0,revenue_cagr_5yr,Revenue CAGR 5Yr,11.193359,10.876325,6.638909,10,0.047754,0.047754,False,computed
+SIEMENS,Industrials,0,fcf_conversion_pct,FCF Conversion,37.628866,-30.851354,123.344214,10,0.555196,0.555196,False,computed
+SIEMENS,Industrials,0,cfo_quality_score,CFO Quality Score,0.840775,1.17796,1.470801,10,-0.229252,0.229252,False,computed
+SIEMENS,Industrials,0,capex_intensity_pct,Capex Intensity,2.257194,13.741162,10.040116,10,-1.143808,1.143808,False,computed
+SUNPHARMA,Healthcare,0,net_profit_margin_pct,Net Profit Margin,19.815659,16.09725,5.874497,6,0.632975,0.632975,False,computed
+SUNPHARMA,Healthcare,0,operating_profit_margin_pct,Operating Profit Margin,26.842897,33.813647,21.510619,6,-0.324061,0.324061,False,computed
+SUNPHARMA,Healthcare,0,return_on_equity_pct,Return on Equity,15.094162,16.635887,4.542244,6,-0.339419,0.339419,False,computed
+SUNPHARMA,Healthcare,0,debt_to_equity,Debt to Equity,0.051424,0.249827,0.33733,6,-0.588157,0.588157,False,computed
+SUNPHARMA,Healthcare,0,return_on_capital_employed_pct,ROCE,20.739158,32.155045,20.046062,6,-0.569483,0.569483,False,computed
+SUNPHARMA,Healthcare,0,asset_turnover,Asset Turnover,0.568493,0.744747,0.221416,6,-0.79603,0.79603,False,computed
+SUNPHARMA,Healthcare,0,revenue_cagr_5yr,Revenue CAGR 5Yr,10.781163,10.698731,2.687796,6,0.030669,0.030669,False,computed
+SUNPHARMA,Healthcare,0,fcf_conversion_pct,FCF Conversion,87.355969,42.13186,39.57804,6,1.142657,1.142657,False,computed
+SUNPHARMA,Healthcare,0,cfo_quality_score,CFO Quality Score,1.75667,1.793315,0.891238,6,-0.041117,0.041117,False,computed
+SUNPHARMA,Healthcare,0,capex_intensity_pct,Capex Intensity,1.573293,6.754895,5.458638,6,-0.949248,0.949248,False,computed
+TATACONSUM,Consumer Staples,0,net_profit_margin_pct,Net Profit Margin,7.990267,13.336141,10.026286,7,-0.533186,0.533186,False,computed
+TATACONSUM,Consumer Staples,0,operating_profit_margin_pct,Operating Profit Margin,15.020387,30.19953,21.505999,7,-0.70581,0.70581,False,computed
+TATACONSUM,Consumer Staples,0,return_on_equity_pct,Return on Equity,7.566793,34.471273,40.973641,7,-0.656629,0.656629,False,computed
+TATACONSUM,Consumer Staples,0,debt_to_equity,Debt to Equity,0.216541,0.181566,0.176426,7,0.198241,0.198241,False,computed
+TATACONSUM,Consumer Staples,0,return_on_capital_employed_pct,ROCE,11.277772,55.494785,55.115404,7,-0.802262,0.802262,False,computed
+TATACONSUM,Consumer Staples,0,asset_turnover,Asset Turnover,0.545428,1.122853,0.675973,7,-0.854213,0.854213,False,computed
+TATACONSUM,Consumer Staples,0,revenue_cagr_5yr,Revenue CAGR 5Yr,15.960863,10.130855,3.643796,7,1.599982,1.599982,False,computed
+TATACONSUM,Consumer Staples,0,fcf_conversion_pct,FCF Conversion,1.138354,34.023155,47.097394,7,-0.69823,0.69823,False,computed
+TATACONSUM,Consumer Staples,0,cfo_quality_score,CFO Quality Score,1.665494,1.017625,0.457261,7,1.416849,1.416849,False,computed
+TATACONSUM,Consumer Staples,0,capex_intensity_pct,Capex Intensity,12.567408,9.069528,7.636651,7,0.458038,0.458038,False,computed
+TATAMOTORS,Consumer Discretionary,0,net_profit_margin_pct,Net Profit Margin,7.263066,11.500325,6.968452,14,-0.608063,0.608063,False,computed
+TATAMOTORS,Consumer Discretionary,0,operating_profit_margin_pct,Operating Profit Margin,13.595386,25.536186,24.661573,14,-0.484186,0.484186,False,computed
+TATAMOTORS,Consumer Discretionary,0,return_on_equity_pct,Return on Equity,37.456134,86.724106,232.104483,14,-0.212266,0.212266,False,computed
+TATAMOTORS,Consumer Discretionary,0,debt_to_equity,Debt to Equity,1.263124,0.698619,1.0975,14,0.514355,0.514355,False,computed
+TATAMOTORS,Consumer Discretionary,0,return_on_capital_employed_pct,ROCE,33.932251,441.11496,1497.893148,14,-0.271837,0.271837,False,computed
+TATAMOTORS,Consumer Discretionary,0,asset_turnover,Asset Turnover,1.185123,5.157839,14.752203,14,-0.269296,0.269296,False,computed
+TATAMOTORS,Consumer Discretionary,0,revenue_cagr_5yr,Revenue CAGR 5Yr,7.72016,13.604579,8.800016,14,-0.668683,0.668683,False,computed
+TATAMOTORS,Consumer Discretionary,0,fcf_conversion_pct,FCF Conversion,75.805368,24.626797,37.425658,14,1.367473,1.367473,False,computed
+TATAMOTORS,Consumer Discretionary,0,cfo_quality_score,CFO Quality Score,1.927705,0.178076,4.295602,14,0.407307,0.407307,False,computed
+TATAMOTORS,Consumer Discretionary,0,capex_intensity_pct,Capex Intensity,5.202225,5.868292,5.264319,14,-0.126525,0.126525,False,computed
+TATAPOWER,Energy,0,net_profit_margin_pct,Net Profit Margin,6.965126,16.022672,12.981687,14,-0.697717,0.697717,False,computed
+TATAPOWER,Energy,0,operating_profit_margin_pct,Operating Profit Margin,17.469772,33.596854,24.659114,14,-0.654001,0.654001,False,computed
+TATAPOWER,Energy,0,return_on_equity_pct,Return on Equity,13.22784,17.933799,11.243965,14,-0.418532,0.418532,False,computed
+TATAPOWER,Energy,0,debt_to_equity,Debt to Equity,1.659321,1.459648,1.634055,14,0.122195,0.122195,False,computed
+TATAPOWER,Energy,0,return_on_capital_employed_pct,ROCE,16.446046,19.326477,8.626593,14,-0.333901,0.333901,False,computed
+TATAPOWER,Energy,0,asset_turnover,Asset Turnover,0.441907,0.653519,0.612361,14,-0.345567,0.345567,False,computed
+TATAPOWER,Energy,0,revenue_cagr_5yr,Revenue CAGR 5Yr,15.511158,12.446835,8.494439,14,0.360745,0.360745,False,computed
+TATAPOWER,Energy,0,fcf_conversion_pct,FCF Conversion,33.24639,18.263863,65.003647,14,0.230487,0.230487,False,computed
+TATAPOWER,Energy,0,cfo_quality_score,CFO Quality Score,3.866292,2.010569,1.208837,14,1.535132,1.535132,False,computed
+TATAPOWER,Energy,0,capex_intensity_pct,Capex Intensity,14.690231,36.529155,59.038781,14,-0.369908,0.369908,False,computed
+TATASTEEL,Materials,0,net_profit_margin_pct,Net Profit Margin,-2.142505,10.916177,8.131072,9,-1.606022,1.606022,False,computed
+TATASTEEL,Materials,0,operating_profit_margin_pct,Operating Profit Margin,9.708035,31.761388,26.886179,9,-0.820249,0.820249,False,computed
+TATASTEEL,Materials,0,return_on_equity_pct,Return on Equity,-5.334927,16.069204,14.417459,9,-1.484598,1.484598,False,computed
+TATASTEEL,Materials,0,debt_to_equity,Debt to Equity,0.946184,0.370539,0.417624,9,1.378379,1.378379,False,computed
+TATASTEEL,Materials,0,return_on_capital_employed_pct,ROCE,9.068374,42.281564,40.609741,9,-0.817863,0.817863,False,computed
+TATASTEEL,Materials,0,asset_turnover,Asset Turnover,0.85095,0.805806,0.217015,9,0.208022,0.208022,False,computed
+TATASTEEL,Materials,0,revenue_cagr_5yr,Revenue CAGR 5Yr,7.766225,9.119603,4.440099,9,-0.304808,0.304808,False,computed
+TATASTEEL,Materials,0,fcf_conversion_pct,FCF Conversion,27.184466,9.854444,32.807634,9,0.528231,0.528231,False,computed
+TATASTEEL,Materials,0,cfo_quality_score,CFO Quality Score,4.441136,1.481354,1.979169,9,1.495467,1.495467,False,computed
+TATASTEEL,Materials,0,capex_intensity_pct,Capex Intensity,6.219373,10.683582,7.40191,9,-0.603116,0.603116,False,computed
+TCS,Information Technology,0,net_profit_margin_pct,Net Profit Margin,19.136712,13.605975,5.580071,5,0.991159,0.991159,False,computed
+TCS,Information Technology,0,operating_profit_margin_pct,Operating Profit Margin,26.690688,19.811732,6.9802,5,0.985496,0.985496,False,computed
+TCS,Information Technology,0,return_on_equity_pct,Return on Equity,50.944314,27.12772,15.314355,5,1.555181,1.555181,False,computed
+TCS,Information Technology,0,debt_to_equity,Debt to Equity,0.088641,0.093288,0.007259,5,-0.640256,0.640256,False,computed
+TCS,Information Technology,0,return_on_capital_employed_pct,ROCE,68.784895,39.365916,18.586864,5,1.582783,1.582783,False,computed
+TCS,Information Technology,0,asset_turnover,Asset Turnover,1.655941,1.278073,0.222732,5,1.696514,1.696514,False,computed
+TCS,Information Technology,0,revenue_cagr_5yr,Revenue CAGR 5Yr,10.463615,15.019887,8.769128,5,-0.519581,0.519581,False,computed
+TCS,Information Technology,0,fcf_conversion_pct,FCF Conversion,78.432562,67.760424,31.153136,5,0.34257,0.34257,False,computed
+TCS,Information Technology,0,cfo_quality_score,CFO Quality Score,1.036411,1.201282,0.242393,5,-0.680181,0.680181,False,computed
+TCS,Information Technology,0,capex_intensity_pct,Capex Intensity,2.528509,5.084186,3.61915,5,-0.706154,0.706154,False,computed
+TECHM,Information Technology,0,net_profit_margin_pct,Net Profit Margin,4.60997,13.605975,5.580071,5,-1.612167,1.612167,False,computed
+TECHM,Information Technology,0,operating_profit_margin_pct,Operating Profit Margin,8.666051,19.811732,6.9802,5,-1.596757,1.596757,False,computed
+TECHM,Information Technology,0,return_on_equity_pct,Return on Equity,8.987964,27.12772,15.314355,5,-1.184494,1.184494,False,computed
+TECHM,Information Technology,0,debt_to_equity,Debt to Equity,0.095129,0.093288,0.007259,5,0.253634,0.253634,False,computed
+TECHM,Information Technology,0,return_on_capital_employed_pct,ROCE,18.602342,39.365916,18.586864,5,-1.11711,1.11711,False,computed
+TECHM,Information Technology,0,asset_turnover,Asset Turnover,1.205034,1.278073,0.222732,5,-0.327923,0.327923,False,computed
+TECHM,Information Technology,0,revenue_cagr_5yr,Revenue CAGR 5Yr,8.398438,15.019887,8.769128,5,-0.755086,0.755086,False,computed
+TECHM,Information Technology,0,fcf_conversion_pct,FCF Conversion,112.250333,67.760424,31.153136,5,1.428104,1.428104,False,computed
+TECHM,Information Technology,0,cfo_quality_score,CFO Quality Score,1.544725,1.201282,0.242393,5,1.416886,1.416886,False,computed
+TECHM,Information Technology,0,capex_intensity_pct,Capex Intensity,2.53481,5.084186,3.61915,5,-0.704413,0.704413,False,computed
+TITAN,Consumer Discretionary,0,net_profit_margin_pct,Net Profit Margin,6.84363,11.500325,6.968452,14,-0.668254,0.668254,False,computed
+TITAN,Consumer Discretionary,0,operating_profit_margin_pct,Operating Profit Margin,10.359408,25.536186,24.661573,14,-0.615402,0.615402,False,computed
+TITAN,Consumer Discretionary,0,return_on_equity_pct,Return on Equity,37.219206,86.724106,232.104483,14,-0.213287,0.213287,False,computed
+TITAN,Consumer Discretionary,0,debt_to_equity,Debt to Equity,1.653146,0.698619,1.0975,14,0.869728,0.869728,False,computed
+TITAN,Consumer Discretionary,0,return_on_capital_employed_pct,ROCE,23.377874,441.11496,1497.893148,14,-0.278883,0.278883,False,computed
+TITAN,Consumer Discretionary,0,asset_turnover,Asset Turnover,1.619298,5.157839,14.752203,14,-0.239865,0.239865,False,computed
+TITAN,Consumer Discretionary,0,revenue_cagr_5yr,Revenue CAGR 5Yr,20.897164,13.604579,8.800016,14,0.828701,0.828701,False,computed
+TITAN,Consumer Discretionary,0,fcf_conversion_pct,FCF Conversion,28.45805,24.626797,37.425658,14,0.10237,0.10237,False,computed
+TITAN,Consumer Discretionary,0,cfo_quality_score,CFO Quality Score,0.918059,0.178076,4.295602,14,0.172265,0.172265,False,computed
+TITAN,Consumer Discretionary,0,capex_intensity_pct,Capex Intensity,0.369979,5.868292,5.264319,14,-1.044449,1.044449,False,computed
+TORNTPHARM,Healthcare,0,net_profit_margin_pct,Net Profit Margin,15.436242,16.09725,5.874497,6,-0.112522,0.112522,False,computed
+TORNTPHARM,Healthcare,0,operating_profit_margin_pct,Operating Profit Margin,31.394482,33.813647,21.510619,6,-0.112464,0.112464,False,computed
+TORNTPHARM,Healthcare,0,return_on_equity_pct,Return on Equity,24.154026,16.635887,4.542244,6,1.65516,1.65516,False,computed
+TORNTPHARM,Healthcare,0,debt_to_equity,Debt to Equity,0.586639,0.249827,0.33733,6,0.998468,0.998468,False,computed
+TORNTPHARM,Healthcare,0,return_on_capital_employed_pct,ROCE,32.303732,32.155045,20.046062,6,0.007417,0.007417,False,computed
+TORNTPHARM,Healthcare,0,asset_turnover,Asset Turnover,0.739607,0.744747,0.221416,6,-0.023213,0.023213,False,computed
+TORNTPHARM,Healthcare,0,revenue_cagr_5yr,Revenue CAGR 5Yr,6.932744,10.698731,2.687796,6,-1.401143,1.401143,False,computed
+TORNTPHARM,Healthcare,0,fcf_conversion_pct,FCF Conversion,92.220903,42.13186,39.57804,6,1.265577,1.265577,False,computed
+TORNTPHARM,Healthcare,0,cfo_quality_score,CFO Quality Score,1.831031,1.793315,0.891238,6,0.042319,0.042319,False,computed
+TORNTPHARM,Healthcare,0,capex_intensity_pct,Capex Intensity,1.491424,6.754895,5.458638,6,-0.964246,0.964246,False,computed
+TRENT,Consumer Discretionary,0,net_profit_margin_pct,Net Profit Margin,11.935354,11.500325,6.968452,14,0.062428,0.062428,False,computed
+TRENT,Consumer Discretionary,0,operating_profit_margin_pct,Operating Profit Margin,15.927273,25.536186,24.661573,14,-0.389631,0.389631,False,computed
+TRENT,Consumer Discretionary,0,return_on_equity_pct,Return on Equity,36.307768,86.724106,232.104483,14,-0.217214,0.217214,False,computed
+TRENT,Consumer Discretionary,0,debt_to_equity,Debt to Equity,0.430924,0.698619,1.0975,14,-0.243914,0.243914,False,computed
+TRENT,Consumer Discretionary,0,return_on_capital_employed_pct,ROCE,50.850369,441.11496,1497.893148,14,-0.260542,0.260542,False,computed
+TRENT,Consumer Discretionary,0,asset_turnover,Asset Turnover,1.727869,5.157839,14.752203,14,-0.232506,0.232506,False,computed
+TRENT,Consumer Discretionary,0,revenue_cagr_5yr,Revenue CAGR 5Yr,36.306916,13.604579,8.800016,14,2.579806,2.579806,False,computed
+TRENT,Consumer Discretionary,0,fcf_conversion_pct,FCF Conversion,42.668696,24.626797,37.425658,14,0.482073,0.482073,False,computed
+TRENT,Consumer Discretionary,0,cfo_quality_score,CFO Quality Score,1.182342,0.178076,4.295602,14,0.233789,0.233789,False,computed
+TRENT,Consumer Discretionary,0,capex_intensity_pct,Capex Intensity,4.105051,5.868292,5.264319,14,-0.334942,0.334942,False,computed
+TVSMOTOR,Consumer Discretionary,0,net_profit_margin_pct,Net Profit Margin,4.544642,11.500325,6.968452,14,-0.998168,0.998168,False,computed
+TVSMOTOR,Consumer Discretionary,0,operating_profit_margin_pct,Operating Profit Margin,14.050326,25.536186,24.661573,14,-0.465739,0.465739,False,computed
+TVSMOTOR,Consumer Discretionary,0,return_on_equity_pct,Return on Equity,26.223467,86.724106,232.104483,14,-0.260661,0.260661,False,computed
+TVSMOTOR,Consumer Discretionary,0,debt_to_equity,Debt to Equity,3.833432,0.698619,1.0975,14,2.856321,2.856321,False,computed
+TVSMOTOR,Consumer Discretionary,0,return_on_capital_employed_pct,ROCE,17.096676,441.11496,1497.893148,14,-0.283076,0.283076,False,computed
+TVSMOTOR,Consumer Discretionary,0,asset_turnover,Asset Turnover,0.931492,5.157839,14.752203,14,-0.286489,0.286489,False,computed
+TVSMOTOR,Consumer Discretionary,0,revenue_cagr_5yr,Revenue CAGR 5Yr,14.192388,13.604579,8.800016,14,0.066796,0.066796,False,computed
+TVSMOTOR,Consumer Discretionary,0,fcf_conversion_pct,FCF Conversion,-40.981818,24.626797,37.425658,14,-1.753038,1.753038,False,computed
+TVSMOTOR,Consumer Discretionary,0,cfo_quality_score,CFO Quality Score,-0.750895,0.178076,4.295602,14,-0.216261,0.216261,False,computed
+TVSMOTOR,Consumer Discretionary,0,capex_intensity_pct,Capex Intensity,2.557159,5.868292,5.264319,14,-0.628976,0.628976,False,computed
+INDIGO,Consumer Discretionary,1,net_profit_margin_pct,Net Profit Margin,11.852723,11.500325,6.968452,14,0.05057,0.05057,False,computed
+INDIGO,Consumer Discretionary,1,operating_profit_margin_pct,Operating Profit Margin,76.298909,25.536186,24.661573,14,2.058373,2.058373,False,computed
+INDIGO,Consumer Discretionary,1,return_on_equity_pct,Return on Equity,892.568306,86.724106,232.104483,14,3.471903,3.471903,True,computed
+INDIGO,Consumer Discretionary,1,debt_to_equity,Debt to Equity,0.018579,0.698619,1.0975,14,-0.619627,0.619627,False,computed
+INDIGO,Consumer Discretionary,1,return_on_capital_employed_pct,ROCE,5643.454936,441.11496,1497.893148,14,3.473105,3.473105,True,computed
+INDIGO,Consumer Discretionary,1,asset_turnover,Asset Turnover,56.386252,5.157839,14.752203,14,3.472594,3.472594,True,computed
+INDIGO,Consumer Discretionary,1,revenue_cagr_5yr,Revenue CAGR 5Yr,19.313355,13.604579,8.800016,14,0.648723,0.648723,False,computed
+INDIGO,Consumer Discretionary,1,fcf_conversion_pct,FCF Conversion,17.925551,24.626797,37.425658,14,-0.179055,0.179055,False,computed
+INDIGO,Consumer Discretionary,1,cfo_quality_score,CFO Quality Score,-14.344663,0.178076,4.295602,14,-3.380839,3.380839,True,computed
+INDIGO,Consumer Discretionary,1,capex_intensity_pct,Capex Intensity,17.065773,5.868292,5.264319,14,2.127052,2.127052,False,computed
+ATGL,Energy,0,net_profit_margin_pct,Net Profit Margin,14.927374,16.022672,12.981687,14,-0.084373,0.084373,False,computed
+ATGL,Energy,0,operating_profit_margin_pct,Operating Profit Margin,24.670391,33.596854,24.659114,14,-0.361994,0.361994,False,computed
+ATGL,Energy,0,return_on_equity_pct,Return on Equity,18.659218,17.933799,11.243965,14,0.064516,0.064516,False,computed
+ATGL,Energy,0,debt_to_equity,Debt to Equity,0.434916,1.459648,1.634055,14,-0.62711,0.62711,False,computed
+ATGL,Energy,0,return_on_capital_employed_pct,ROCE,22.698073,19.326477,8.626593,14,0.390837,0.390837,False,computed
+ATGL,Energy,0,asset_turnover,Asset Turnover,0.678853,0.653519,0.612361,14,0.041371,0.041371,False,computed
+ATGL,Energy,0,revenue_cagr_5yr,Revenue CAGR 5Yr,21.088649,12.446835,8.494439,14,1.01735,1.01735,False,computed
+ATGL,Energy,0,fcf_conversion_pct,FCF Conversion,18.387681,18.263863,65.003647,14,0.001905,0.001905,False,computed
+ATGL,Energy,0,cfo_quality_score,CFO Quality Score,1.394199,2.010569,1.208837,14,-0.509887,0.509887,False,computed
+ATGL,Energy,0,capex_intensity_pct,Capex Intensity,16.804469,36.529155,59.038781,14,-0.334097,0.334097,False,computed
+SBIN,Financials,0,net_profit_margin_pct,Net Profit Margin,15.834413,38.238003,87.706652,23,-0.255438,0.255438,False,computed
+SBIN,Financials,0,operating_profit_margin_pct,Operating Profit Margin,-13.729169,53.425739,35.593822,22,-1.886701,1.886701,False,computed
+SBIN,Financials,0,revenue_cagr_5yr,Revenue CAGR 5Yr,11.6338,17.744843,5.304504,22,-1.152048,1.152048,False,computed
+SBIN,Financials,0,fcf_conversion_pct,FCF Conversion,-30.110951,-132.589622,254.419738,22,0.402794,0.402794,False,computed
+SBIN,Financials,0,cfo_quality_score,CFO Quality Score,1.053882,2.380893,8.557163,23,-0.155076,0.155076,False,computed
+SBIN,Financials,0,capex_intensity_pct,Capex Intensity,0.791459,14.614712,23.266484,23,-0.594127,0.594127,False,computed
